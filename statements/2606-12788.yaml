@@ -1,0 +1,59 @@
+id: 2606-12788
+title: To Share or Not to Share: Orchestrating Trustworthy Data in Global Value Chains
+
+source:
+  paper: https://arxiv.org/abs/2606.12788
+  pdf: https://arxiv.org/pdf/2606.12788
+  lab_report: https://labreports.app/2606-12788
+  repo: https://github.com/thinkthoughts/engineering-statements
+
+objective: >
+  Understand how sovereign data exchange can support sustainability compliance
+  across global semiconductor and petrochemical value chains, turning regulatory
+  accountability into capability-building.
+
+contexts:
+  - RegTech
+  - sustainability compliance
+  - global value chains
+  - semiconductor-petrochemical supply chains
+  - CBAM
+  - SSbD
+  - Digital Product Passports
+  - International Data Spaces
+  - Agentic AI
+  - green finance
+
+constraints:
+  - distinguish voluntary frameworks from mandatory regulation
+  - preserve product-level evidence rather than aggregate claims alone
+  - protect data sovereignty and proprietary industrial information
+  - support interoperability across jurisdictions
+  - avoid double-reporting traps between carbon and chemical-safety workflows
+
+evidence:
+  - CBAM requires product-level verification of embedded emissions
+  - SBTi is voluntary and corporate-level rather than legally binding
+  - SSbD adds chemical safety and lifecycle transparency requirements
+  - IDSA data sovereignty standards support trusted cross-organizational data exchange
+  - Digital Product Passports can structure emissions, materials, process, and compliance evidence
+  - Agentic AI can support autonomous validation, monitoring, exception handling, and compliance updates
+  - FinTech integration can connect compliance data to green finance instruments
+
+outputs:
+  - infographic
+  - lab report
+  - companion notebook
+  - Engineering Statement YAML
+  - stakeholder map
+  - workflow summary
+  - next-step artifacts
+
+next_steps:
+  - read the paper
+  - map voluntary versus mandatory compliance requirements
+  - identify stakeholder roles across the value chain
+  - sketch a Digital Product Passport data flow
+  - compare IDSA-style sovereign data exchange with ordinary data sharing
+  - prototype an Agentic AI compliance workflow
+  - connect verified compliance data to green-finance use cases
