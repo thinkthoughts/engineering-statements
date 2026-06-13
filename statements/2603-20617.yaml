@@ -1,0 +1,69 @@
+id: ai-layoff-trap
+title: "Demystifying the AI Layoff Trap"
+
+source:
+  paper: https://arxiv.org/abs/2603.20617
+  pdf: https://arxiv.org/pdf/2603.20617
+  lab_report: https://labreports.app/ai-layoff-trap
+  repo: https://github.com/thinkthoughts/engineering-statements
+
+objective: >
+  Understand how competition among rational firms can create incentives
+  for automation that exceed collectively optimal levels, even when
+  firms recognize the resulting effects on aggregate demand.
+
+contexts:
+  - artificial intelligence
+  - labor economics
+  - automation
+  - consumer demand
+  - competition
+  - public policy
+  - technological change
+
+constraints:
+  - distinguish theoretical models from forecasts
+  - identify assumptions explicitly
+  - distinguish private incentives from collective outcomes
+  - avoid deterministic claims about employment futures
+  - support evidence-based policy discussions
+
+evidence:
+  - firms capture the full benefits of their own automation decisions
+  - firms internalize only part of the resulting reduction in aggregate demand
+  - competition can amplify incentives to automate
+  - individually rational decisions can generate collectively undesirable outcomes
+  - policy interventions may alter the incentive structure
+
+technical_specifications:
+  - "private benefit > internalized demand cost"
+  - "internalized demand loss ≈ total demand loss / N"
+  - "N = number of competing firms"
+
+contrasts:
+  classical:
+    - markets self-correct automatically
+    - firms will slow automation if everyone is harmed
+  observation:
+    - competition changes incentives
+    - over-automation can persist under specific assumptions
+
+outputs:
+  - infographic
+  - lab report
+  - Engineering Statement YAML
+  - companion notebook
+  - assumptions summary
+  - policy comparison notes
+
+next_steps:
+  - inspect the assumptions of the model
+  - compare alternative policy interventions
+  - examine historical evidence on automation and employment
+  - monitor emerging empirical evidence from AI adoption
+  - distinguish incentives from inevitabilities in public discussions
+  - develop companion notebooks exploring the model structure
+
+footer:
+  contrast: "incentives ≠ inevitabilities"
+  climate_reality: "c = √(E/m)"
