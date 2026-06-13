@@ -1,0 +1,73 @@
+id: 2606-13556
+title: "Demystifying Personalized Health AI"
+
+source:
+  paper: https://arxiv.org/abs/2606.13556
+  html: https://arxiv.org/html/2606.13556v1
+  pdf: https://arxiv.org/pdf/2606.13556
+  lab_report: https://labreports.app/2606-13556
+  repo: https://github.com/thinkthoughts/engineering-statements
+
+objective: >
+  Understand how genetics-informed baselines can help interpret health signals
+  relative to the individual person rather than relying only on population norms.
+
+contexts:
+  - personalized health AI
+  - genetics-informed baselines
+  - wearable signals
+  - heart rate variability
+  - health monitoring
+  - attribution
+  - evidence grading
+
+constraints:
+  - distinguish population norms from personal baselines
+  - treat genetic anchors as weak priors that update with evidence
+  - account for ancestry-matched effect sizes
+  - separate stable set points from temporary deviations
+  - protect privacy and individual control
+
+evidence:
+  - the same observed value can mean different things for different people
+  - genetics-informed priors can provide individualized reference points
+  - observed signals combine stable predisposition, non-constitutional deviation, and measurement noise
+  - prior strength should be graded, decayed, and updated as new evidence arrives
+  - models support attribution and interpretation before decisions
+
+technical_specifications:
+  - "observed signal = genetic set point + non-constitutional deviation + measurement noise"
+  - "same value ≠ same meaning"
+  - "personal context → better interpretation → better decisions"
+
+contrasts:
+  classical:
+    - compare a value to a population average
+    - ask whether the value is normal
+    - assume one reference range fits everyone
+  observation:
+    - compare a value to a person-specific baseline
+    - ask what changed for this individual
+    - use genetics-informed anchors to improve interpretation
+
+outputs:
+  - infographic
+  - lab report
+  - Engineering Statement YAML
+  - companion notebook
+  - assumptions summary
+  - evidence-grading notes
+
+next_steps:
+  - read the paper
+  - inspect assumptions about priors and ancestry matching
+  - evaluate effect sizes, uncertainty, and replication
+  - refine baseline models as data grows
+  - protect privacy and user control
+  - translate interpretable deviations into better health decisions
+
+footer:
+  contrast:
+    - "normal ≠ meaningful"
+    - "baseline ≠ destiny"
+  climate_reality: "c = √(E/m)"
