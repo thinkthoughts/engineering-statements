@@ -1,0 +1,52 @@
+id: el-nino-2026
+title: "Demystifying El Niño: Climate Risk, Probabilities, and Preparedness"
+
+source:
+  noaa_enso: https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml
+  noaa_news: https://www.noaa.gov/news-release/el-nino-forms-expected-to-strengthen-say-noaa-forecasters
+  lab_report: https://labreports.app/el_nino
+  repo: https://github.com/thinkthoughts/engineering-statements
+
+objective: >
+  Understand how coupled ocean-atmosphere processes in the tropical
+  Pacific alter climate risks, influence regional weather patterns,
+  and support preparedness planning through probabilistic forecasts.
+
+contexts:
+  - ENSO
+  - El Niño
+  - climate variability
+  - climate risk
+  - disaster preparedness
+  - adaptation
+  - public communication
+
+constraints:
+  - distinguish observations from forecasts
+  - distinguish probabilities from certainties
+  - avoid deterministic regional predictions
+  - communicate changing risks clearly
+  - support preparedness without amplifying panic
+
+evidence:
+  - sea-surface temperatures above average in the central and eastern tropical Pacific
+  - Niño-3.4 region crossing the El Niño threshold
+  - atmospheric circulation responding to ocean warming
+  - NOAA forecast models projecting continued El Niño development
+  - historical associations between strong El Niño events and regional climate impacts
+
+outputs:
+  - infographic
+  - lab report
+  - Engineering Statement YAML
+  - companion notebook
+  - preparedness guidance
+  - Climate Reality article
+
+next_steps:
+  - monitor NOAA ENSO updates
+  - review regional seasonal outlooks
+  - identify local preparedness actions
+  - compare El Niño, La Niña, and neutral conditions
+  - update guidance as observations and forecasts evolve
+  - communicate probabilistic risks clearly to diverse audiences
