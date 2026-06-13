@@ -1,3 +1,4 @@
+```yaml
 id: agapi-agents
 title: Engineering Statements With AGAPI-Agents
 
@@ -9,26 +10,42 @@ source:
 
 objective: >
   Connect AGAPI-style agentic scientific infrastructure with portable
-  Engineering Statements that specify claims, constraints, tools,
-  evidence, workflows, outputs, and next steps.
+  Engineering Statements that specify claims, constraints, evidence,
+  workflows, outputs, and next steps.
 
 contexts:
   - agentic science
   - materials discovery
   - open scientific infrastructure
+  - scientific reasoning workflows
+  - reproducible research artifacts
 
 constraints:
   - preserve scientific intent
-  - support collaboration
-  - keep outputs inspectable
+  - support collaboration rather than centralization
+  - keep outputs inspectable and reproducible
+  - complement existing scientific tools and repositories
+
+evidence:
+  - AGAPI paper
+  - AGAPI GitHub repository
+  - Climate Reality statements feature
+  - Engineering Statements examples derived from recent papers
 
 outputs:
   - feature page
   - YAML statements
-  - notebooks
+  - companion notebooks
   - lab reports
+  - reusable templates
 
 next_steps:
   - read the AGAPI paper
   - inspect the AGAPI repository
   - compare AGAPI workflows with Engineering Statements
+  - explore how Engineering Statements might complement agentic science systems
+  - provide feedback on the specification structure
+```
+
+```
+```
