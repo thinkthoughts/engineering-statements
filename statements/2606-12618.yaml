@@ -1,0 +1,16 @@
+id: 2606-12618
+title: Did you lie?
+
+objective: >
+  Evaluate whether lie detectors identify belief-based deception rather
+  than only prompted deceptive behavior.
+
+outputs:
+  - infographic
+  - lab report
+  - notebook
+
+next_steps:
+  - compare detector families
+  - review belief verification
+  - inspect model organisms

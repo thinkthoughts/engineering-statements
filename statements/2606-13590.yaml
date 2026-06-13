@@ -1,0 +1,16 @@
+id: 2606-13590
+title: Modular Nahm sums of ranks 3 and 4
+
+objective: >
+  Identify new modular Nahm sums and understand how Rogers-Ramanujan
+  identities establish modularity.
+
+outputs:
+  - infographic
+  - lab report
+  - notebook
+
+next_steps:
+  - read the paper
+  - review q-series concepts
+  - run the notebook

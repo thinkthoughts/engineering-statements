@@ -1,0 +1,34 @@
+id: agapi-agents
+title: Engineering Statements With AGAPI-Agents
+
+source:
+  paper: https://arxiv.org/abs/2512.11935
+  github: https://github.com/atomgptlab/agapi
+  feature: https://climatereality.app/statements/
+  repo: https://github.com/thinkthoughts/engineering-statements
+
+objective: >
+  Connect AGAPI-style agentic scientific infrastructure with portable
+  Engineering Statements that specify claims, constraints, tools,
+  evidence, workflows, outputs, and next steps.
+
+contexts:
+  - agentic science
+  - materials discovery
+  - open scientific infrastructure
+
+constraints:
+  - preserve scientific intent
+  - support collaboration
+  - keep outputs inspectable
+
+outputs:
+  - feature page
+  - YAML statements
+  - notebooks
+  - lab reports
+
+next_steps:
+  - read the AGAPI paper
+  - inspect the AGAPI repository
+  - compare AGAPI workflows with Engineering Statements

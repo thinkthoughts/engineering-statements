@@ -1,0 +1,16 @@
+id: 2606-13619
+title: Split primes and the Elekes-Ronyai problem
+
+objective: >
+  Understand how split primes and local arithmetic constraints produce
+  unexpectedly small image sets for non-special polynomials.
+
+outputs:
+  - infographic
+  - lab report
+  - notebook
+
+next_steps:
+  - read the paper
+  - run the notebook
+  - explore related Number Theory reports
