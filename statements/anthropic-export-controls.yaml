@@ -1,0 +1,37 @@
+id: anthropic-export-controls
+title: Frontier AI export controls and model access
+
+objective: >
+  Understand how export controls on advanced AI models
+  influence scientific collaboration, AI governance,
+  and reproducible research workflows.
+
+contexts:
+  - AI governance
+  - export controls
+  - national security
+  - scientific collaboration
+  - frontier AI systems
+
+constraints:
+  - distinguish reporting from speculation
+  - preserve factual chronology
+  - recognize uncertainty regarding security claims
+  - support international scientific participation
+
+evidence:
+  - Reuters reporting
+  - Anthropic statements
+  - export-control directives
+  - public commentary
+
+outputs:
+  - infographic
+  - lab report
+  - companion notebook
+
+next_steps:
+  - read primary reporting
+  - compare previous export-control policies
+  - examine implications for open science
+  - revisit as additional evidence emerges
