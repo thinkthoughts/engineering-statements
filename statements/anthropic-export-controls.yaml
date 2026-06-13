@@ -1,10 +1,16 @@
 id: anthropic-export-controls
 title: Frontier AI export controls and model access
 
+source:
+  reporting: https://www.reuters.com/technology/us-blocks-foreign-access-anthropics-most-advanced-ai-models-2026-06-13/
+  company: https://www.anthropic.com/
+  feature: https://climatereality.app/
+  repo: https://github.com/thinkthoughts/engineering-statements
+
 objective: >
-  Understand how export controls on advanced AI models
-  influence scientific collaboration, AI governance,
-  and reproducible research workflows.
+  Understand how export controls on advanced AI models influence
+  scientific collaboration, AI governance, and reproducible
+  research workflows.
 
 contexts:
   - AI governance
@@ -21,17 +27,18 @@ constraints:
 
 evidence:
   - Reuters reporting
-  - Anthropic statements
+  - Anthropic public statements
   - export-control directives
-  - public commentary
+  - public discussion and analysis
 
 outputs:
   - infographic
   - lab report
   - companion notebook
+  - Climate Reality article
 
 next_steps:
   - read primary reporting
   - compare previous export-control policies
   - examine implications for open science
-  - revisit as additional evidence emerges
+  - revisit the statement as additional evidence emerges
