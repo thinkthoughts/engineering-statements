@@ -1,0 +1,100 @@
+title: "Demystifying Quantum Coherence Protection"
+subtitle: "Engineering within constraints enables both coherence protection and quantum control."
+
+paper:
+  title: "All-mechanical coherence protection and fast control of a spin qubit"
+  authors:
+    - "Eliza Cornell"
+    - "Marko Lončar Group"
+    - "Collaborators"
+  arxiv: "2508.13356"
+  year: 2025
+  url: "https://arxiv.org/abs/2508.13356"
+
+climate_reality:
+  statement: >
+    Climate reality describes what engineering prescribes:
+    identify constraints, then build within them.
+
+engineering_statements:
+
+  - id: ES-250813356-01
+    category: "Constraint Engineering"
+    statement: >
+      Strong interactions and long coherence times need not be mutually
+      exclusive when the interactions themselves are engineered to support
+      both information transfer and noise suppression.
+
+  - id: ES-250813356-02
+    category: "Quantum Control"
+    statement: >
+      Continuous mechanical driving can establish dressed spin states that
+      preserve coherence while maintaining compatibility with phononic
+      quantum architectures.
+
+  - id: ES-250813356-03
+    category: "Systems Design"
+    statement: >
+      Engineering advances often arise from aligning competing requirements
+      rather than optimizing one objective at the expense of another.
+
+  - id: ES-250813356-04
+    category: "Quantum Information"
+    statement: >
+      The same physical interaction that enables quantum information exchange
+      may also contribute to protecting that information from environmental
+      disturbances.
+
+  - id: ES-250813356-05
+    category: "Scalability"
+    statement: >
+      Coherence protection strategies compatible with phononic cavities may
+      support the development of scalable quantum networks and transducers.
+
+  - id: ES-250813356-06
+    category: "Measurement"
+    statement: >
+      Experimental demonstrations of ultrafast control provide practical
+      benchmarks for evaluating the readiness of emerging quantum platforms.
+
+observations:
+
+  - >
+    Silicon-vacancy centers exhibit strong spin-strain coupling.
+
+  - >
+    Continuous coherent mechanical driving generates noise-resistant dressed
+    spin states.
+
+  - >
+    The demonstrated approach remains compatible with phononic cavities.
+
+  - >
+    Mechanically driven spin control achieved Rabi frequencies approaching
+    800 MHz.
+
+classical_question:
+  prompt: >
+    Must quantum systems trade strong interactions for long coherence times?
+
+  response: >
+    This work demonstrates that, under engineered constraints, mechanical
+    interactions can simultaneously support coherence protection and fast
+    quantum control.
+
+footer:
+  climate_reality: >
+    Climate reality describes what engineering prescribes:
+    identify constraints, then build within them.
+
+  mathematical_context: "c = √(E/m)"
+
+tags:
+  - "quantum-information"
+  - "silicon-vacancy"
+  - "phononics"
+  - "coherence"
+  - "spin-qubit"
+  - "constraint-engineering"
+  - "climate-reality"
+  - "engineering-statements"
