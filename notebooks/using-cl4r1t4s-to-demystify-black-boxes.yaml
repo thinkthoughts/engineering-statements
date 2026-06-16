@@ -1,0 +1,58 @@
+id: using-cl4r1t4s-to-demystify-black-boxes
+
+title: Using CL4R1T4S To Demystify Black Boxes
+
+statement: >
+  Observable specifications support scientific investigation
+  of AI systems.
+
+claim: >
+  AI systems are often treated as black boxes. Artifacts such
+  as CL4R1T4S suggest that some operational specifications can
+  become observable and studied.
+
+evidence:
+  - Operational instructions
+  - Tool permissions
+  - Search requirements
+  - Memory policies
+  - Citation practices
+  - Refusal criteria
+
+constraints:
+  - Specifications alone do not fully characterize a system.
+  - Observable artifacts may be incomplete.
+  - Scientific conclusions require continued refinement.
+
+observation: >
+  Black boxes may contain discoverable structure.
+
+context: >
+  Public discussion increasingly encounters AI systems as
+  opaque. Operational artifacts provide opportunities for
+  broader participation in understanding those systems.
+
+scientific_intent: >
+  Develop methods for identifying, comparing, and
+  communicating observable AI specifications.
+
+next_steps:
+  - Characterize specifications.
+  - Compare systems.
+  - Track revisions over time.
+  - Support broader participation in AI literacy.
+
+traffic_light: green
+
+tags:
+  - AI
+  - Observability
+  - Transparency
+  - Specifications
+  - Climate Reality
+  - Climate Democracy
+
+links:
+  report: https://labreports.app/CL4R1T4S/
+  repo: https://github.com/elder-plinius/CL4R1T4S
+  artifact: https://github.com/elder-plinius/CL4R1T4S/blob/main/ANTHROPIC/CLAUDE-FABLE-5.md
