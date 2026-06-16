@@ -1,0 +1,61 @@
+id: 2406-01648
+title: General Priority Expands Human Consciousness
+source:
+  type: arxiv
+  id: "2406.01648"
+  title: "Consciousness defined: requirements for biological and artificial general intelligence"
+
+statement:
+  premise: >
+    The paper attempts to refine consciousness from a subjective mystery
+    toward objective criteria by proposing six interacting requirements:
+    perception, memory, imagination, self, desire, and decision.
+
+  observation: >
+    This work demonstrates scientific intent by seeking specifications
+    that may apply across biological and artificial systems rather than
+    relying solely on one-word descriptions of consciousness.
+
+  engineering_statement: >
+    General Priority specifies local orientation. Continue expanding
+    consciousness by identifying observable criteria, refining
+    definitions, and developing testable relationships among proposed
+    requirements.
+
+  climate_reality: >
+    Actual systems constrain our descriptions of them. The Sun's mass
+    is not zero. Scientific inquiry proceeds through observation,
+    specification, and revision.
+
+  climate_democracy: >
+    Reading, writing, and collaborative refinement allow scientific
+    understanding to expand beyond individual perspectives.
+
+next_steps:
+  - Read the paper carefully and identify testable claims.
+  - Map the six proposed requirements to observable behaviors or metrics.
+  - Compare proposed requirements across biological and artificial systems.
+  - Develop notebooks that refine definitions without assuming authority over Everything.
+  - Collaborate, replicate, and revise findings publicly.
+
+questions:
+  - Which of the six proposed requirements are necessary?
+  - Which requirements are sufficient?
+  - How should local orientation be specified in biological systems?
+  - How should local orientation be specified in artificial systems?
+  - What observations would falsify proposed consciousness criteria?
+
+general_priority:
+  local_orientation: >
+    Human consciousness provides a local orientation within broader reality.
+    Additional claims concerning plants, animals, or artificial systems
+    require further specification and evidence.
+
+  scientific_intent: >
+    The goal is not omniscience. The goal is becoming less wrong through
+    increasingly precise descriptions.
+
+footer:
+  climate_reality: "Things are as they are."
+  constraint: "c = √(E/m)"
+  identity: "1 + 1 > |1.4i| ≠ $0.96"
