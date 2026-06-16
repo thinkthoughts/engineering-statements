@@ -1,0 +1,93 @@
+title: "Computation Demystifies Semiclassical Gravity"
+slug: "2606-14806"
+paper:
+  arxiv: "2606.14806"
+  html: "https://arxiv.org/html/2606.14806v1"
+  category: "gr-qc"
+
+statement:
+  title: "Computation Demystifies Semiclassical Gravity"
+
+context:
+  premise: >
+    Climate Reality describes systems in context. Scientific claims are
+    constrained by observation, experiment, and the measurable behavior
+    of physical systems, including their computational limits.
+
+claim:
+  summary: >
+    If gravity remains classical while coupling to quantum matter through
+    semiclassical Einstein equations, the resulting weak-field dynamics
+    become nonlinear and may efficiently solve NP-complete problems.
+    Therefore, if observed computational constraints hold, at least one
+    assumption of the semiclassical framework is likely incorrect.
+
+observation:
+  summary: >
+    The Physical Extended Church–Turing Thesis (PECTT) states that no
+    physically realizable process efficiently solves NP-complete problems.
+    Semiclassical gravity appears to violate this principle by introducing
+    nonlinear quantum evolution with enhanced computational power.
+
+lab_report:
+  core_claim:
+    - "Gravity is classical."
+    - "Matter is quantum."
+    - "Coupling follows semiclassical Einstein equations."
+    - "Weak-field dynamics become nonlinear."
+    - "Nonlinear evolution may efficiently solve NP-complete problems."
+
+  pathway:
+    - "Quantum matter"
+    - "Semiclassical coupling"
+    - "Schrödinger–Newton dynamics"
+    - "Nonlinear quantum evolution"
+    - "Efficient NP-complete solutions"
+
+classical:
+  contrast:
+    - framework: "Classical computation"
+      capability: "P"
+    - framework: "Linear quantum computation"
+      capability: "BQP"
+    - framework: "Nonlinear quantum mechanics"
+      capability: "Potentially NP-complete"
+    - framework: "Semiclassical gravity"
+      capability: "Potentially NP-complete"
+
+  interpretation: >
+    Established physical theories respect observed computational limits.
+    If semiclassical gravity generically permits efficient solutions to
+    NP-complete problems, then either those limits fail or the underlying
+    assumptions of the semiclassical model require revision.
+
+engineering_statement:
+  statement: >
+    Physical theories should preserve observed computational constraints.
+
+  observation: >
+    Semiclassical gravity introduces nonlinear quantum dynamics.
+
+  context: >
+    Generic nonlinear quantum theories can efficiently solve NP-complete
+    problems.
+
+  next_step: >
+    Determine experimentally whether gravity exhibits fundamentally
+    quantum behavior or an alternative coupling mechanism.
+
+tags:
+  - "semiclassical gravity"
+  - "quantum gravity"
+  - "computational complexity"
+  - "NP-complete"
+  - "Physical Extended Church-Turing Thesis"
+  - "Schrödinger-Newton equation"
+  - "gr-qc"
+
+footer:
+  climate_reality: >
+    Climate Reality describes systems in context through observation,
+    evidence, and measurable constraints.
+
+  traffic_light: "🚦"
