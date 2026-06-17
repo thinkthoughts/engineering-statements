@@ -1,0 +1,107 @@
+id: 2606-14150
+
+date: "2026-06-16"
+source: "arXiv"
+identifier: "2606.14150"
+
+title: "Revision Demystifies Small Language Models"
+paper_title: "Small LLMs: Pruning vs. Training from Scratch"
+
+category: "cs.LG"
+
+authors:
+  - "Yuxin Wen"
+  - "Yifei Wang"
+  - "Tianyun Zhong"
+  - "Ying Sheng"
+  - "Beidi Chen"
+
+status: "draft"
+
+summary: >
+  This paper compares two approaches to building smaller language models:
+  training from scratch versus pruning larger pretrained models. Under
+  matched training-token budgets, pruned models consistently outperform
+  randomly initialized models. The advantage narrows as training budgets
+  increase and as pruning becomes more aggressive, suggesting that pruning
+  provides a useful initialization rather than an inherent guarantee of
+  superior performance.
+
+claim: >
+  Smaller language models can be built through reset or revision. When
+  training-token budgets are matched, revision through pruning preserves
+  useful structure that random initialization must rediscover through
+  additional training.
+
+constraints:
+  - "Equal-token comparisons are necessary for fair evaluation."
+  - "Inherited structure can transfer useful capabilities."
+  - "Pruning effectiveness depends on pruning granularity."
+  - "Scratch training becomes increasingly competitive with larger training budgets."
+  - "Pruning is an engineering tradeoff rather than a universal advantage."
+
+observation: >
+  Pruning functions as a revision process. Parameters accumulated during
+  pretraining are selectively removed, the resulting model is retrained,
+  and performance is reevaluated. The central question shifts from how
+  many parameters remain to which capabilities survive compression.
+
+engineering_statement: >
+  Compare reset and revision under matched budgets. Measure not only final
+  performance but also the residues that persist after compression,
+  retraining, and evaluation. Treat pruning as an empirical test of which
+  structures are robust enough to survive revision.
+
+questions:
+  - "Which pruning strategies preserve reasoning most effectively?"
+  - "Which capabilities are most vulnerable to compression?"
+  - "Can revision triggers guide pruning decisions dynamically?"
+  - "How should inherited structure be measured during continual learning?"
+  - "What residues consistently survive repeated revision cycles?"
+
+applications:
+  - "Small language model development"
+  - "Model compression workflows"
+  - "Resource-constrained deployment"
+  - "Continual learning research"
+  - "Revision-based machine learning systems"
+
+connections:
+  - "continual-learning-bench-rml"
+  - "engineering-statements"
+  - "accurate-intelligence"
+  - "AGAPI"
+  - "pruning-rml"
+
+tags:
+  - "pruning"
+  - "small language models"
+  - "compression"
+  - "training from scratch"
+  - "revision"
+  - "residues"
+  - "continual learning"
+  - "RML"
+
+links:
+  paper_abs: "https://arxiv.org/abs/2606.14150"
+  paper_html: "https://arxiv.org/html/2606.14150v1"
+  repo: "https://github.com/zlab-princeton/llm-pruning-collection"
+
+lab_report:
+  title: "Revision Demystifies Small Language Models"
+  infographic: "2606-14150.png"
+  page: "/2606-14150/"
+
+climate_reality: >
+  Accumulated structure is not equivalent to zero. Useful capabilities
+  can persist through revision, provided they are evaluated under
+  measurable constraints.
+
+climate_democracy: >
+  Engineering decisions should distinguish between reset and revision,
+  documenting which structures are preserved, discarded, and justified
+  through transparent evaluation.
+
+footer: >
+  Climate Reality describes. Engineering Statements prescribe.
