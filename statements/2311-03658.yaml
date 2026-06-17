@@ -1,0 +1,42 @@
+id: 2311-03658
+title: Computation Demystifies Linear Representation
+paper:
+arxiv_id: "2311.03658v2"
+title: "The Linear Representation Hypothesis and the Geometry of Large Language Models"
+authors:
+- Kiho Park
+- Yo Joong Choe
+- Victor Veitch
+url: "https://arxiv.org/abs/2311.03658"
+claim: >
+Linear representation is not just a claim that concepts occupy locations in
+model space. It is a claim that concept changes define directions, and that
+those directions become meaningful only after choosing the right geometry.
+context:
+
+* Large language models represent contexts and output words as vectors.
+* High-level concepts may appear as directions in those representation spaces.
+* Counterfactual pairs make concept directions observable.
+  constraints:
+* Similarity, projection, probing, and steering require an inner product.
+* Euclidean/cosine geometry is not automatically the right geometry.
+* Causally separable concepts should be orthogonal under the chosen metric.
+  observations:
+* Unembedding representations connect to measurement and linear probes.
+* Embedding representations connect to intervention and steering vectors.
+* A causal inner product can unify these notions.
+  takeaway: >
+  The geometry of concepts depends on the metric. Computation finds directions;
+  geometry gives them meaning; causality makes them useful.
+  links:
+  report: "https://labreports.app/2311-03658/"
+  arxiv: "https://arxiv.org/abs/2311.03658"
+  html: "https://arxiv.org/html/2311.03658v2"
+  image: "2311-03658.png"
+  tags:
+* linear representation hypothesis
+* causal inner product
+* mechanistic interpretability
+* steering vectors
+* counterfactual geometry
+  status: complete
