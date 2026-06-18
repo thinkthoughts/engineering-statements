@@ -1,0 +1,81 @@
+```yaml
+id: 2606-12683
+
+title: Constraints Demystify Superintelligence
+
+paper: arXiv:2606.12683
+
+claim: >
+  The transition from artificial general intelligence (AGI)
+  to artificial superintelligence (ASI) depends not only on
+  increasing capability, but also on the constraints that
+  shape scaling, feedback lifts, and coordination.
+
+observe:
+  - scaling compute
+  - algorithmic efficiency
+  - feedback lifts
+  - multi-agent collectives
+  - effective compute growth
+  - digital intelligence advantages
+
+classical:
+  - finite energy
+  - hardware constraints
+  - data limitations
+  - coordination bottlenecks
+  - complexity-theoretic limits
+  - physical constraints
+
+statement: >
+  Superintelligence is shaped by both growth and constraint.
+  Understanding bottlenecks is necessary for understanding
+  future capability.
+
+equation: |
+  capability = growth - friction
+
+tags:
+  - AGI
+  - ASI
+  - feedback lifts
+  - effective compute
+  - scaling laws
+  - multi-agent systems
+  - forecasting
+  - artificial intelligence
+
+links:
+  arxiv: https://arxiv.org/abs/2606.12683
+  pdf: https://arxiv.org/pdf/2606.12683
+
+engineering:
+  question: >
+    Which constraints matter most:
+    compute, energy, data, coordination,
+    or feedback lifts?
+
+  answer: >
+    The significance of these constraints remains an
+    open research question. Continued AI progress
+    depends on both capability growth and the
+    frictions that oppose it.
+
+feedback_lifts:
+  - code
+  - data
+  - evaluation
+  - hardware
+  - coordination
+
+climate_reality: >
+  Climate reality describes what engineering prescribes:
+  identify constraints, then build within them.
+
+footer:
+  - AGI
+  - ASI
+  - Feedback Lifts
+  - Multi-Agent Collectives
+  - Effective Compute
+```
