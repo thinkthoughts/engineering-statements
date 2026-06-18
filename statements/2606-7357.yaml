@@ -1,0 +1,13 @@
+title: Computation Demystifies Quantum Chemistry
+
+statement: >
+  Useful quantum chemistry depends on the execution
+  time of physical circuit elements. Hardware-tailored
+  pulses reduce runtime, improve noise resilience,
+  and preserve the modular structure required for
+  scalable VQE algorithms.
+
+evidence:
+  - Single-qubit excitations: ≤289 ns
+  - Double-qubit excitations: ≤927 ns
+  - Runtime reduction up to 15.3×
