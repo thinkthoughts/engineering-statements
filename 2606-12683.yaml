@@ -1,0 +1,73 @@
+id: 2606-12683
+
+title: Constraints Demystify Superintelligence
+
+paper: arXiv:2606.12683
+
+claim: >
+  The transition from artificial general intelligence (AGI)
+  to artificial superintelligence (ASI) depends not only on
+  increasing capability, but also on the constraints that
+  shape scaling, recursive improvement, and coordination.
+
+observe:
+  - scaling compute
+  - algorithmic efficiency
+  - recursive self-improvement
+  - multi-agent collectives
+  - effective compute growth
+  - digital intelligence advantages
+
+classical:
+  - finite energy
+  - hardware constraints
+  - data limitations
+  - coordination bottlenecks
+  - complexity-theoretic limits
+  - physical constraints
+
+statement: >
+  Superintelligence is shaped by both growth and constraint.
+  Understanding bottlenecks is necessary for understanding
+  future capability.
+
+equation: |
+  capability = growth - friction
+
+tags:
+  - AGI
+  - ASI
+  - recursive improvement
+  - effective compute
+  - scaling laws
+  - multi-agent systems
+  - forecasting
+  - artificial intelligence
+
+links:
+  arxiv: https://arxiv.org/abs/2606.12683
+  pdf: https://arxiv.org/pdf/2606.12683
+
+engineering:
+  question: >
+    Which constraints matter most:
+    compute, energy, data, coordination,
+    or recursive-improvement bottlenecks?
+
+  answer: >
+    The significance of these constraints remains an
+    open research question. Continued AI progress
+    depends on both capability growth and the
+    frictions that oppose it.
+
+climate_reality: >
+  Climate reality describes what engineering prescribes:
+  identify constraints, then build within them.
+
+footer:
+  - AGI
+  - ASI
+  - Universal AI
+  - Recursive Improvement
+  - Multi-Agent Collectives
+  - Effective Compute
