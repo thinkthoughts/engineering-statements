@@ -1,0 +1,38 @@
+id: 2606-16425
+
+title: Depth Demystifies Quantum Advantage
+
+paper: arXiv:2606.16425
+
+claim: >
+  Increasing quantum circuit depth strictly increases
+  computational power, even within constant-depth
+  quantum computation.
+
+observe:
+  - shallow quantum circuits
+  - QNC0 depth hierarchy
+  - multi-controlled phase gates
+  - nonlocal correlations
+  - quantum advantage
+
+classical:
+  - fixed-depth assumptions
+  - depth-insensitive models
+  - shallow classical circuits
+  - insufficient nonlocal correlation
+
+statement: >
+  Circuit depth is a computational resource.
+  Additional layers enable correlations and
+  operations unavailable to shallower circuits.
+
+equation: |
+  depth d > depth (d - 1)
+
+tags:
+  - quantum circuits
+  - circuit depth
+  - QNC0
+  - quantum advantage
+  - complexity theory
