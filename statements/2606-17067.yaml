@@ -1,0 +1,73 @@
+id: 2606-17067
+
+title: Radio Lines Demystify Axion Dark Matter
+
+paper: arXiv:2606.17067
+
+claim: >
+  Axion dark matter models can be tested through
+  axion-photon conversion searches in strong magnetic fields.
+  Radio observations of neutron-star environments can search
+  for narrow spectral lines produced by this conversion.
+
+observe:
+  - axion dark matter
+  - axion-photon coupling
+  - neutron-star magnetic fields
+  - radio photons
+  - spectral lines
+  - FAST telescope observations
+
+classical:
+  - dark matter halo
+  - axion field
+  - magnetic field
+  - radio telescope
+  - spectral measurement
+  - observational constraint
+
+statement: >
+  Axion dark matter is tested through axion-photon
+  conversion searches. Radio observations constrain
+  the range of viable axion models, and measurements
+  refine future searches.
+
+equation: |
+  Axion → Radio Line → Measurement → Constraint
+
+tags:
+  - axion dark matter
+  - radio lines
+  - FAST telescope
+  - neutron stars
+  - axion-photon conversion
+  - dark matter constraints
+  - spectral line search
+  - cosmology
+
+engineering:
+  question: >
+    Can neutron-star magnetic fields convert axion dark matter
+    into detectable radio photons?
+
+  answer: >
+    arXiv:2606.17067 searches two XDINS targets with FAST
+    in the 1.0–1.5 GHz band. No significant spectral line is
+    detected, and the result sets new ACL-method limits in the
+    4.14–6.20 eV axion-mass range.
+
+principles:
+  - Observe
+  - Measure
+  - Constrain
+  - Refine
+
+footer:
+  - Axion → Radio Line → Measurement → Constraint
+  - Dark Matter → Search → Measurement → Understanding
+  - Measurements refine axion models
+
+climate_reality: >
+  Climate reality describes what engineering prescribes:
+  identify the physical system, measure the signal,
+  constrain the model, and refine the search.
