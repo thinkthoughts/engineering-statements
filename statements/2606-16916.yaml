@@ -1,0 +1,34 @@
+id: 2606-16916
+title: Quantum Coherence Demystifies Entanglement
+paper: arXiv:2606.16916
+
+claim: >
+  Local quantum coherence can be converted into bipartite entanglement.
+  In the noiseless protocol studied here, the generated entanglement
+  negativity equals one half of the initial l1 coherence.
+
+observe:
+  - coherent single-qubit input
+  - incoherent ancilla
+  - ideal CNOT operation
+  - generated entanglement
+
+classical:
+  - phase damping suppresses conversion efficiency
+  - depolarizing noise can produce entanglement sudden death
+  - maximally coherent inputs maximize robustness
+
+statement: >
+  Entanglement is not created from nowhere. In this protocol,
+  entanglement is generated from pre-existing local coherence,
+  then constrained by noise.
+
+equation: |
+  N = C/2
+
+tags:
+  - quantum coherence
+  - entanglement
+  - CNOT
+  - phase damping
+  - depolarization
