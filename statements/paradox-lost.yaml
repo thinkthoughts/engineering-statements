@@ -1,0 +1,77 @@
+```yaml
+id: paradox-lost
+
+title: Physical Context Demystifies Paradoxes
+
+source: Book
+
+claim: >
+  Physical systems precede measurements.
+  Measurements precede descriptions.
+  Descriptions do not replace the physical systems
+  from which they arise.
+
+observe:
+  - wave-particle duality
+  - entanglement
+  - superposition
+  - Schrödinger's cat
+  - measurement problem
+
+classical:
+  - Sun
+  - energy
+  - matter
+  - atoms
+  - measurement
+  - observers
+
+statement: >
+  Paradoxes diminish when physical context is restored.
+  Better explanations begin with physical systems,
+  continue through measurement, and culminate in
+  descriptions that remain connected to reality.
+
+equation: |
+  Sun → Energy → Matter → Atoms → Measurement → Observer → Understanding
+
+tags:
+  - paradox lost
+  - physics
+  - physical context
+  - quantum foundations
+  - measurement
+  - observers
+  - entanglement
+  - superposition
+
+engineering:
+  question: >
+    What happens when descriptions become detached
+    from the physical systems they describe?
+
+  answer: >
+    Physical context can be replaced by abstraction.
+    Restoring context reconnects descriptions to
+    measurements and measurements to physical systems.
+
+principles:
+  - Expand Thoughts
+  - Extend Context
+  - Resist Immediate Division
+
+footer:
+  - 1 + 1 > |1.4i| ≠ $0.96
+  - Context precedes paradox
+  - Understanding inherits physical context
+
+climate_reality: >
+  Climate reality describes what physical systems
+  make possible. Explanations improve when observers,
+  measurements, and descriptions remain connected to
+  those systems.
+
+book:
+  title: Paradox Lost
+  theme: Physics Demystifies Paradoxes
+```
