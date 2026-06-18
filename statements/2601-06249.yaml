@@ -1,0 +1,75 @@
+id: 2601-06249
+
+title: Neural Networks Demystify String Theory
+
+paper: arXiv:2601.06249
+
+claim: >
+  Infinite-width neural-network ensembles can reproduce
+  key mathematical structures of bosonic string theory.
+  Network correlators match string-theory correlators,
+  including structures related to Veneziano and
+  Virasoro-Shapiro amplitudes.
+
+observe:
+  - infinite-width neural networks
+  - Gaussian processes
+  - neural network field theory
+  - correlators
+  - Veneziano amplitude
+  - Virasoro-Shapiro amplitude
+  - bosonic string theory
+
+classical:
+  - architecture
+  - parameters
+  - correlators
+  - amplitudes
+  - string tension
+  - mathematical structure
+
+statement: >
+  Neural-network architectures generate correlators.
+  Correlators generate amplitudes. Shared mathematical
+  structure connects machine learning and string theory.
+
+equation: |
+  Architecture → Correlator → Amplitude → Understanding
+
+tags:
+  - neural networks
+  - string theory
+  - bosonic strings
+  - Gaussian processes
+  - correlators
+  - amplitudes
+  - field theory
+  - machine learning
+
+engineering:
+  question: >
+    Can neural-network ensembles reproduce known
+    structures of bosonic string theory?
+
+  answer: >
+    arXiv:2601.06249 shows that suitable infinite-width
+    neural-network ensembles become Gaussian processes
+    whose correlators reproduce key bosonic string-theory
+    structures, including Veneziano and Virasoro-Shapiro
+    amplitude behavior.
+
+principles:
+  - Observe
+  - Model
+  - Correlate
+  - Understand
+
+footer:
+  - Architecture → Correlator → Amplitude → Understanding
+  - Neural Networks → Field Theory → String Theory
+  - Shared structure demystifies formalism
+
+climate_reality: >
+  Climate reality describes what engineering prescribes:
+  identify structure, compare descriptions, and preserve
+  the measurable relationships that connect models.
