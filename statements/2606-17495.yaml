@@ -1,0 +1,98 @@
+id: 2605-05209
+
+title: Representation Demystifies Flat Minima
+
+date: 2026-06-19
+
+authors:
+  - Dan Hawkley
+
+citation:
+  source: arXiv
+  identifier: "2605.05209"
+  title: "Are Flat Minima an Illusion?"
+
+summary: >
+  Flat minima are widely associated with neural network generalization,
+  but this paper argues that flatness is not an invariant property of the
+  learned function. Reparameterizations can change Hessian sharpness
+  without changing model behavior, suggesting that representation and
+  coordinate choice matter more than geometric flatness alone.
+
+claims:
+
+  - id: representation-matters
+    statement: >
+      The same learned function can exhibit different measured sharpness
+      under different parameterizations.
+
+  - id: flatness-not-invariant
+    statement: >
+      Flatness is not an invariant property of a model's computation and
+      therefore cannot by itself establish a causal explanation for
+      generalization.
+
+  - id: geometry-vs-function
+    statement: >
+      Geometric properties measured in parameter space may reflect the
+      chosen representation rather than the underlying function realized
+      by the network.
+
+  - id: correlation-not-causation
+    statement: >
+      Observed correlations between flat minima and generalization do not
+      necessarily imply that flatness causes generalization.
+
+observations:
+
+  - Neural networks that generalize well are often found in flatter regions
+    of parameter space.
+
+  - Reparameterizations can alter measured sharpness while preserving model
+    predictions.
+
+  - Function-preserving transformations provide counterexamples to claims
+    that sharpness alone explains generalization.
+
+context:
+
+  field: machine learning
+
+  themes:
+    - optimization
+    - generalization
+    - loss landscapes
+    - representation
+    - geometry
+    - mechanistic interpretability
+
+  related_reports:
+    - 2311-03658
+    - 2606-14150
+
+tags:
+  - flat minima
+  - sharpness
+  - generalization
+  - loss landscapes
+  - Hessian
+  - representation
+  - optimization
+  - machine learning
+
+equations:
+
+  - name: Hessian
+    expression: "H = ∇²L(θ)"
+
+  - name: Parameterization dependence
+    expression: "f(x; θ) = f(x; φ(θ))"
+
+engineering_intent: >
+  Scientific explanations should remain meaningful under equivalent
+  representations. If a proposed explanatory quantity changes while the
+  underlying computation remains the same, the explanation requires
+  additional justification.
+
+footer: >
+  Representation describes geometry. Computation describes function.
