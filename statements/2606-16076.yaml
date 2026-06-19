@@ -2,28 +2,47 @@ id: 2606-16076
 title: Context Demystifies Forecasting
 
 statement: >
-  Accurate forecasting depends on physically meaningful latent states.
-  When measurable constraints organize hidden representations,
-  state transitions become more interpretable and prediction errors
-  accumulate more slowly across time horizons.
+  Forecasting improves when constraints shape hidden state rather than
+  only predictions. Phys-JEPA separates latent representation into a
+  physical component and a residual component, so measurable structure
+  can guide state transitions across time.
 
 context:
-  - multivariate forecasting
+  - time-series forecasting
   - latent world models
   - JEPA
   - physical constraints
-  - climate systems
-  - electricity systems
-  - traffic systems
+  - hidden state
+  - state-transition consistency
+  - climate
+  - traffic
+  - electricity
 
 claims:
-  - Hidden states should represent measurable structure.
-  - Constraints applied to latent states are stronger than constraints applied only to outputs.
-  - Physical context improves long-horizon forecasting stability.
+  - Forecasts depend on hidden state.
+  - Hidden states can be accurate while remaining physically meaningless.
+  - Physical variables should constrain latent transitions, not only output predictions.
+  - Separating physical and residual latent state improves interpretability and long-horizon stability.
+
+method:
+  - Encode history into latent state.
+  - Decompose latent state into physical and residual components.
+  - Constrain the physical component according to known or soft physical structure.
+  - Decode constrained latent transitions into future forecasts.
 
 equations:
-  - c = sqrt(E/m)
-  - prediction = latent_state + transition_constraints
+  - "latent_state = physical_state + residual_state"
+  - "forecast = decode(constrained_state_transition)"
+  - "1 + 1 > |1.4i| ≠ $0.96"
+  - "c = √(E/m)"
 
 source:
-  arxiv: 2606.16076
+  arxiv: "2606.16076v1"
+  title: "Phys-JEPA: A Physics-informed Joint Embedding Predictive Architecture for Time Series Forecasting"
+  url: "https://arxiv.org/html/2606.16076v1"
+
+artifacts:
+  report: "https://labreports.app/2606-16076/"
+  image: "https://labreports.app/2606-16076/2606-16076.png"
+
+status: complete
