@@ -1,0 +1,63 @@
+```yaml
+date: 2026-06-19
+
+title: Differential Context Demystifies Atom Interferometry
+
+statement: >
+  Shared noise is not necessarily lost information.
+  In atom interferometry, common-mode laser phase noise can be removed
+  through differential measurement, preserving Standard Quantum Limit
+  sensitivity even when individual sensors appear noise dominated.
+  Precision depends on identifying what is shared and what is different.
+
+context:
+  - atom interferometry
+  - common-mode noise rejection
+  - differential measurement
+  - standard quantum limit
+  - AION
+  - gravitational-wave detection
+  - ultralight dark matter
+
+claims:
+  - Two atom interferometers driven by a common laser experience correlated phase noise.
+  - Injected laser phase noise can overwhelm individual interferometer outputs.
+  - Differential readout cancels the shared phase-noise contribution.
+  - Sensitivity remains consistent with the Standard Quantum Limit.
+  - Measurement geometry determines which disturbances can be rejected.
+
+evidence:
+  - arXiv:2504.09158
+  - Differential comparison removes common-mode laser phase noise.
+  - Experimental measurements remain shot-noise limited despite injected disturbances.
+
+equations:
+  - "\\phi_{diff} = \\phi_A - \\phi_B"
+
+engineering_principle: >
+  Common-mode rejection preserves precision.
+  Identify correlated disturbances, measure differential structure,
+  and design systems around the constraints that separate signal
+  from shared noise.
+
+climate_reality: >
+  Apparent randomness can arise from missing context.
+  When common structure is identified and measured, uncertainty may
+  decrease without changing the underlying system.
+
+tags:
+  - atom interferometry
+  - quantum sensing
+  - common-mode rejection
+  - differential context
+  - standard quantum limit
+  - gravitational waves
+  - dark matter
+
+source:
+  type: arxiv
+  identifier: "2504.09158"
+  url: "https://arxiv.org/abs/2504.09158"
+
+status: complete
+```
