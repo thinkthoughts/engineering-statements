@@ -1,0 +1,29 @@
+id: 2606-16076
+title: Context Demystifies Forecasting
+
+statement: >
+  Accurate forecasting depends on physically meaningful latent states.
+  When measurable constraints organize hidden representations,
+  state transitions become more interpretable and prediction errors
+  accumulate more slowly across time horizons.
+
+context:
+  - multivariate forecasting
+  - latent world models
+  - JEPA
+  - physical constraints
+  - climate systems
+  - electricity systems
+  - traffic systems
+
+claims:
+  - Hidden states should represent measurable structure.
+  - Constraints applied to latent states are stronger than constraints applied only to outputs.
+  - Physical context improves long-horizon forecasting stability.
+
+equations:
+  - c = sqrt(E/m)
+  - prediction = latent_state + transition_constraints
+
+source:
+  arxiv: 2606.16076
