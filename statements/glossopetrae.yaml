@@ -1,0 +1,34 @@
+id: glossopetrae-spec
+title: Invariant Correspondence Demystifies Translation
+
+statement: >
+  Translation, writing systems, and language evolution alter observable forms.
+  Words change. Scripts change. Descendant languages diverge.
+  Yet correspondence relationships can persist across these transformations.
+  Scientific explanations should identify what survives transformation rather
+  than what merely changes representation.
+
+context:
+  source: GLOSSOPETRAE
+  repository: https://github.com/thinkthoughts/glossopetrae-spec
+
+claims:
+  - Translation changes representation.
+  - Script change alters visual form without necessarily changing language content.
+  - Language evolution changes forms while preserving lineage relationships.
+  - Correspondence is more stable than words, glyphs, or pronunciations.
+  - Invariant structure is a stronger explanatory target than surface representation.
+
+equations:
+  - "Specification → Language → {Translation, Script Change, Evolution} → Correspondence"
+
+tags:
+  - translation
+  - linguistics
+  - language-evolution
+  - writing-systems
+  - correspondence
+  - specification
+  - glossopetrae
+
+status: complete
