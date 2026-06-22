@@ -1,0 +1,36 @@
+title: Scattering Demystifies Electroweak Stability
+
+statement: >
+Interactions among gauge bosons are not merely inferred from theory. They can
+be observed through rare scattering processes. When vector bosons scatter,
+measured event distributions reveal whether electroweak interactions remain
+stable at high energy. Stability is not assumed. Stability is constrained by
+observation.
+
+context:
+paper: arXiv:2606.20558
+collaboration: CMS
+process: electroweak ZZjj production
+
+observations:
+
+* Electroweak production of two Z bosons and two jets was observed.
+* Vector boson scattering provides a direct probe of electroweak interactions.
+* Event rates and kinematic distributions are consistent with Standard Model expectations.
+* No evidence for anomalous quartic gauge couplings was observed.
+
+implications:
+
+* Stability can be tested through scattering measurements.
+* Interactions among gauge bosons are experimentally accessible.
+* Precision measurements constrain possible extensions of the Standard Model.
+
+tags:
+
+* vector boson scattering
+* electroweak interaction
+* CMS
+* Z boson
+* scattering
+* stability
+* particle physics
