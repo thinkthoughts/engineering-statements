@@ -1,0 +1,43 @@
+id: 2409-02426
+title: Intrinsic Dimension Demystifies Diffusion
+date: 2026-06-22
+
+statement: >
+  Leading indicators specify constraints. Trailing indicators generalize limits.
+  Data specifies intrinsic structure. Intrinsic structure specifies sample
+  complexity. Diffusion generalizes corresponding limits.
+
+context: >
+  Diffusion models often operate in extremely high-dimensional spaces, yet
+  empirical performance frequently exceeds expectations based on ambient
+  dimensionality alone.
+
+observation: >
+  Data distributions can occupy low-dimensional structure embedded within
+  high-dimensional representations. The effective complexity of learning is
+  constrained by intrinsic structure rather than ambient coordinates.
+
+intent: >
+  Identify intrinsic structure as a leading indicator that specifies learning
+  constraints, and interpret sample complexity as a trailing indicator that
+  generalizes corresponding limits.
+
+constraint: >
+  Sample complexity scales with intrinsic dimension and subspace geometry rather
+  than the full dimensionality of the representation.
+
+implication: >
+  Data efficiency improves when learning follows intrinsic structure. Apparently
+  high-dimensional problems may admit substantially lower effective complexity
+  when constrained by low-dimensional geometry.
+
+formula: >
+  Leads specify constraints. Trails generalize limits.
+
+tags:
+  - diffusion-models
+  - intrinsic-dimension
+  - sample-complexity
+  - generalization
+  - low-rank-subspaces
+  - machine-learning
