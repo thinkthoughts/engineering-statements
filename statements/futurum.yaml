@@ -1,0 +1,55 @@
+id: futurum
+title: Leading Specifications Demystify Quantum AI
+
+statement: >
+  Component specifications explain systems; system specifications predict
+  usefulness. Engineering improves when specifications move closer to the
+  outcomes users actually care about.
+
+summary: >
+  Hardware measurements such as qubit count, fidelity, connectivity, and
+  circuit depth constrain what a quantum processor can do. System-level
+  specifications such as energy-to-solution, time-to-solution, and solution
+  quality evaluate how effectively those capabilities produce useful
+  computation.
+
+leading_specifications:
+  - Energy-to-Solution
+  - Time-to-Solution
+  - Solution Quality
+
+component_specifications:
+  - Qubit Count
+  - Gate Speed
+  - Fidelity
+  - Connectivity
+  - Circuit Depth
+
+engineering_chain:
+  - Architecture
+  - Hardware Properties
+  - System Specifications
+  - Useful Computation
+
+equation: |
+  Architecture
+      ↓
+  Hardware Properties
+      ↓
+  System Specifications
+      ↓
+  Useful Computation
+
+principles:
+  - Leading specifications identify engineering constraints.
+  - System-level specifications connect hardware behavior to user value.
+  - Better architectures improve system specifications through better hardware properties.
+  - Engineering metrics mature as they move from components toward outcomes.
+
+tags:
+  - quantum computing
+  - quantum AI
+  - leading specifications
+  - energy-to-solution
+  - engineering metrics
+  - systems engineering
