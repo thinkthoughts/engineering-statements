@@ -1,0 +1,79 @@
+id: xuyi
+
+title: Integrated Quantum Photonics Demystifies Scalable Quantum Computing
+
+date: 2026-06-27
+
+status: complete
+
+statement: >
+  Integrated quantum photonics specifies scalable quantum computing.
+  Frequency multiplexing, Kerr nonlinear interaction, many-mode
+  entanglement, integrated photonic circuits, and region-constrained
+  engineering together preserve optical resources while expanding
+  admissible quantum computation.
+
+leading_specification:
+  Integrated quantum photonics
+
+engineering_question: >
+  How can one integrated photonic platform generate, preserve, and
+  manipulate enough optical quantum resources to support scalable
+  fault-tolerant quantum computation?
+
+constraint_chain:
+  - scaling pressure
+  - frequency multiplexing
+  - quantum frequency combs
+  - Kerr nonlinearity
+  - two-mode squeezing
+  - many-mode entanglement
+  - integrated photonic circuits
+  - optical loss
+  - operating regimes
+  - error-correction thresholds
+  - experimental specification
+
+leading_indicators:
+  - mode count
+  - propagation loss
+  - quality factor
+  - squeezing
+  - entanglement fidelity
+  - operating-region robustness
+
+trailing_indicators:
+  - scalable cluster states
+  - fault-tolerant computation
+  - photonic quantum processors
+
+seminar:
+  speaker: Xu Yi
+  topic: Integrated Quantum Photonics
+
+repository:
+  github: https://github.com/thinkthoughts/integrated-quantum-photonics
+  report: https://labreports.app/xuyi
+  notebook: https://colab.research.google.com/github/thinkthoughts/integrated-quantum-photonics/blob/main/notebooks/00_why_integrated_quantum_photonics.ipynb
+
+tags:
+  - integrated photonics
+  - quantum photonics
+  - frequency multiplexing
+  - quantum frequency combs
+  - Kerr nonlinearity
+  - two-mode squeezing
+  - many-mode entanglement
+  - cluster states
+  - optical loss
+  - operating regimes
+  - fault tolerance
+  - experimental design
+
+next_steps:
+  - Increase usable optical modes.
+  - Reduce compound optical loss.
+  - Expand admissible operating regions.
+  - Improve robustness margins.
+  - Validate integrated experimental workflows.
+  - Scale fault-tolerant photonic architectures.
