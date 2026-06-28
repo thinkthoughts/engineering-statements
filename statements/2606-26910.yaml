@@ -1,0 +1,67 @@
+id: 2606.26910
+
+title: Optical Loss Specifies Photonic Quantum Scale
+
+date: 2026-06-27
+
+status: complete
+
+statement: >
+  Optical loss specifies photonic quantum scale. Reducing compound loss
+  across generation, routing, fusion, and measurement preserves
+  entanglement, increases usable graph size, and advances fault-tolerant
+  integrated quantum photonics.
+
+leading_specification:
+  Optical loss budget
+
+engineering_question: >
+  Which optical losses most strongly constrain scalable photonic quantum
+  computation?
+
+constraint_chain:
+  - fabrication
+  - ultralow-loss Si3N4
+  - integrated EPR sources
+  - low-loss fusion
+  - state analysis
+  - multipartite entanglement
+  - fault-tolerant scaling
+
+leading_indicators:
+  - propagation loss
+  - coupling efficiency
+  - indistinguishability
+  - fusion fidelity
+  - GHZ fidelity
+
+trailing_indicators:
+  - multipartite entanglement size
+  - computational scale
+  - processor performance
+
+paper:
+  arxiv: 2606.26910
+  category: quant-ph
+
+repository:
+  notebooks: https://labreports.app/xuyi
+  github: https://github.com/thinkthoughts/integrated-quantum-photonics
+
+tags:
+  - integrated photonics
+  - silicon nitride
+  - optical loss
+  - frequency combs
+  - EPR states
+  - GHZ state
+  - quantum fusion
+  - fault tolerance
+  - photonic quantum computing
+
+next_steps:
+  - Reduce propagation loss.
+  - Improve fusion efficiency.
+  - Increase multipartite entanglement.
+  - Approach fault-tolerance thresholds.
+  - Integrate additional photonic components.
