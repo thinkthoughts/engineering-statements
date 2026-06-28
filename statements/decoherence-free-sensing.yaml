@@ -1,0 +1,22 @@
+id: decoherence-free-sensing
+title: Decoherence-Free Subspaces Specify Robust Quantum Sensing
+repo: https://github.com/thinkthoughts/decoherence-free-sensing
+report: https://labreports.app/ksyh-mb4s/
+paper: https://doi.org/10.1103/ksyh-mb4s
+status: active
+type: computational-physics
+tags:
+  - quantum sensing
+  - decoherence-free subspaces
+  - Lieb-Mattis states
+  - differential phase sensing
+  - quantum Fisher information
+  - cavity-mediated interactions
+  - collective emission
+  - common-mode noise
+summary: >
+  Computational specifications for decoherence-free, entanglement-enhanced
+  differential quantum sensing.
+leading_specification: >
+  Decoherence-free subspaces remove common-mode phase noise while preserving
+  sensitivity to differential phase signals.
