@@ -1,0 +1,76 @@
+id: 2509.10445
+
+title: Wafer-Scale Uniformity Specifies Scalable Quantum Photonics
+
+date: 2026-06-27
+
+status: complete
+
+statement: >
+  Wafer-scale uniformity specifies scalable quantum photonics.
+  Uniform low-loss fabrication preserves reproducible squeezing across
+  integrated Si3N4 microresonator chips, enabling multiplexed
+  entanglement and manufacturable continuous-variable quantum photonic
+  processors.
+
+leading_specification:
+  Wafer-scale uniformity
+
+engineering_question: >
+  Can strong squeezed-light generation be made uniform, reproducible,
+  and manufacturable across a CMOS-compatible integrated photonics wafer?
+
+constraint_chain:
+  - CMOS-compatible fabrication
+  - ultralow-loss Si3N4 microresonators
+  - uniform coupling
+  - cascaded pump filtering
+  - reproducible two-mode squeezing
+  - wafer-scale measurement
+  - multiplexed entanglement
+  - continuous-variable quantum processors
+
+leading_indicators:
+  - propagation loss
+  - coupling uniformity
+  - resonator quality factor
+  - pump suppression
+  - measured squeezing
+  - wafer-to-wafer reproducibility
+  - die-to-die variation
+
+trailing_indicators:
+  - scalable entangled states
+  - continuous-variable processor size
+  - manufacturable quantum photonics
+  - deployable integrated quantum systems
+
+paper:
+  arxiv: 2509.10445
+  category: quant-ph
+
+repository:
+  report: https://labreports.app/2509-10445
+  notebooks: https://labreports.app/xuyi
+  github: https://github.com/thinkthoughts/integrated-quantum-photonics
+
+tags:
+  - integrated photonics
+  - silicon nitride
+  - wafer-scale fabrication
+  - squeezing
+  - two-mode squeezing
+  - frequency combs
+  - Kerr nonlinearity
+  - continuous-variable quantum computing
+  - microresonators
+  - manufacturability
+  - quantum photonics
+
+next_steps:
+  - Reduce on-chip optical loss.
+  - Improve wafer-scale coupling uniformity.
+  - Increase measured squeezing.
+  - Expand multiplexed entanglement across more modes.
+  - Validate reproducibility across additional dies and wafers.
+  - Connect uniform squeezed-light chips to scalable continuous-variable processors.
