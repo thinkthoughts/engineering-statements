@@ -1,0 +1,80 @@
+id: 2603.14044
+
+title: Dispersion Engineering Specifies Quantum Microcombs
+
+date: 2026-06-29
+
+status: complete
+
+statement: >
+  Dispersion engineering specifies quantum microcombs. By controlling
+  resonator dispersion, phase matching, and Kerr nonlinear dynamics,
+  integrated photonics can generate efficient, broadband, and uniform
+  quantum states across many frequency modes.
+
+leading_specification:
+  Engineered dispersion
+
+engineering_question: >
+  Can resonator dispersion be engineered to phase-match Kerr four-wave
+  mixing and generate scalable quantum microcomb resources across many
+  optical modes?
+
+constraint_chain:
+  - waveguide geometry
+  - resonator dispersion
+  - integrated dispersion
+  - phase matching
+  - Kerr nonlinearity
+  - four-wave mixing
+  - two-mode squeezing
+  - quantum microcomb
+  - many-mode entanglement
+  - integrated photonic circuits
+
+leading_indicators:
+  - integrated dispersion
+  - mode spacing
+  - phase matching
+  - resonator quality factor
+  - nonlinear coupling strength
+  - squeezing bandwidth
+  - mode-pair uniformity
+
+trailing_indicators:
+  - broadband squeezing
+  - uniform mode pairs
+  - cluster-state scale
+  - continuous-variable processor size
+  - fault-tolerant photonic architecture
+
+paper:
+  arxiv: 2603.14044
+  category: quant-ph
+
+repository:
+  report: https://labreports.app/2603-14044
+  notebooks: https://labreports.app/xuyi
+  github: https://github.com/thinkthoughts/integrated-quantum-photonics
+
+tags:
+  - integrated photonics
+  - silicon nitride
+  - quantum microcombs
+  - dispersion engineering
+  - integrated dispersion
+  - phase matching
+  - Kerr nonlinearity
+  - four-wave mixing
+  - two-mode squeezing
+  - frequency multiplexing
+  - many-mode entanglement
+  - continuous-variable quantum computing
+
+next_steps:
+  - Further tailor dispersion for broader bandwidth.
+  - Improve phase matching across more mode pairs.
+  - Increase squeezing strength and uniformity.
+  - Generate and verify larger cluster states.
+  - Integrate sources, detectors, and control electronics.
+  - Build fault-tolerant photonic quantum architectures.
