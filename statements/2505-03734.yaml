@@ -1,0 +1,77 @@
+id: 2505.03734
+
+title: Broadband Squeezing Specifies Quantum Microcombs
+
+date: 2026-06-29
+
+status: complete
+
+statement: >
+  Broadband squeezing specifies quantum microcombs. A chip-scale,
+  tunable, multi-mode squeezed-light source enables the resource needed
+  for scalable integrated continuous-variable quantum computing,
+  sensing, and many-mode photonic entanglement.
+
+leading_specification:
+  Broadband squeezed frequency comb
+
+engineering_question: >
+  Can one integrated silicon nitride microresonator generate broadband,
+  tunable, multi-mode squeezed light across enough modes to function as
+  a scalable quantum microcomb resource?
+
+constraint_chain:
+  - frequency multiplexing
+  - silicon nitride microresonator
+  - Kerr nonlinearity
+  - four-wave mixing
+  - below-threshold optical parametric amplification
+  - two-mode squeezing
+  - broadband tunability
+  - multi-mode quantum microcomb
+  - many-mode entanglement
+  - continuous-variable quantum computing
+
+leading_indicators:
+  - number of squeezed modes
+  - squeezing level
+  - tuning bandwidth
+  - resonator quality factor
+  - pump stability
+  - on-chip loss
+  - detection fidelity
+
+trailing_indicators:
+  - cluster-state scale
+  - continuous-variable processor size
+  - sensing performance
+  - deployable integrated quantum systems
+
+paper:
+  arxiv: 2505.03734
+  category: quant-ph
+
+repository:
+  report: https://labreports.app/2505-03734
+  notebooks: https://labreports.app/xuyi
+  github: https://github.com/thinkthoughts/integrated-quantum-photonics
+
+tags:
+  - integrated photonics
+  - silicon nitride
+  - quantum microcombs
+  - broadband squeezing
+  - two-mode squeezing
+  - Kerr nonlinearity
+  - four-wave mixing
+  - frequency multiplexing
+  - continuous-variable quantum computing
+  - many-mode entanglement
+  - quantum sensing
+
+next_steps:
+  - Increase the number of squeezed modes.
+  - Improve total and on-chip squeezing.
+  - Expand tuning range and stability.
+  - Generate and verify larger cluster states.
+  - Integrate detectors and control electronics on chip.
