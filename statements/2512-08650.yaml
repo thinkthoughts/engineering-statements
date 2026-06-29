@@ -1,0 +1,81 @@
+id: 2512.08650
+
+title: Uniform Squeezing Specifies Scalable Quantum Microcombs
+
+date: 2026-06-29
+
+status: complete
+
+statement: >
+  Uniform squeezing specifies scalable quantum microcombs. Consistent
+  high-performance squeezing across many frequency modes, rather than
+  isolated record performance, determines whether integrated photonics
+  can support large continuous-variable cluster states and scalable
+  photonic quantum computing.
+
+leading_specification:
+  Uniform squeezing across many modes
+
+engineering_question: >
+  Can an engineered silicon nitride quantum microcomb produce consistent
+  high-performance two-mode squeezing across many independent mode pairs
+  over a broad optical bandwidth?
+
+constraint_chain:
+  - frequency multiplexing
+  - quantum frequency combs
+  - engineered silicon nitride microresonator
+  - optimized pump conditions
+  - Kerr nonlinearity
+  - four-wave mixing
+  - two-mode squeezing
+  - uniform high-performance squeezing
+  - many-mode entanglement
+  - integrated photonic circuits
+  - continuous-variable quantum computing
+
+leading_indicators:
+  - number of squeezed mode pairs
+  - raw squeezing per mode pair
+  - squeezing uniformity
+  - usable bandwidth
+  - mode-spectrum engineering
+  - pump stability
+  - on-chip loss
+
+trailing_indicators:
+  - cluster-state scale
+  - continuous-variable processor size
+  - fault-tolerant photonic architecture
+  - deployable integrated quantum systems
+
+paper:
+  arxiv: 2512.08650
+  category: quant-ph
+
+repository:
+  report: https://labreports.app/2512-08650
+  notebooks: https://labreports.app/xuyi
+  github: https://github.com/thinkthoughts/integrated-quantum-photonics
+
+tags:
+  - integrated photonics
+  - silicon nitride
+  - quantum microcombs
+  - uniform squeezing
+  - broadband squeezing
+  - two-mode squeezing
+  - Kerr nonlinearity
+  - four-wave mixing
+  - frequency multiplexing
+  - many-mode entanglement
+  - continuous-variable quantum computing
+  - cluster states
+  - fault-tolerant photonics
+
+next_steps:
+  - Increase the number of squeezed mode pairs beyond 14.
+  - Improve total and on-chip squeezing.
+  - Expand bandwidth while preserving squeezing uniformity.
+  - Generate and verify larger continuous-variable cluster states.
+  - Integrate detectors and control electronics on chip.
