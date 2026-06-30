@@ -1,0 +1,144 @@
+title: "Transcript Stability Specifies Interferon Regulation"
+
+authors:
+  - Kaitlyn C. Witt
+  - Aimee M. Stansbury
+  - Yuchen Zhao
+  - Allison M. Stinnett
+  - Benjamin M. Jacobs
+  - Robert B. Fowle-Grider
+  - Yongli Xiao
+  - Jonathan A. Tickle
+  - James A. Gomez
+  - Thomas C. Foster
+  - Kenneth D. Jones
+  - Joaquin M. Espinosa
+  - Thomas A. Wynn
+  - Randall H. Morse
+  - Ting Wang
+  - Gregory P. Downey
+  - Ting Xie
+  - David M. Langenau
+  - Tatiana V. Kutateladze
+  - David M. Markovitz
+  - Xin Sun
+  - Chuong B. Nguyen
+
+venue: "Nature"
+year: 2025
+doi: "10.1038/s41586-025-09152-2"
+
+statement: >
+  Transcript stability specifies interferon regulation.
+  SP140 represses the RESIST pathway to control Ifnb1 mRNA lifetime,
+  coupling chromatin regulation to post-transcriptional control and
+  tuning antiviral immunity through transcript stability rather than
+  transcription alone.
+
+context:
+  lab: "Chuong Lab"
+  institution: "BioFrontiers Institute, University of Colorado Boulder"
+  problem: >
+    Antiviral immunity requires interferon responses that are strong enough
+    to eliminate infection while remaining transient enough to avoid
+    chronic inflammation and autoimmune pathology.
+
+leading_specification:
+  name: "Transcript stability"
+
+  specifies:
+    - interferon response magnitude
+    - interferon response duration
+    - Ifnb1 mRNA lifetime
+    - antiviral immunity
+    - immune homeostasis
+    - post-transcriptional regulation
+
+observe:
+  laboratory:
+    - SP140
+    - RESIST (ANXA2R)
+    - CCR4-NOT complex
+    - TTP family proteins
+    - macrophages
+    - viral infection models
+
+  measurements:
+    - RNA-seq
+    - RNA stability assays
+    - CUT&RUN
+    - ATAC-seq
+    - ChIP
+    - viral replication assays
+    - interferon production
+
+results:
+  - >
+    SP140 does not primarily regulate Ifnb1 transcription directly; it
+    controls the stability of Ifnb1 mRNA through repression of RESIST.
+
+  - >
+    RESIST promotes stabilization of Ifnb1 transcripts by limiting
+    CCR4-NOT/TTP-mediated mRNA decay.
+
+  - >
+    Loss of SP140 increases transcript lifetime, producing prolonged
+    interferon responses.
+
+  - >
+    Chromatin organization regulates a post-transcriptional pathway,
+    linking epigenetic regulation with RNA decay.
+
+  - >
+    Transcript lifetime determines both the magnitude and duration of
+    antiviral immunity.
+
+engineering:
+  specification:
+    control_surface: "mRNA lifetime"
+    upstream_regulator: "SP140"
+    pathway: "RESIST"
+    downstream_process: "CCR4-NOT / TTP-mediated decay"
+    intervention_type: "post-transcriptional regulation"
+    electronics_required: false
+    therapeutic_translation: next_step
+
+pipeline:
+  - Chromatin regulation
+  - SP140 repression
+  - RESIST pathway
+  - Ifnb1 mRNA stability
+  - Tunable interferon immunity
+
+next_engineering:
+  - Map the complete RESIST interactome
+  - Engineer transcript half-life regulators
+  - Tune temporal interferon responses
+  - Develop programmable RNA-stability therapeutics
+  - Apply transcript-stability control to antiviral and autoimmune diseases
+
+keywords:
+  - Chuong Lab
+  - BioFrontiers Institute
+  - University of Colorado Boulder
+  - SP140
+  - RESIST
+  - ANXA2R
+  - interferon
+  - IFNβ
+  - Ifnb1
+  - transcript stability
+  - mRNA decay
+  - RNA stability
+  - CCR4-NOT
+  - TTP
+  - chromatin regulation
+  - innate immunity
+  - antiviral immunity
+  - post-transcriptional regulation
+  - RNA biology
+  - Nature
+
+image: chuong.png
+
+license: "CC-BY-4.0"
