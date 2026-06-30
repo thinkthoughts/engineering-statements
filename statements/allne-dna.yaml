@@ -1,0 +1,136 @@
+title: "Mediator Kinase Inhibition Specifies Interferon Normalization"
+
+authors:
+  - Kira A. Cozzolino
+  - Lynn Sanford
+  - Samuel Hunter
+  - Kayla Molison
+  - Benjamin Erickson
+  - Meaghan C. S. Courvan
+  - Taylor Jones
+  - Deepa Ajit
+  - Matthew D. Galbraith
+  - Joaquín M. Espinosa
+  - David Bentley
+  - Mary Ann Allen
+  - Robin D. Dowell
+  - Dylan J. Taatjes
+
+venue: "eLife"
+year: 2025
+doi: "10.7554/eLife.100197"
+
+statement: >
+  Mediator kinase inhibition specifies interferon normalization.
+  In Down syndrome cell models, CDK8/CDK19 inhibition suppresses
+  hyperactive interferon signaling by rewiring transcription, splicing,
+  lipid metabolism, nuclear receptor activity, and cytokine networks
+  toward a more resolved inflammatory state.
+
+context:
+  lab: "DnA Lab"
+  institution: "BioFrontiers Institute, University of Colorado Boulder"
+  disease_context: "Down syndrome / Trisomy 21"
+  problem: >
+    Trisomy 21 increases interferon receptor dosage and drives chronic,
+    hyperactive interferon signaling, cytokine elevation, metabolic
+    dysregulation, and inflammatory imbalance.
+
+leading_specification:
+  name: "Mediator kinase inhibition"
+
+  specifies:
+    - interferon response suppression
+    - inflammatory cytokine normalization
+    - transcription factor activity control
+    - alternative splicing regulation
+    - lipid-metabolic rewiring
+    - nuclear receptor activation
+
+observe:
+  laboratory:
+    - sibling-matched D21 and T21 cell lines
+    - cortistatin A
+    - CDK8/CDK19 inhibition
+    - IFNγ stimulation
+    - 75 min to 24 hr time course
+
+  measurements:
+    - RNA-seq
+    - splicing analysis
+    - untargeted metabolomics
+    - cytokine screen
+    - mitochondrial function
+    - IFN score
+
+results:
+  - >
+    Cortistatin A suppresses IFN-responsive transcriptional programs in
+    D21 and T21 cells by inhibiting Mediator-associated kinases CDK8/CDK19.
+
+  - >
+    Mediator kinase inhibition alters alternative splicing, identifying a
+    new layer of CDK8/CDK19-dependent gene regulation.
+
+  - >
+    Inhibition rewires lipid metabolism, increasing anti-inflammatory lipid
+    mediators and activating nuclear receptors including PPAR and LXR.
+
+  - >
+    Cytokine screens show that Mediator kinases help drive IFN-dependent
+    cytokine and receptor responses.
+
+  - >
+    Multi-omic integration identifies CDK8/CDK19 as context-specific
+    regulators of transcription, splicing, metabolism, and cytokine networks.
+
+engineering:
+  specification:
+    target: "CDK8/CDK19"
+    inhibitor: "cortistatin A"
+    disease_state: "hyperactive interferon signaling"
+    intervention_type: "regulatory network modulation"
+    electronics_required: false
+    multi_omic_validation: true
+    clinical_translation: next_step
+
+pipeline:
+  - Hyperactive interferon signaling
+  - CDK8/CDK19 inhibition
+  - Multi-omic rewiring
+  - Cytokine network control
+  - Normalized inflammatory state
+
+next_engineering:
+  - Patient stratification biomarkers
+  - Validation in primary immune cells
+  - Organoid disease models
+  - Combination therapies
+  - Precision inflammatory medicine
+
+keywords:
+  - DnA Lab
+  - BioFrontiers Institute
+  - University of Colorado Boulder
+  - Mary Ann Allen
+  - Robin Dowell
+  - Dylan Taatjes
+  - Down syndrome
+  - Trisomy 21
+  - interferon signaling
+  - Mediator kinase
+  - CDK8
+  - CDK19
+  - cortistatin A
+  - cytokines
+  - transcriptomics
+  - metabolomics
+  - RNA splicing
+  - lipid metabolism
+  - PPAR
+  - LXR
+  - inflammatory normalization
+
+image: allen-dna.png
+
+license: "CC-BY-4.0"
