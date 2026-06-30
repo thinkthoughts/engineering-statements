@@ -1,0 +1,111 @@
+title: "Absorption Specifies Body–Material Interaction"
+
+authors:
+  - Viola Arduini
+  - Eldy S. Lazaro Vasquez
+  - Srujana Golla
+  - Mirela Alistar
+
+venue: "TEI 2026"
+year: 2026
+doi: "10.1145/3731459.3774473"
+
+statement: >
+  Absorption specifies body-material interaction. Moisture-responsive
+  casein bioplastic turns bodily fluids into actuation sources, allowing
+  leakage, swelling, curling, drying, and resetting to become passive,
+  reversible, embodied interaction without electronics.
+
+context:
+  lab: "Living Matter Lab"
+  institution: "ATLAS Institute, University of Colorado Boulder"
+  project: "Leaky Bodies"
+  problem: >
+    Wearable technologies often sense or conceal bodily fluids instead of
+    designing with them. This work reframes leakage as a generative site
+    of interaction between body, fluid, material, and environment.
+
+leading_specification:
+  name: "Localized absorption"
+
+  specifies:
+    - moisture-actuated shape change
+    - body-material interaction
+    - passive wearable response
+    - reversible biomaterial behavior
+    - programmable absorption fields
+
+observe:
+  laboratory:
+    - casein bioplastic
+    - bodily fluids
+    - kirigami cuts
+    - wet/dry cycling
+    - heat reset
+    - Leaky Body Maps
+
+  measurements:
+    - water absorption
+    - mass loss
+    - drying shrinkage
+    - shape-change timing
+    - thermal reversibility
+    - body-fluid placement maps
+
+results:
+  - >
+    Casein bioplastic absorbed water-based fluids and changed shape through
+    swelling, bending, curling, and unfolding.
+
+  - >
+    Shape change occurred on practical interaction timescales, generally
+    within minutes, depending on material size, thickness, and moisture input.
+
+  - >
+    Heat reset restored the material toward its pre-moisture state, enabling
+    repeated wet/dry interaction cycles.
+
+  - >
+    Leaky Body Maps converted bodily fluid paths into design inputs for
+    speculative garments and material placement.
+
+engineering:
+  specification:
+    absorption_as_actuator: true
+    electronics_required: false
+    reversible_cycle: true
+    body_map_guided: true
+    programmable_gradients: next_step
+
+pipeline:
+  - Body fluid
+  - Localized absorption
+  - Mechanical transformation
+  - Embodied interaction
+
+next_engineering:
+  - Body maps
+  - Absorption fields
+  - Gradient design
+  - Predictive models
+  - Biomedical systems
+
+keywords:
+  - Living Matter Lab
+  - ATLAS Institute
+  - University of Colorado Boulder
+  - Mirela Alistar
+  - body-material interaction
+  - casein bioplastic
+  - moisture responsive materials
+  - biomaterials
+  - wearable HCI
+  - Leaky Body Maps
+  - feminist HCI
+  - embodied interaction
+  - kirigami
+  - passive actuation
+
+image: alistar.png
+
+license: "CC-BY-NC-ND-4.0"
