@@ -1,0 +1,73 @@
+id: zanoga02
+title: Content Addressing Specifies Model Distribution
+source: Twitter
+author: Max Zanoga
+handle: "@zanoga"
+date: 2026-06-30
+category: distributed-systems
+status: draft
+
+claim: >
+  Content-addressed identifiers specify reproducible model distribution by
+  separating object identity from storage location. Content remains
+  discoverable, verifiable, and distributable regardless of where it is hosted.
+
+leading_specification: >
+  Content—not location—defines identity. Cryptographic verification preserves
+  integrity, while replication and independent network paths preserve
+  availability.
+
+identity_equation: "I ∝ C V"
+availability_equation: "A ∝ R P"
+
+variables:
+  I: Identity — canonical identity of a digital artifact.
+  C: Content — immutable bytes of the model, software, dataset, or document.
+  V: Verification — cryptographic hashes and digital signatures proving the bytes match the identity.
+  A: Availability — probability the artifact remains accessible.
+  R: Replication — independent copies across independent operators.
+  P: Paths — independent network routes, mirrors, and transport protocols.
+
+context:
+  - Location-based URLs are administrative references rather than object identities.
+  - Repository outages, policy changes, and link rot can break location-based distribution.
+  - AI model checkpoints are sufficiently large that resilient distribution becomes an infrastructure problem.
+  - Scientific software and datasets require reproducible retrieval.
+
+observations:
+  - The content hash becomes the canonical identifier.
+  - Files can be chunked and transferred independently.
+  - Verification occurs after reconstruction rather than trusting the download source.
+  - Any node possessing identical content can participate in distribution.
+  - Storage location can change without changing object identity.
+
+engineering_consequences:
+  - Immutable identity
+  - Tamper-evident verification
+  - Location-independent retrieval
+  - Efficient deduplication
+  - Bit-for-bit reproducibility
+  - Infrastructure independence
+
+applications:
+  - Open-weight AI models
+  - Software package distribution
+  - Scientific datasets
+  - Container images
+  - Digital archives
+  - Reproducible research
+
+example_implementation:
+  components:
+    - BitTorrent DHT
+    - Content-addressed storage
+    - Git repositories
+    - Signed releases
+    - Tor mirrors
+    - Shared compute
+
+statement: >
+  Content addressing replaces location-dependent references with cryptographic
+  identities. When identity is derived from content rather than storage
+  location, distribution becomes verifiable, location-independent, and
+  resilient across changing infrastructure.
