@@ -1,0 +1,123 @@
+title: "Temporality Specifies Swarm Control"
+
+authors:
+  - Tuhin Chakrabortty
+  - Saad Bhamla
+
+venue: "Science Advances"
+year: 2026
+doi: "10.1126/sciadv.adx6791"
+
+statement: >
+  Temporality specifies swarm control. Synchronizing network restructuring
+  with agent state updates, T = 1, turns stochastic switching in noisy,
+  indecisive collectives into a control resource, minimizing control energy
+  for trajectory-following swarm tasks.
+
+context:
+  lab: "Bhamla Lab"
+  institution: "BioFrontiers Institute"
+  project: "Bioinspired systems and swarm control"
+  problem: >
+    Noisy collectives with stochastic behavior switching are difficult to
+    control because agents unpredictably alternate between individual and
+    social interaction rules.
+
+leading_specification:
+  name: "Temporality"
+  condition: "T = tau_d / tau_n = 1"
+
+  specifies:
+    - synchronized network restructuring
+    - low-energy swarm control
+    - indecisive swarm behavior
+    - stochastic temporal network control
+    - trajectory-following performance
+
+observe:
+  laboratory:
+    - sheepdog trials
+    - small sheep flocks
+    - herding
+    - shedding
+    - stochastic choice model
+    - Indecisive Swarm Algorithm
+
+  measurements:
+    - sheep orientation transitions
+    - pressure
+    - lightness
+    - reaching time
+    - staying time
+    - ease of herding
+    - ease of shedding
+    - control energy
+
+results:
+  - >
+    Small flocks of sheep stochastically switch between fleeing and
+    following, forming noisy temporal networks that are difficult to control.
+
+  - >
+    Expert dog-handler teams exploit indecisiveness to both herd and shed
+    sheep groups on demand.
+
+  - >
+    A stochastic choice model captures sheep orientation transitions using
+    noise, sheep-sheep influence, and dog or handler influence.
+
+  - >
+    The Indecisive Swarm Algorithm outperforms averaging-based and
+    leader-follower swarm algorithms under noisy conditions.
+
+  - >
+    Control energy is minimized when network restructuring and state updates
+    are synchronized at T = 1.
+
+engineering:
+  specification:
+    temporal_network: true
+    stochastic_switching: true
+    controller_prediction_required: false
+    future_topology_known: false
+    swarm_algorithm: "Indecisive Swarm Algorithm"
+    optimal_temporality: "T = 1"
+
+pipeline:
+  - Noisy collective
+  - Indecisive switching
+  - Temporal network restructuring
+  - Synchronized state updates
+  - Low-energy swarm control
+
+next_engineering:
+  - Deploy ISA on robotic swarms
+  - Estimate transition rates online
+  - Test in larger and more complex environments
+  - Apply to opinion dynamics and human collectives
+  - Scale control to real-world noisy systems
+
+keywords:
+  - Bhamla Lab
+  - BioFrontiers Institute
+  - Saad Bhamla
+  - swarm control
+  - temporal networks
+  - stochastic temporal networks
+  - indecisive collectives
+  - sheepdog trials
+  - herding
+  - shedding
+  - Indecisive Swarm Algorithm
+  - ISA
+  - control energy
+  - pressure
+  - lightness
+  - stochastic choice model
+  - network restructuring
+  - collective behavior
+  - swarm robotics
+
+image: bhamla.png
+
+license: "CC-BY-NC-4.0"
