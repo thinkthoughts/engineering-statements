@@ -1,0 +1,104 @@
+title: "Localized Morphogen Signaling Specifies Growth Plate Regeneration"
+
+authors:
+  - Elizabeth A. Aisenbrey
+  - Francisco Rodriguez-Fontan
+  - Sarah A. Schoonraad
+  - Christopher B. Erickson
+  - Yangyi Yu
+  - Stacey M. Thomas
+  - Kristine M. Fischenich
+  - Laurel Stefani
+  - Karin A. Payne
+  - Stephanie J. Bryant
+
+venue: "Biomedical Materials"
+year: 2026
+doi: "10.1088/1748-605X/ae810c"
+
+statement: >
+  Localized morphogen signaling specifies growth plate regeneration.
+  Tethering TGFβ3 within a biodegradable biomimetic hydrogel changes
+  mesenchymal stromal cell fate toward hyaline cartilage, reduces bony
+  bar formation after growth plate injury, and supports restoration of
+  longitudinal bone growth.
+
+context:
+  problem: >
+    Pediatric growth plate injuries frequently heal by forming a bony bar
+    that bridges the growth plate, preventing normal bone elongation and
+    leading to deformity or growth arrest.
+
+  classical: >
+    Soluble growth factor delivery often produces diffuse signaling,
+    fibrocartilage, and incomplete regeneration.
+
+leading_specification:
+  name: "Localized morphogen presentation"
+
+  specifies:
+    - hyaline cartilage formation
+    - mesenchymal stromal cell differentiation
+    - reduced bony bar formation
+    - restoration of longitudinal growth
+
+observe:
+  laboratory:
+    - injectable PEG biomimetic hydrogel
+    - tethered TGFβ3
+    - thiol–norbornene photoclick chemistry
+    - degradable matrix
+    - optional MSC delivery
+
+  measurements:
+    - collagen II
+    - collagen I
+    - sulfated glycosaminoglycans
+    - microCT bone volume
+    - limb length
+    - histology
+
+results:
+  - >
+    Tethered TGFβ3 remained bioactive after covalent immobilization.
+
+  - >
+    Localized TGFβ3 promoted hyaline-like cartilage, while soluble TGFβ3
+    produced fibrocartilage.
+
+  - >
+    Hydrogel treatment reduced bony bar formation after growth plate injury.
+
+  - >
+    Addition of MSCs promoted greater limb length restoration.
+
+engineering:
+  specification:
+    localized_signal: true
+    biodegradable_matrix: true
+    injectable: true
+    in_situ_photopolymerization: true
+    cell_delivery: optional
+
+pipeline:
+  - Localized TGFβ3
+  - Cell-fate specification
+  - Hyaline cartilage
+  - Reduced bony bar
+  - Restored longitudinal growth
+
+keywords:
+  - growth plate
+  - regenerative medicine
+  - biomaterials
+  - hydrogel
+  - TGFβ3
+  - morphogen signaling
+  - cartilage
+  - tissue engineering
+  - mesenchymal stromal cells
+  - photoclick chemistry
+
+image: bryant.png
+
+license: CC-BY-4.0
