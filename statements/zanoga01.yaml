@@ -1,0 +1,57 @@
+id: zanoga01
+title: Distributed Replication Specifies Open AI Infrastructure
+source: Twitter
+author: Max Zanoga
+handle: "@zanoga"
+date: 2026-06-30
+category: open-ai-infrastructure
+status: draft
+
+claim: >
+  Open AI infrastructure is specified by distributed replication, not by any
+  single repository, server, company, or administrative domain.
+
+leading_specification: >
+  Availability increases with independent replication, cryptographic
+  verification, and multiple network paths.
+
+equation: "A ∝ R V P"
+
+variables:
+  A: Availability — probability that models, libraries, and documentation remain accessible.
+  R: Replication — independent copies across independent operators.
+  V: Verification — hashes, signatures, and manifests that preserve integrity and authenticity.
+  P: Paths — independent network routes, mirrors, and fallback transports.
+
+context:
+  - Centralized distribution creates single repository dependence.
+  - Large AI model weights require robust transfer and storage.
+  - Open-weight ecosystems need models, libraries, configs, and documentation.
+  - Correlated legal, policy, or technical failures can affect access at scale.
+
+observations:
+  - Model weights can be distributed as content-addressed files.
+  - Peer-to-peer transport improves redundancy and parallel transfer.
+  - Git mirrors preserve libraries, documentation, configs, and release history.
+  - Tor mirrors provide backup reachability for trackers and metadata.
+  - Shared idle compute can extend distribution into execution.
+
+engineering_consequences:
+  - Fault tolerance
+  - Geographic redundancy
+  - Integrity by design
+  - Reproducibility
+  - Infrastructure independence
+
+example_implementation:
+  name: Project ModelBay
+  components:
+    - Models via BitTorrent
+    - Libraries and documentation via Git mirrors
+    - Tor mirrors for trackers and gateways
+    - Shared compute through authenticated APIs
+
+statement: >
+  Distributed replication turns open AI from a repository dependency into a
+  resilient infrastructure property: many copies, verified integrity, and
+  independent paths preserve access when any single platform fails.
