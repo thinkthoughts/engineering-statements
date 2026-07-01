@@ -1,0 +1,71 @@
+id: "2606-24155"
+title: "Evaluation Trajectories Specify Frontier AI Reliability"
+stars: 5
+source: "arXiv"
+identifier: "2606.24155"
+category: "cs.AI"
+date: "2026-06-24"
+status: "complete"
+
+paper:
+  title: "MedBench v5: A Dynamic, Process-Oriented, and Hallucination-Aware Benchmark"
+  url: "https://arxiv.org/abs/2606.24155"
+  html: "https://arxiv.org/html/2606.24155"
+  arxiv_id: "2606.24155"
+
+tags:
+  - frontier AI evaluation
+  - process-oriented evaluation
+  - evaluation trajectories
+  - hallucination analysis
+  - capability profiling
+  - stress testing
+  - behavioral regression
+  - model reliability
+  - open evaluation infrastructure
+  - MedBench v5
+
+claim: >
+  Frontier AI reliability is not specified by a single benchmark score.
+  It is specified by evaluation trajectories that expose reasoning process,
+  hallucination propagation, stress robustness, calibration, recovery, and
+  behavioral change over time.
+
+summary: >
+  MedBench v5 motivates a shift from static answer accuracy toward dynamic,
+  process-aware evaluation. The leading specification is the evaluation
+  trajectory: a structured record of how a model reasons, where it fails,
+  how errors propagate, and whether the system recovers under stress.
+  This report generalizes that principle from medical benchmarking toward
+  frontier AI evaluation infrastructure.
+
+image: "/2606-24155/2606-24155.png"
+report: "/2606-24155/"
+repo: "https://github.com/thinkthoughts/evaluation-trajectories"
+notebook: ""
+
+equations:
+  - label: "Reliability as trajectory function"
+    latex: "R = F(T, C, S, H, U)"
+    notes: "Reliability depends on trajectory quality, capability, stress robustness, hallucination control, and uncertainty calibration."
+
+  - label: "Outcome score is insufficient"
+    latex: "\\mathrm{Outcome}\\neq\\mathrm{Reliability}"
+    notes: "A correct final answer can still hide unstable reasoning, hallucination, or poor recovery."
+
+  - label: "Evaluation loop"
+    latex: "\\mathrm{Evaluate}\\rightarrow\\mathrm{Analyze}\\rightarrow\\mathrm{Prioritize}\\rightarrow\\mathrm{Train}\\rightarrow\\mathrm{Reevaluate}"
+    notes: "Evaluation becomes infrastructure for training decisions rather than a trailing score."
+
+sections:
+  - "Problem with static evaluation"
+  - "Evaluation trajectory paradigm"
+  - "Capability profiling"
+  - "Process-aware diagnostics"
+  - "Stress testing"
+  - "Hallucination analysis"
+  - "Evaluation-to-training feedback loop"
+  - "Research and engineering directions"
+
+takeaway: >
+  Evaluate the path, earn the trust.
