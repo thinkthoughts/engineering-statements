@@ -1,0 +1,22 @@
+id: 2606-25011
+date: 2026-06-30
+source: arXiv
+identifier: "2606.25011"
+title: "Encoding Rate Specifies Scalable Quantum Simulation"
+category: quant-ph
+tags:
+  - quantum simulation
+  - neutral atoms
+  - STAR architecture
+  - quantum error correction
+  - high-rate codes
+  - fault tolerance
+  - logical qubits
+  - resource estimation
+  - TFIM
+status: complete
+report: /2606-25011/
+statement: 2606-25011
+repo: https://github.com/thinkthoughts/encoding-rate-quantum-simulation
+notebook: https://colab.research.google.com/github/thinkthoughts/encoding-rate-quantum-simulation/blob/main/notebooks/00_context.ipynb
+image: /2606-25011/2606-25011.png
