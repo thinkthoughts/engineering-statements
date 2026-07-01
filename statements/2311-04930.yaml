@@ -1,0 +1,63 @@
+id: 2311-04930
+title: Trajectory Straightening Specifies Language Prediction
+date: 2026-07-01
+source: arXiv
+identifier: "2311.04930"
+category: cs.CL
+status: complete
+
+paper:
+  title: "Large language models implicitly learn to straighten neural sentence trajectories to construct a predictive representation of natural language"
+  authors:
+    - Eghbal A. Hosseini
+    - Evelina Fedorenko
+  venue: NeurIPS 2023
+  url: https://arxiv.org/abs/2311.04930
+
+statement: >
+  Trajectory straightening specifies language prediction: autoregressive
+  transformer models reduce the curvature of internal sentence trajectories
+  across layers, making future representation states easier to extrapolate
+  for next-word prediction.
+
+leading_specification:
+  name: trajectory_straightening
+  description: >
+    Sentence representations become progressively straighter from early to
+    middle transformer layers, enabling more efficient linear extrapolation
+    of future internal states.
+
+key_equations:
+  - name: displacement_vector
+    latex: "v_i^{\\ell}=x_{i+1}^{\\ell}-x_i^{\\ell}"
+  - name: sentence_curvature
+    latex: "C_{\\ell}=\\frac{1}{k}\\sum_{i=1}^{k}\\arccos\\left(\\frac{v_i^{\\ell}\\cdot v_{i+1}^{\\ell}}{\\|v_i^{\\ell}\\|\\,\\|v_{i+1}^{\\ell}\\|}\\right)"
+  - name: curvature_change
+    latex: "\\Delta C^{P}_{s_n}=C^{P}_{s_n}-C^{1}_{s_n}"
+
+claims:
+  - Trained GPT models reduce sentence-trajectory curvature from early to middle layers.
+  - Untrained models do not show the same systematic curvature reduction.
+  - Larger models exhibit greater curvature reduction.
+  - Models trained on more data exhibit greater trajectory straightening.
+  - Model-generated continuations are straighter than human corpus continuations from the same prompt.
+  - Middle-layer curvature correlates with sentence surprisal.
+
+lab_report:
+  report: /2311-04930/
+  statement: 2311-04930
+  image: /2311-04930/2311-04930.png
+  repo: ""
+  notebook: ""
+
+tags:
+  - language models
+  - transformer geometry
+  - sentence trajectories
+  - trajectory straightening
+  - curvature
+  - next-word prediction
+  - predictive representation
+  - surprisal
+  - representation geometry
+  - interpretability
