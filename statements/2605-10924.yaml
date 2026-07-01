@@ -1,0 +1,25 @@
+id: 2605-10924
+date: 2026-07-01
+source: arXiv
+identifier: "2605.10924"
+title: "Bounded-Latency Syndrome Extraction Specifies Fault Tolerance"
+category: quant-ph
+tags:
+  - syndrome extraction
+  - stabilizer readout
+  - quantum error correction
+  - fault tolerance
+  - bounded latency
+  - neutral atom arrays
+  - dual-species Rydberg arrays
+  - ancilla qubits
+  - stabilizer measurements
+  - quantum architecture
+  - hardware-software co-design
+  - scalable quantum computing
+status: complete
+report: /2605-10924/
+statement: 2605-10924
+repo: ""
+notebook: ""
+image: /2605-10924/2605-10924.png
