@@ -1,0 +1,22 @@
+id: 2508-08191
+date: 2026-07-01
+source: arXiv
+identifier: "2508.08191"
+title: "Bounded-Latency Error Correction Specifies Fault Tolerance"
+category: quant-ph
+tags:
+  - quantum error correction
+  - fault tolerance
+  - bounded latency
+  - decoding
+  - syndrome extraction
+  - logical qubits
+  - quantum architecture
+  - hardware software co-design
+  - scalable quantum computing
+status: complete
+report: /2508-08191/
+statement: 2508-08191
+repo: ""
+notebook: ""
+image: /2508-08191/2508-08191.png
