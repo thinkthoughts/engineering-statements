@@ -1,0 +1,43 @@
+title: Cell-Cycle Closure Specifies Cellular Integration
+
+statement: >
+  Cell-cycle closure specifies cellular integration by coupling DNA replication,
+  gene expression, membrane growth, protein synthesis, and division machinery
+  into a coordinated growth–replication–division cycle. Closing this biological
+  feedback loop transforms independently engineered subsystems into a functioning
+  synthetic cell and establishes a foundation for future advances in autonomous
+  metabolism, homeostasis, environmental sensing, adaptive regulation, and
+  sustained evolution.
+
+keywords:
+  - synthetic biology
+  - synthetic cells
+  - cell cycle
+  - cell-cycle closure
+  - cellular integration
+  - bottom-up cell engineering
+  - DNA replication
+  - gene expression
+  - membrane growth
+  - protein synthesis
+  - cell division
+  - biological feedback
+  - systems biology
+  - cellular organization
+  - autonomous metabolism
+  - homeostasis
+  - adaptive regulation
+
+equations:
+  - C = {DNA replication, gene expression, membrane growth, protein synthesis, division}
+  - Φ(C) → closed cell cycle
+  - closed cell cycle ⇒ cellular integration
+  - cellular integration → autonomous metabolism + homeostasis + sensing + adaptive regulation + evolution
+
+figure: cell.png
+
+caption: >
+  Independently engineered cellular modules converge into a closed
+  growth–replication–division cycle. Cell-cycle closure is the leading
+  specification that integrates these subsystems into a functioning synthetic
+  cell and provides a roadmap toward increasingly autonomous biological systems.
