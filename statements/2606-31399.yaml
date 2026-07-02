@@ -1,0 +1,75 @@
+id: 2606-31399
+title: Critical Boundaries Specify World-Model Collapse
+source: arXiv
+date: 2026-06-30
+category: cs.AI
+status: complete
+
+paper:
+  title: World Models Don’t Degrade Gradually, They Collapse at a Critical Boundary
+  url: https://arxiv.org/abs/2606.31399
+  arxiv: 2606.31399
+
+statement: >
+  Critical boundaries in multidimensional state-task load space specify when
+  world-model agents remain reliable or collapse.
+
+summary: >
+  World-model failure is not gradual. As planning horizon, state cardinality,
+  dependency density, and branching factor increase, agents approach a critical
+  boundary where world-state fidelity drops sharply before action validity.
+  Measuring distance to this boundary provides an engineering specification for
+  safer long-horizon agents.
+
+leading_specification:
+  name: Critical boundary surface
+  claim: >
+    Agent reliability is specified by proximity to a critical boundary in
+    state-task load space, rather than by any single variable such as horizon
+    length or benchmark success rate.
+
+observables:
+  - world-state fidelity
+  - action validity
+  - planning horizon
+  - state cardinality
+  - dependency density
+  - branching factor
+  - distance to critical boundary
+
+mechanism:
+  - World-state fidelity drifts from the true environment.
+  - Actions remain superficially plausible.
+  - Action validity collapses after fidelity.
+  - Errors compound across the planning horizon.
+  - Tasks fail after the critical boundary is crossed.
+
+engineering_implications:
+  - Measure distance to the critical boundary.
+  - Monitor world-state fidelity directly.
+  - Treat fidelity loss as the earliest warning signal.
+  - Intervene before crossing the boundary.
+  - Reduce horizon, simplify state, decompose tasks, or add memory and feedback.
+  - Design agents to remain within stable operating regions.
+
+tags:
+  - world models
+  - agents
+  - phase transitions
+  - critical boundaries
+  - state-task load
+  - world-state fidelity
+  - action validity
+  - planning horizon
+  - state cardinality
+  - dependency density
+  - branching factor
+  - long-horizon reasoning
+  - agent reliability
+  - AI safety
+
+links:
+  report: /2606-31399/
+  image: /2606-31399/2606-31399.png
+  repo:
+  notebook:
