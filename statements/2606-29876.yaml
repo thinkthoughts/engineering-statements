@@ -1,0 +1,22 @@
+- date: "2026-07-02"
+  source: "arXiv"
+  identifier: "2606-29876"
+  title: "Clinical Reasoning Graphs Specify Diagnostic Consistency"
+  category: "cs.AI"
+  tags:
+    - clinical AI
+    - large language models
+    - diagnostic reasoning
+    - clinical reasoning graphs
+    - graph-based evaluation
+    - process-level evaluation
+    - diagnostic consistency
+    - reasoning consistency
+    - medical AI safety
+    - trustworthy AI
+  status: "complete"
+  report: "/2606-29876/"
+  statement: "2606-29876"
+  repo: ""
+  notebook: ""
+  image: "/2606-29876/2606-29876.png"
