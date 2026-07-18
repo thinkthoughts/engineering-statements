@@ -1,0 +1,22 @@
+identifier: 260713-737974
+
+source: bioRxiv
+
+title: Structural Constraints Specify Functional Peptide Alternatives
+
+engineering_statement: >
+  Structural constraints specify functional peptide alternatives.
+
+constraint: Structural constraints
+
+connected_lane: Binding interface
+
+engineering_object: Functional peptide alternative
+
+engineering_variable: Experimental function
+
+observable_state: Validated peptide alternative
+
+indicator: Experimental specification
+
+footer: Admissible generalizations trail leading specifications.
