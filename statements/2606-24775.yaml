@@ -1,0 +1,72 @@
+id: 2606-24775
+title: "Are We Ready For An Agent-Native Memory System?"
+
+source:
+paper: https://arxiv.org/abs/2606.24775
+html: https://arxiv.org/html/2606.24775
+pdf: https://arxiv.org/pdf/2606.24775
+code: https://github.com/OpenDataBox/MemoryData
+lab_report: https://labreports.app/2606-24775
+repo: https://github.com/thinkthoughts/engineering-statements
+
+objective: >
+Evaluate memory systems by how their representation, extraction, retrieval,
+routing, and maintenance choices support reliable agent behavior across
+workloads. Admissible memory structures trail agent reliability.
+
+contexts:
+
+* agent-native memory
+* large language model agents
+* persistent agent state
+* memory representation and storage
+* memory extraction
+* retrieval and routing
+* memory maintenance
+* dynamic knowledge updates
+* long-horizon agent behavior
+* data management systems
+
+constraints:
+
+* evaluate memory modules rather than treating each system as a monolithic black box
+* distinguish end-to-end task performance from system-level reliability
+* preserve representation fidelity during extraction and storage
+* align retrieval and routing choices with workload bottlenecks
+* maintain update correctness under changing knowledge
+* measure long-horizon stability rather than isolated retrieval accuracy
+* account for operational cost and latency
+* avoid assuming that a single memory architecture dominates every workload
+
+evidence:
+
+* the paper decomposes agent memory into four core modules
+* twelve representative memory systems and two reference baselines are evaluated
+* five benchmark workloads span eleven datasets
+* no single memory architecture dominates across all evaluated scenarios
+* workload alignment affects memory-system effectiveness
+* module choices affect representation fidelity and retrieval precision
+* maintenance choices affect update correctness and long-horizon stability
+* localized maintenance can be more cost-efficient than global reorganization
+
+outputs:
+
+* infographic
+* alt text
+* Engineering Statement YAML
+* lab report
+* companion notebook
+* memory-system comparison
+* workload-to-architecture map
+* next-step engineering artifacts
+
+next_steps:
+
+* read the paper
+* inspect the MemoryData repository
+* map each evaluated system onto the four memory modules
+* compare reliability metrics with end-to-end task scores
+* identify workload bottlenecks before selecting a memory architecture
+* benchmark temporal consistency and update correctness
+* compare localized maintenance with global memory reorganization
+* develop admissible memory structures that trail agent reliability
