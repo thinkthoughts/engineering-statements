@@ -1,0 +1,105 @@
+identifier: "2607-14111"
+source:
+  type: "arXiv"
+  arxiv_id: "2607.14111v1"
+  title: "Introspection Fine-Tuning (IFT): Training Small LLMs to Introspect"
+  url: "https://arxiv.org/abs/2607.14111"
+
+report:
+  title: "Introspective Fine-Tuning Specifies Internal State Detection"
+  image: "/2607-14111/2607-14111.png"
+  page: "/2607-14111/"
+  category: "cs.CL"
+
+leading_specification: >
+  Reliable internal-state reporting specifies measurable model evaluation.
+
+engineering_variable: "internal-state reporting"
+
+engineering_statement:
+  subject: "Introspective fine-tuning"
+  verb: "specifies"
+  object: "internal state detection"
+  full: >
+    Introspective fine-tuning specifies internal state detection by training
+    models to detect and report controlled perturbations to their own activations.
+
+process:
+  - name: "Observe"
+    statement: "Hidden states become measurable."
+    evidence: >
+      Internal activation states are selected and accessed as measurable
+      engineering objects.
+  - name: "Perturb"
+    statement: "Controlled perturbations establish ground truth."
+    evidence: >
+      Known steering-vector interventions provide labeled changes in activation
+      magnitude, direction, and location.
+  - name: "Train"
+    statement: "Introspective fine-tuning learns internal reporting."
+    evidence: >
+      Supervised training on sentence-localization examples teaches models to
+      report perturbations from their own internal states.
+  - name: "Evaluate"
+    statement: "Reliable reporting specifies model evaluation."
+    evidence: >
+      Confound-free sentence-localization and strength-comparison tasks compare
+      model reports with controlled intervention ground truth.
+
+paper_findings:
+  - >
+    Binary yes-or-no introspection tests are confounded in the small-model regime
+    because activation steering can bias affirmative responses.
+  - >
+    Sentence localization and strength comparison provide quantitative,
+    chance-referenced alternatives that avoid this affirmative-response confound.
+  - >
+    Introspection generally improves with model scale, while models as small as
+    2B parameters perform reliably above chance.
+  - >
+    Introspection Fine-Tuning substantially improves introspection in a 1B model
+    and transfers zero-shot from localization training to strength comparison.
+  - >
+    Random-layer semantic-vector training generalizes better than fixed-layer
+    training or Gaussian-noise training.
+  - >
+    General language capabilities are largely preserved after introspection
+    fine-tuning.
+
+constraints:
+  - >
+    The experiments measure responses to controlled activation steering rather
+    than naturally arising internal conflicts or anomalous reasoning.
+  - >
+    Evidence is limited to the tested Llama and Gemma model families and scales.
+  - >
+    Introspective reports remain evaluation signals, not independent proof that
+    a model has complete or faithful access to its internal computation.
+  - >
+    Reasoning-supervision targets show mixed results and require further design.
+
+next_steps:
+  - >
+    Test whether introspection fine-tuning transfers from controlled steering
+    interventions to naturally occurring anomalous reasoning and internal conflict.
+  - >
+    Evaluate larger models and additional architectures to determine whether
+    training gains continue, saturate, or change with scale.
+  - >
+    Develop reasoning-supervision targets that improve both localization and
+    strength comparison without reducing either capability.
+  - >
+    Compare trained self-reporting with external interpretability methods,
+    including activation oracles and concept decoders.
+  - >
+    Measure robustness under distribution shift, adversarial prompting, deceptive
+    behavior, and deliberately misleading self-reports.
+  - >
+    Specify calibration criteria for deciding where introspective reports may
+    safely supplement external monitoring.
+
+trail:
+  footer: "Admissible generalizations trail leading specifications."
+  generalization: >
+    Trainable introspection may provide a complementary engineering signal for
+    model diagnostics, interpretability, monitoring, and alignment.
