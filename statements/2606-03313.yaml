@@ -1,0 +1,89 @@
+id: "2606-03313"
+source:
+  type: "arXiv"
+  identifier: "2606.03313v1"
+  url: "https://arxiv.org/abs/2606.03313"
+  title: "Detection of a four-carbon sugar in interstellar space"
+
+report:
+  title: "Dust-Grain Chemistry Specifies Interstellar Sugar Formation"
+  subtitle: "Surface chemistry on interstellar dust grains builds complex sugars from simple molecules."
+  category: "Research Report"
+  status: "candidate"
+  image: "2606-03313-web.png"
+
+engineering_statement:
+  leading_specification: "Dust-grain surface chemistry specifies complex sugar formation from simple precursors."
+  supporting_statement: "Spectroscopy and astrochemical models independently support the same pathway."
+  trailing_generalization: "Interstellar ices can contribute prebiotic molecular resources to planetary systems."
+
+specification_sequence:
+  - stage: "Build"
+    statement: "Simple precursors accumulate on dust grains."
+    objects:
+      - "glycolaldehyde"
+      - "ethylene glycol"
+      - "interstellar dust-grain ice"
+
+  - stage: "React"
+    statement: "Surface reactions assemble the four-carbon sugar erythrulose."
+    objects:
+      - "hydrogen abstraction"
+      - "radical coupling"
+      - "intersystem crossing"
+      - "erythrulose"
+
+  - stage: "Detect"
+    statement: "Spectral agreement confirms erythrulose in molecular cloud G+0.693-0.027."
+    evidence:
+      - "multiple rotational transitions"
+      - "predominantly unblended spectral features"
+      - "Yebes 40 m observations"
+      - "IRAM 30 m observations"
+      - "LTE spectral modeling"
+
+  - stage: "Extend"
+    statement: "Interstellar sugar chemistry enriches the prebiotic inventories available to planetary systems."
+    trail:
+      - "interstellar ice synthesis"
+      - "preservation in comets and meteorites"
+      - "delivery to planetary surfaces"
+      - "aqueous isomerization of ketoses into aldoses"
+
+measurable_claims:
+  - claim: "Erythrulose is detected in the interstellar medium."
+    measure: "12 fitted line sets representing 17 transitions"
+  - claim: "The identification is statistically supported."
+    measure: "six predominantly unblended features with an estimated chance-alignment probability of 0.2 percent"
+  - claim: "Erythrulose is more abundant than analogous three-carbon sugars in the surveyed cloud."
+    measure: "at least 8 to 17 times more abundant than the reported upper limits for glyceraldehyde and dihydroxyacetone"
+  - claim: "Dust-grain chemistry can produce erythrulose efficiently."
+    measure: "quantum-chemical reaction pathway and kinetic Monte Carlo modeling reproduce the observed abundance scale"
+
+constraints:
+  - "The detection depends on accurate laboratory rotational spectroscopy."
+  - "Line blending and source confusion constrain molecular assignments."
+  - "The grain-surface network contains uncertain reaction rates, branching ratios, and photodissociation efficiencies."
+  - "Modeled ice abundances do not directly equal observed gas-phase abundances."
+  - "Delivery to early planetary environments remains an inferred chemical trail rather than a direct observation."
+
+next_steps:
+  - "Search for erythrulose in additional molecular clouds and protoplanetary environments."
+  - "Measure more laboratory spectra for other three-carbon and four-carbon sugars."
+  - "Refine grain-surface reaction rates and branching ratios experimentally."
+  - "Model gas-phase destruction and grain re-adsorption after shock release."
+  - "Test whether asymmetric interstellar processing can produce measurable enantiomeric excess."
+
+keywords:
+  - "astrochemistry"
+  - "erythrulose"
+  - "interstellar medium"
+  - "dust-grain chemistry"
+  - "molecular clouds"
+  - "prebiotic chemistry"
+  - "chiral molecules"
+  - "spectroscopy"
+  - "kinetic Monte Carlo"
+
+footer:
+  statement: "Admissible generalizations trail leading specifications."
