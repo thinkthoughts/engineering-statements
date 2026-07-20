@@ -1,0 +1,32 @@
+[
+  {
+    "id": "specification-grammar",
+    "title": "Specification Grammar",
+    "primary_group": "Engineering",
+    "object_type": "reference-standard",
+    "status": "ready",
+    "status_symbol": "🟢",
+    "timestamp": "2026-07-20T18:42:00Z",
+    "engineering_statement": {
+      "text": "Leading specifications specify engineering objects.",
+      "url": "statements/specification-grammar.yaml"
+    },
+    "summary": "Canonical engineering language reference.",
+    "repository": {
+      "name": "thinkthoughts/specification-grammar",
+      "release": "v1.0.0",
+      "url": "https://github.com/thinkthoughts/specification-grammar"
+    },
+    "targets": {
+      "danhawkley.dev": true,
+      "labreports.app": true,
+      "github": true
+    },
+    "tags": [
+      "engineering",
+      "reference-standard",
+      "specification",
+      "notebook-00"
+    ]
+  }
+]
