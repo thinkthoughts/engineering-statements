@@ -1,34 +1,32 @@
 # engineering-statements
 
-Structured claims, constraints, and artifacts for agentic science workflows.
+Canonical engineering objects for reproducible scientific publication.
 
-Engineering Statements are portable specifications that translate scientific intent into reproducible next steps.
+Engineering Statements are human-authored YAML records that describe engineering objects and their publication metadata. They serve as the canonical source for notebooks, reports, repositories, websites, software, and other published artifacts.
 
 ---
 
-## Core idea
+## Engineering publication pipeline
+
+```text
+scientific source
+        ↓
+Engineering Statement (YAML)
+        ↓
+engineering object
+        ↓
+publication JSON
+        ↓
+site builders
+        ↓
+published artifacts
+```
 
 Scientific papers describe discoveries.
 
-Engineering Statements specify how those discoveries can be inspected, communicated, and extended.
+Engineering Statements specify reusable engineering objects.
 
-```text
-paper or source
-↓
-Engineering Statement (YAML)
-↓
-notebook
-↓
-lab report
-↓
-infographic
-↓
-published artifact
-```
-
-The goal is not to replace papers, repositories, or researchers.
-
-The goal is to preserve scientific intent while making next steps more accessible and reproducible.
+The goal is to preserve scientific intent while making engineering work inspectable, reproducible, and portable across repositories, websites, and engineering workflows.
 
 ---
 
@@ -36,217 +34,262 @@ The goal is to preserve scientific intent while making next steps more accessibl
 
 ```text
 engineering-statements/
+
+├── statements/
+├── json/
 ├── notebooks/
-├── outputs/
+├── templates/
 ├── src/
 │   └── engineering_statements/
-├── statements/
-├── templates/
+├── outputs/
 ├── LICENSE
 ├── README.md
 └── pyproject.toml
 ```
 
-### `statements/`
+---
 
-Primary Engineering Statement artifacts.
+## statements/
 
-Human-readable YAML specifications describing:
+Canonical Engineering Statement records.
 
-* objectives
-* contexts
-* constraints
-* evidence
-* outputs
-* next steps
+Each YAML file describes one engineering object.
+
+Typical fields include:
+
+```text
+id
+title
+timestamp
+
+primary_group
+object_type
+status
+
+engineering_statement
+
+targets
+
+repository
+artifacts
+
+tags
+```
 
 Examples:
 
 ```text
 statements/
-├── agapi-agents.yaml
-├── 2606-13619.yaml
-├── 2606-13590.yaml
-└── 2606-12618.yaml
+
+specification-grammar.yaml
+engineering-status.yaml
+engineering-template.yaml
+
+2606-13619.yaml
+2606-13590.yaml
+2606-12618.yaml
 ```
+
+The statements are the primary authored content.
 
 ---
 
-### `notebooks/`
+## json/
 
-Companion notebooks.
+Generated publication objects.
 
-Reader-facing demonstrations that introduce vocabulary, inspect toy examples, generate specifications, and support comprehension.
+JSON is generated from the Engineering Statements and consumed by websites, builders, search, and publication tools.
 
-Examples:
+Current outputs include:
 
 ```text
-notebooks/
-├── 00_2606-13619.ipynb
-├── 00_2606-13590.ipynb
-└── 00_2606-12618.ipynb
+json/
+
+latest.json
+
+engineering.json
+research.json
+models.json
+hardware.json
+seminars.json
+notebooks.json
+software.json
+policies.json
+context.json
 ```
 
----
+Each JSON file contains engineering objects whose `primary_group` matches the filename.
 
-### `src/engineering_statements/`
-
-Lightweight Python utilities supporting Engineering Statements.
-
-Responsibilities may include:
-
-* YAML loading
-* schema validation
-* notebook helpers
-* report utilities
-
-The source code supports the statements.
-
-The statements remain primary.
+The JSON files are generated rather than edited directly.
 
 ---
 
-### `templates/`
+## notebooks/
 
-Reusable templates.
+Reader-facing demonstrations.
+
+Notebooks introduce vocabulary, inspect examples, generate figures, and explain Engineering Statements.
+
+Notebook 00 introduces reusable engineering context shared across repositories.
+
+---
+
+## templates/
+
+Reusable publication templates.
 
 Examples:
 
 ```text
 templates/
-├── statement.yaml
-├── notebook.md
-├── lab_report.md
-└── infographic.md
+
+statement.yaml
+notebook.md
+lab_report.md
+infographic.md
 ```
 
-Templates help establish consistent workflows without constraining scientific content.
+Templates establish consistent engineering workflows while allowing each engineering object to remain independent.
 
 ---
 
-### `outputs/`
+## src/
 
-Generated local artifacts.
+Supporting utilities.
 
-This directory is intended for derived files and experiments.
+Responsibilities may include:
 
-Primary specifications should remain in `statements/`.
+- YAML loading
+- schema validation
+- publication JSON generation
+- notebook helpers
+- report utilities
+- site-builder helpers
+
+The software supports the statements.
+
+The statements remain primary.
 
 ---
 
-## Workflow
+## outputs/
+
+Derived local artifacts.
+
+Generated notebooks, figures, temporary exports, and experiments.
+
+Canonical engineering objects remain in `statements/`.
+
+---
+
+# Workflow
 
 ```text
-discover paper
-↓
-read abstract and introduction
-↓
-identify scientific intent
-↓
-draft Engineering Statement YAML
-↓
-generate notebook
-↓
-generate lab report
-↓
-generate infographic
-↓
-publish artifacts
+discover source
+        ↓
+identify engineering intent
+        ↓
+Engineering Statement
+        ↓
+engineering object
+        ↓
+publication JSON
+        ↓
+Notebook
+        ↓
+Lab Report
+        ↓
+Infographic
+        ↓
+Website
 ```
 
 ---
 
-## Current examples
+# Primary groups
 
-### Number Theory
-
-**arXiv:2606.13619**
-
-Split primes and the Elekes–Rónyai problem
-
-Outputs:
-
-* Engineering Statement
-* notebook
-* lab report
-* infographic
-
----
-
-**arXiv:2606.13590**
-
-Some new modular Nahm sums of ranks 3 and 4
-
-Outputs:
-
-* Engineering Statement
-* notebook
-* lab report
-* infographic
-
----
-
-### AI Safety
-
-**arXiv:2606.12618**
-
-Did you lie? Evaluating Lie Detectors across Model Scale and Belief-Verified Model Organisms
-
-Outputs:
-
-* Engineering Statement
-* notebook
-* lab report
-* infographic
-
----
-
-## AGAPI connection
-
-Engineering Statements are intended to complement agentic scientific systems.
-
-The initial demonstration focuses on AGAPI as a bridge between:
+Engineering objects currently publish into one primary group.
 
 ```text
-scientific infrastructure
-↓
-structured specifications
-↓
-reproducible next steps
+Engineering
+Research
+Models
+Hardware
+Seminars
+Notebooks
+Software
+Policies
+Context
 ```
 
-See:
+Additional publication groupings may be generated later without changing the Engineering Statements themselves.
+
+---
+
+# Reference standards
+
+Engineering Statements complement several reference repositories.
+
+## Specification Grammar
+
+Defines relationships among engineering concepts.
+
+## Engineering Status
+
+Defines engineering lifecycle vocabulary.
 
 ```text
-statements/agapi-agents.yaml
+🟢 Ready
+
+🟡 Developing
+
+🔴 Revision Required
 ```
 
-for the current Engineering Statement derived from AGAPI-related work.
+## Engineering Template
+
+Defines reusable repository structure.
+
+Engineering Statements connect these reference standards into publishable engineering objects.
 
 ---
 
-## Related projects
+# Current examples
 
-Climate Reality
+Reference standards
 
-https://climatereality.app
+- Specification Grammar
+- Engineering Status
+- Engineering Template
 
-Engineering Statements feature
+Research examples
 
-https://climatereality.app/statements/
+- arXiv:2606.13619
+- arXiv:2606.13590
+- arXiv:2606.12618
 
-Lab Reports
-
-https://labreports.app
+Each engineering object may publish notebooks, reports, repositories, software, figures, websites, and other artifacts while preserving a single canonical Engineering Statement.
 
 ---
 
-## Philosophy
+# Related projects
 
-Climate Reality describes contexts and constraints.
+- Specification Grammar
+- Engineering Status
+- Engineering Template
 
-Engineering Statements specify next steps in context.
+- labreports.app
+- danhawkley.dev
+- Climate Reality
 
-Climate Democracy prescribes collaborative action.
+---
 
-Scientific intent can remain inspectable, reproducible, and portable across communities, disciplines, and tools.
+# Philosophy
+
+Scientific papers communicate discoveries.
+
+Engineering Statements communicate reusable engineering objects.
+
+Those engineering objects become the canonical source for publication across notebooks, reports, repositories, websites, software, seminars, and future engineering workflows.
+
+Engineering Statements preserve scientific intent while making engineering work inspectable, reproducible, and portable.
