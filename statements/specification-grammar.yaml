@@ -1,0 +1,46 @@
+id: specification-grammar
+timestamp: 2026-07-20T18:42:00Z
+
+title: Specification Grammar
+object_type: reference-standard
+status: ready
+status_symbol: "🟢"
+
+engineering_statement: >
+  Leading specifications specify engineering objects.
+
+summary: >
+  A reusable engineering reference plate connecting leading specifications,
+  engineering objects, engineering variables, observable states, measured
+  states, and admissible generalizations.
+
+repository:
+  name: thinkthoughts/specification-grammar
+  url: https://github.com/thinkthoughts/specification-grammar
+  release: v1.0.0
+
+artifacts:
+  - type: infographic
+    title: Specification Grammar
+    path: exports/specification-grammar-3200.png
+    alt_text: >
+      Reference plate titled Specification Grammar showing five engineering
+      relationships from leading specifications through measured states.
+
+  - type: svg
+    path: source/specification-grammar.svg
+
+  - type: pdf
+    path: exports/specification-grammar.pdf
+
+publication:
+  primary_url: https://github.com/thinkthoughts/specification-grammar
+  sites:
+    - danhawkley.dev
+    - labreports.app
+
+tags:
+  - engineering
+  - specification
+  - reference-standard
+  - notebook-00
