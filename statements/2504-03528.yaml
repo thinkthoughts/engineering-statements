@@ -1,0 +1,12 @@
+cd superfluids-guarda
+
+git init
+git add .
+git commit -m "Initialize seminar engineering scaffold"
+
+gh repo create thinkthoughts/superfluids-guarda \
+  --public \
+  --description "This engineering repository identifies leading specifications for out-of-equilibrium quantum field dynamics as addressed by Giacomo Guarda." \
+  --source=. \
+  --remote=origin \
+  --push
