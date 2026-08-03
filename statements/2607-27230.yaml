@@ -1,0 +1,56 @@
+artifact_type: engineering_statement
+
+statement:
+  id: ES_2607_27230
+  title: Multi-Head Routing Across Model Depth
+  repository: multi-head-routing
+  status: specified
+  initiated: 2026-08
+
+statement_text: >
+  Multi-head depth routing specifies independently addressable
+  residual histories, allowing feature subspaces to retrieve
+  distinct layer histories while preserving model width.
+
+engineering_object:
+  name: residual-history routing
+  current_specification: multi-head depth routing
+
+leading_specifications:
+  - partition residual-history retrieval by attention head
+  - preserve model width across routing
+  - retrieve independent depth histories
+  - constrain routing through learned depth distributions
+  - preserve compatibility with transformer residual streams
+
+measured_states:
+  - validation loss
+  - downstream evaluation
+  - training throughput
+  - peak memory
+  - continued pretraining performance
+
+engineering_constraints:
+  - routing is memory-bound
+  - repeated reads increase memory traffic
+  - fused kernels reduce routing overhead
+  - routing quality depends on independently learned depth histories
+
+engineering_statement:
+  object: residual-history routing
+  specification: >
+    Independently addressable residual histories improve
+    depth routing by allowing feature subspaces to retrieve
+    different layer histories.
+
+admissible_generalizations:
+  - multi-head routing refines residual-history retrieval
+  - feature subspaces need not share one depth distribution
+  - depth routing can scale independently of token routing
+  - independently addressable histories constrain residual retrieval
+
+next_specifications:
+  - characterize routing-head specialization
+  - compare routing across model scales
+  - measure routing diversity
+  - evaluate alternative depth-history parameterizations
