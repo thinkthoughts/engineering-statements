@@ -1,0 +1,160 @@
+artifact_type: engineering_statement
+
+statement:
+  id: ES_2510_19304
+  title: Information Pathways for Discrete Diffusion
+  repository: engineering-statements
+  status: developing
+  initiated: 2026-08
+  source_identifier: 2510.19304
+
+statement_text: >
+  Deterministic latent pathways preserve distributional context
+  across discrete diffusion steps, supporting more informed
+  parallel refinement.
+
+engineering_object:
+  name: cross-step information propagation
+  system: discrete diffusion language modeling
+  current_specification: deterministic latent pathway
+
+source:
+  type: arXiv
+  identifier: 2510.19304
+  version: v3
+  title: Loopholing Discrete Diffusion: Deterministic Bypass of the Sampling Wall
+  authors:
+    - Mingyu Jo
+    - Junyoung Yoon
+    - Jeremy Deschenaux
+    - Caglar Gulcehre
+    - Sungjin Ahn
+  source_url: https://arxiv.org/abs/2510.19304
+  html_url: https://arxiv.org/html/2510.19304v3
+  pdf_url: https://arxiv.org/pdf/2510.19304
+  project_url: https://sites.google.com/view/lddms/home
+  code_url: https://github.com/ahn-ml/lddm
+
+engineering_context: >
+  A discrete diffusion denoising step predicts a rich categorical
+  distribution but conventionally passes only a sampled one-hot token
+  into the following step. This categorical interface removes
+  distributional information that could inform subsequent refinement.
+  The source describes this constraint as the sampling wall.
+
+mechanism:
+  name: loopholing
+  description: >
+    Each denoising step produces both a categorical token prediction
+    and a continuous latent state. The sampled token continues along
+    the stochastic discrete trajectory, while the latent state follows
+    a deterministic pathway into the next denoising step.
+  inputs:
+    - current noisy token state
+    - previous latent state
+    - diffusion time
+  outputs:
+    - categorical token distribution
+    - propagated latent state
+
+execution_paths:
+  stochastic_path:
+    sequence:
+      - rich token distribution
+      - categorical sampling
+      - one-hot token
+      - next refinement step
+    constraint: >
+      Distributional context collapses to a categorical selection
+      before the following denoising computation.
+
+  deterministic_path:
+    sequence:
+      - current token state
+      - latent-state integration
+      - updated latent state
+      - next refinement step
+    specification: >
+      Continuous contextual information is carried directly between
+      successive denoising steps.
+
+engineering_relation: >
+  sampled token + latent context -> next refinement step
+
+observable_evidence:
+  reported_effects:
+    - improved language-model perplexity
+    - improved generated-text quality
+    - fewer idle denoising steps
+    - reduced late-stage oscillation
+    - improved arithmetic-reasoning performance
+  interpretation: >
+    The reported results indicate that preserving cross-step
+    distributional context improves the coordination and efficiency
+    of iterative parallel refinement.
+
+engineering_variables:
+  - latent pathway representation
+  - latent-state dimension
+  - self-conditioning procedure
+  - sampling schedule
+  - refinement schedule
+  - denoising-step count
+  - idle-step frequency
+  - temporal oscillation
+  - generation quality
+  - execution cost
+
+leading_specifications:
+  preserve:
+    - distributional structure
+    - latent state
+    - cross-step information
+
+  propagate:
+    - deterministic pathways
+    - parallel refinement
+    - self-conditioning
+
+  refine:
+    - idle-step frequency
+    - temporal oscillation
+    - generation quality
+    - inference throughput
+
+  develop:
+    - scientific AI
+    - reasoning systems
+    - open engineering
+
+next_engineering_step: >
+  Reproduce the official implementation and trace both the sampled
+  token path and deterministic latent path across successive denoising
+  steps. Measure how latent-state dimension, self-conditioning,
+  sampling schedule, and denoising-step count affect cross-step
+  information, generation quality, and execution cost.
+
+artifacts:
+  lab_report: https://labreports.app/2510-19304/
+  infographic: https://labreports.app/2510-19304/2510-19304.png
+  statement: 2510-19304.yaml
+  repository: https://github.com/ahn-ml/lddm
+  notebook: ""
+
+related_statements:
+  - identifier: 2608.00146
+    title: Execution Schedules for High-Speed Language Generation
+    relation: >
+      DiffusionGemma specifies the execution schedule for parallel
+      block refinement; Loopholing specifies an information pathway
+      connecting successive refinement steps.
+
+status:
+  source_review: complete
+  infographic: complete
+  lab_report: developing
+  reproduction: not_started
+  notebook: not_started
+
+footer: >
+  Admissible generalizations trail leading specifications.
