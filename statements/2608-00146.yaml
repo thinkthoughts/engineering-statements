@@ -1,0 +1,238 @@
+artifact_type: engineering_statement
+
+statement:
+  id: ES_2608_00146
+  title: Execution Schedules for High-Speed Language Generation
+  repository: engineering-statements
+  status: developing
+  initiated: 2026-08
+  source_identifier: 2608.00146
+
+statement_text: >
+  Execution schedules specify inference throughput through
+  parallel canvas refinement.
+
+engineering_object:
+  name: execution schedules
+  system: discrete diffusion language generation
+  current_specification: parallel canvas refinement
+
+source:
+  type: arXiv
+  identifier: 2608.00146
+  version: v1
+  title: DiffusionGemma Technical Report
+  organization: Google DeepMind
+  source_url: https://arxiv.org/abs/2608.00146
+  html_url: https://arxiv.org/html/2608.00146v1
+  pdf_url: https://arxiv.org/pdf/2608.00146
+
+engineering_context: >
+  Conventional autoregressive language models generate one token
+  at a time. This sequential execution procedure requires repeated
+  forward passes and limits low-concurrency generation speed through
+  memory-bandwidth constraints. DiffusionGemma instead generates
+  fixed-length token canvases through iterative parallel refinement.
+
+mechanism:
+  name: block-autoregressive diffusion execution
+  description: >
+    The model encodes the prompt and preceding clean canvases into
+    a causal key-value cache. A 256-token noisy canvas is then refined
+    using bidirectional attention and cross-attention to the cached
+    context. Adaptive stopping completes the canvas once predictions
+    are sufficiently confident and stable. The completed canvas is
+    appended to the context before execution begins on the next canvas.
+  inputs:
+    - system instructions
+    - user prompt
+    - encoded sequence history
+    - uniformly initialized token canvas
+    - previous self-conditioning signal
+  outputs:
+    - completed token canvas
+    - updated key-value cache
+    - next-canvas execution state
+
+execution_paths:
+  autoregressive_path:
+    sequence:
+      - prompt
+      - token prediction
+      - token commitment
+      - context update
+      - next token prediction
+    constraint: >
+      Sequence length determines the minimum number of serial
+      generation passes.
+
+  diffusion_path:
+    sequence:
+      - prompt
+      - context encoding
+      - key-value cache
+      - initialize token canvas
+      - parallel refinement
+      - adaptive stopping
+      - completed canvas
+      - append context
+      - next canvas
+    specification: >
+      Multiple token positions are revised within each denoising
+      forward pass before the completed canvas is committed.
+
+engineering_relation: >
+  canvas length / effective denoising steps -> tokens per forward
+
+architecture:
+  starting_model: Gemma 4 26B A4B
+  model_type: mixture-of-experts transformer
+  total_parameters: 25.2B
+  activated_parameters: 3.85B
+  canvas_length: 256
+  maximum_denoising_steps: 48
+  average_effective_denoising_steps: approximately 12
+  attention:
+    context_encoding: causal
+    canvas_refinement: bidirectional
+    context_conditioning: cross-attention
+  retained_modes:
+    - diffusion generation
+    - autoregressive generation
+    - thinking mode
+    - multimodal inputs
+    - long-context inputs
+
+training_pipeline:
+  initialization: >
+    Begin from the post-trained Gemma 4 26B A4B autoregressive
+    checkpoint rather than pretraining a diffusion model from scratch.
+
+  supervised_finetuning:
+    objective: >
+      Adapt the model to denoise 256-token canvases using
+      bidirectional attention while conditioning on clean context
+      through the key-value cache.
+
+  sampler_distillation_and_reinforcement_learning:
+    objective: >
+      Improve reward-driven generation quality while compressing
+      high-quality denoising trajectories into a few-step execution
+      regime.
+
+adaptive_stopping:
+  maximum_steps: 48
+  entropy_threshold: 0.005
+  stability_condition: >
+    Deterministic token predictions are identical across two
+    consecutive denoising steps.
+  interpretation: >
+    Inference compute is allocated according to prompt, task, and
+    domain complexity rather than always exhausting the maximum
+    denoising budget.
+
+observable_evidence:
+  reported_values:
+    canvas_length: 256
+    average_tokens_per_forward: approximately 20
+    average_effective_denoising_steps: approximately 12
+    output_throughput_h100: approximately 1500 tokens per second
+    training_token_budget: less than 10 percent of the starting model budget
+
+  reported_effects:
+    - fewer forward passes than token-by-token autoregressive decoding
+    - increased tokens per forward pass
+    - adaptive allocation of denoising compute
+    - retained autoregressive generation capability
+    - retained multimodal and long-context capabilities
+    - improved quality-speed Pareto frontier after SD-RL training
+
+  interpretation: >
+    The reported measurements indicate that scheduling generation
+    around canvas-level refinement changes the operating point between
+    generation quality, forward-pass count, and output latency.
+
+engineering_variables:
+  - canvas length
+  - maximum denoising steps
+  - effective denoising steps
+  - entropy stopping threshold
+  - prediction stability criterion
+  - temperature schedule
+  - tokens per forward
+  - total forward passes
+  - output throughput
+  - latency
+  - hybrid routing policy
+  - GPU forward-pass cost
+
+performance_metrics:
+  total_tokens: >
+    Sum of valid tokens generated across all completed canvases.
+
+  total_denoising_steps: >
+    Sum of denoising iterations executed across all canvases.
+
+  effective_denoising_steps: >
+    Token-weighted average number of denoising steps across generated
+    canvases.
+
+  tokens_per_forward: >
+    Total generated tokens divided by denoising and inter-canvas
+    encoding forward passes.
+
+leading_specifications:
+  specify:
+    - parallel refinement
+    - canvas length
+    - adaptive stopping
+    - hybrid execution
+
+  measure:
+    - tokens per forward
+    - effective denoising steps
+    - output throughput
+    - latency
+
+  constrain:
+    - inference efficiency
+    - generation quality
+    - reasoning performance
+    - long-context capability
+
+  develop:
+    - scientific AI
+    - code generation
+    - domain adaptation
+    - open-weight deployment
+
+next_engineering_step: >
+  Reproduce the released inference procedure and measure how canvas
+  length, stopping thresholds, temperature schedules, and hybrid
+  diffusion-autoregressive routing affect tokens per forward,
+  generation quality, latency, and accelerator utilization.
+
+artifacts:
+  lab_report: https://labreports.app/2608-00146/
+  infographic: https://labreports.app/2608-00146/2608-00146.png
+  statement: 2608-00146.yaml
+  repository: ""
+  notebook: ""
+
+related_statements:
+  - identifier: 2510.19304
+    title: Information Pathways for Discrete Diffusion
+    relation: >
+      DiffusionGemma specifies the execution schedule for block
+      refinement; Loopholing specifies a deterministic information
+      pathway connecting successive refinement steps.
+
+status:
+  source_review: complete
+  infographic: complete
+  lab_report: developing
+  reproduction: not_started
+  notebook: not_started
+
+footer: >
+  Admissible generalizations trail leading specifications.
