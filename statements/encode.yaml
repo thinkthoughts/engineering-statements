@@ -1,0 +1,65 @@
+title: ENCODE GRAMMAR
+
+subtitle: >
+  An integrated resource connecting genome-wide measurements,
+  regulatory annotations, predictive sequence models,
+  and public tools for interpreting human gene regulation.
+
+source:
+  title: >
+    ENCODE GRAMMAR: A deep learning model resource for decoding
+    the DNA sequence logic of regulatory elements in the human genome
+  authors: ENCODE Consortium
+  journal: bioRxiv
+  year: 2026
+  doi: 10.64898/2026.07.06.731365
+
+engineering_object:
+
+  statement: >
+    Integrate complementary genome-wide measurements,
+    regulatory annotations, predictive sequence models,
+    and public resources to support interpretation of
+    regulatory DNA across the human genome.
+
+leading_specification:
+
+  statement: >
+    Genome-wide experimental measurements constrain
+    regulatory annotations, predictive sequence models,
+    and interpretation of noncoding genetic variation.
+
+engineering_observations:
+
+  - >
+    Candidate cis-regulatory elements emerge from
+    complementary experimental measurements rather than
+    any single assay.
+
+  - >
+    Predictive sequence models learn regulatory grammar
+    relating DNA sequence to experimentally measured
+    regulatory activity.
+
+  - >
+    Chromatin interactions connect distal regulatory
+    elements with target genes across diverse biological
+    contexts.
+
+  - >
+    Integrated annotations, models, and public resources
+    support interpretation of regulatory mechanisms and
+    noncoding variants.
+
+engineering_outcome:
+
+  statement: >
+    An integrated reference resource supporting
+    exploration, interpretation, and engineering of
+    genome regulation through experimentally grounded
+    measurements, predictive models, and accessible tools.
+
+footer:
+
+  statement: >
+    Admissible generalizations trail leading specifications.
