@@ -1,0 +1,115 @@
+title: Time-Varying Hamiltonians Specify Accelerated Optimization
+
+statement: >
+  Time-varying Hamiltonians specify accelerated optimization through
+  continuous-time variational dynamics that discretize into practical
+  optimization algorithms.
+
+engineering_object:
+  - optimization objective
+  - Hamiltonian system
+  - continuous-time dynamics
+  - variational principle
+  - time discretization
+  - discrete updates
+  - accelerated optimization
+
+engineering_specification:
+
+  objective:
+    description: >
+      Specify an optimization objective whose minimizer defines the
+      desired engineering state.
+    equation: |
+      min_x f(x)
+
+  hamiltonian:
+    description: >
+      Represent optimization as a time-varying Hamiltonian system whose
+      kinetic and potential energies evolve through time.
+    equation: |
+      H(x,p,t)
+      = e^{-2β(t)} ||p||²/(2m)
+        + e^{2β(t)} f(x)
+
+  dynamics:
+    description: >
+      Hamilton's equations continuously evolve position and momentum.
+    equations:
+      - "ẋ = ∂H/∂p"
+      - "ṗ = −∂H/∂x"
+
+  variational_principle:
+    description: >
+      Continuous trajectories are specified by minimizing the action.
+    equations:
+      - "𝒜[x] = ∫ L(x,ẋ,t) dt"
+      - "δ𝒜[x*] = 0"
+
+  discretization:
+    description: >
+      Continuous-time dynamics are sampled to produce executable update
+      rules.
+    equation: |
+      t_k = kΔt
+
+  discrete_updates:
+    description: >
+      Time discretization specifies practical optimization algorithms
+      through discrete state updates.
+    equations:
+      - "x_{k+1}"
+      - "p_{k+1}"
+
+  accelerated_optimization:
+    description: >
+      Practical accelerated optimization methods arise from
+      discretizing continuous-time Hamiltonian dynamics.
+    examples:
+      - Nesterov acceleration
+      - Heavy-ball
+      - Mirror Descent
+
+engineering_consequences:
+  - Continuous-time formulations provide a principled foundation for accelerated optimization.
+  - Variational principles specify optimization trajectories through action minimization.
+  - Hamiltonian dynamics unify optimization and physical dynamical systems.
+  - Time discretization transforms continuous dynamics into executable optimization algorithms.
+  - Accelerated methods emerge as discrete approximations of continuous-time systems.
+
+measured_states:
+  - optimization objective
+  - position
+  - momentum
+  - action
+  - Hamiltonian
+  - continuous trajectory
+  - discrete state
+  - optimization iterate
+
+leading_specifications:
+  - Optimization objectives specify Hamiltonian systems.
+  - Hamiltonian systems specify continuous-time dynamics.
+  - Variational principles specify optimization trajectories.
+  - Time discretization specifies discrete optimization algorithms.
+  - Continuous-time specification produces accelerated optimization.
+
+keywords:
+  - optimization
+  - Hamiltonian dynamics
+  - variational principles
+  - accelerated optimization
+  - continuous-time optimization
+  - discrete optimization
+  - Hamilton's equations
+  - Bregman Lagrangian
+  - action functional
+  - Nesterov acceleration
+  - Heavy-ball
+  - Mirror Descent
+  - optimization algorithms
+  - machine learning
+  - continuous dynamics
+
+references:
+  - "Wibisono A., Wilson A. C., Jordan M. I. A Variational Perspective on Accelerated Methods in Optimization. PNAS (2016)."
