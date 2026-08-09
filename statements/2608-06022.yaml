@@ -1,0 +1,125 @@
+id: "2608-06022"
+
+source:
+  type: "arXiv"
+  identifier: "2608.06022v1"
+  url: "https://arxiv.org/abs/2608.06022"
+  title: "EpiBench: Can LLMs Understand Epitopes for Antibody Drug Discovery?"
+
+report:
+  title: "Sequence Grounding Specifies Antibody–Epitope Reasoning"
+  subtitle: "Antigen and antibody sequences specify measurable epitope decisions across the antibody discovery workflow."
+  category: "Research Report"
+  status: "candidate"
+  image: "2608-06022.png"
+
+engineering_statement:
+  leading_specification: "Reliable antibody discovery requires sequence-grounded, residue-level, antibody-specific reasoning."
+  supporting_statement: "EpiBench measures epitope reasoning across targetable-region discovery, antibody-conditioned identification, epitope binning, functional assessment, and mutation-specific escape."
+  trailing_generalization: "General-purpose LLM reasoning alone does not reliably specify biologically grounded antibody–epitope decisions."
+
+specification_sequence:
+  - stage: "Localize"
+    statement: "Antigen sequences specify candidate targetable epitope regions."
+    objects:
+      - "antigen sequence"
+      - "candidate epitope residues"
+      - "targetable regions"
+      - "RegionRecall@50"
+      - "residue localization"
+
+  - stage: "Condition"
+    statement: "Antibody sequence evidence conditions which antigen region specifies the antibody-specific epitope."
+    objects:
+      - "antibody sequence"
+      - "antigen sequence"
+      - "candidate epitopes"
+      - "antibody-specific binding region"
+      - "epitope identification"
+
+  - stage: "Compare"
+    statement: "Antibody pairs specify measurable epitope overlap and bin membership."
+    objects:
+      - "antibody pair"
+      - "shared antigen"
+      - "epitope overlap"
+      - "same epitope bin"
+      - "different epitope bin"
+
+  - stage: "Assess"
+    statement: "Epitope evidence connects antibody binding regions to measured functional outcomes."
+    evidence:
+      - "structural antibody–antigen contacts"
+      - "curated functional B-cell assays"
+      - "candidate epitope comparisons"
+      - "functional antibody outcomes"
+
+  - stage: "Test"
+    statement: "Mutation-specific sequence evidence tests whether an antigen change produces antibody escape."
+    evidence:
+      - "antibody variable-domain sequence"
+      - "wild-type antigen sequence"
+      - "single antigen mutation"
+      - "deep mutational scanning"
+      - "escape or non-escape"
+
+  - stage: "Specify"
+    statement: "Measured failures identify sequence grounding as the leading engineering requirement."
+    trail:
+      - "long-range sequence grounding"
+      - "residue-level correspondence"
+      - "antibody-specific structural inference"
+      - "biologically grounded sequence understanding"
+
+measurable_claims:
+  - claim: "EpiBench evaluates epitope-centered reasoning across a connected antibody discovery workflow."
+    measure: "1,609 curated samples distributed across five benchmark tasks"
+
+  - claim: "Current general-purpose LLMs capture partial epitope-related signals but remain weak at precise antibody-specific sequence grounding."
+    measure: "nine general-purpose LLMs evaluated under a unified zero-shot protocol"
+
+  - claim: "Targetable-region localization degrades sharply as antigen sequences become longer."
+    measure: "average Task 1 RegionRecall@50 decreases from 81.3 for antigens shorter than 200 residues to 12.8 for antigens longer than 800 residues"
+
+  - claim: "Explicit reasoning does not produce a uniform performance advantage."
+    measure: "average explicit-reasoning effects across five tasks range from +5.4 points for GPT-5.5 to -2.2 points for GLM-5.2 and Qwen3-235B"
+
+  - claim: "Explicit reasoning often helps targetable-region discovery but has inconsistent effects on the remaining tasks."
+    measure: "most models improve on Task 1, while Tasks 2–5 show model-dependent positive, neutral, and negative changes"
+
+constraints:
+  - "Sequence-only prompts remove structural identifiers and external retrieval, requiring models to operate from antigen and antibody sequence evidence."
+  - "Long antigen sequences increase the number of non-epitope residues, structural domains, and plausible surface regions while the prediction budget remains fixed."
+  - "Current models do not reliably preserve fine-grained residue-position information across long antigen contexts."
+  - "Antibody-conditioned tasks require sequence relationships that generic antigen cues or sequence-similarity shortcuts do not reliably specify."
+  - "Explicit chain-of-thought changes performance inconsistently and does not by itself resolve biologically grounded sequence understanding."
+  - "Incorrect reasoning traces frequently rely on motifs, generic physicochemical heuristics, remembered biological associations, or antibody-similarity shortcuts rather than antibody-specific epitope relationships."
+
+next_steps:
+  - "Improve residue-level correspondence across long antigen sequences."
+  - "Develop models that condition epitope localization directly on antibody-specific sequence evidence."
+  - "Integrate sequence representations capable of supporting antibody-specific structural inference."
+  - "Evaluate reasoning methods by measured epitope performance rather than reasoning format alone."
+  - "Reduce motif, similarity, and generic physicochemical shortcuts through controlled benchmark design and targeted validation."
+  - "Measure progress across localization, antibody conditioning, epitope binning, functional assessment, and mutation-specific escape as connected engineering tasks."
+
+keywords:
+  - "EpiBench"
+  - "antibody drug discovery"
+  - "epitopes"
+  - "antigen sequence"
+  - "antibody sequence"
+  - "sequence grounding"
+  - "residue localization"
+  - "antibody-specific reasoning"
+  - "epitope identification"
+  - "epitope binning"
+  - "functional epitope assessment"
+  - "antibody escape"
+  - "deep mutational scanning"
+  - "biomedical LLMs"
+  - "chain-of-thought"
+  - "benchmarking"
+
+footer:
+  statement: "Admissible generalizations trail leading specifications."
