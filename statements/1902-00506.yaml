@@ -1,0 +1,112 @@
+title: Independent Training Specifies Robust Coordination
+
+statement: |
+  Robust coordination between independently developed agents
+  requires interaction conventions that generalize across
+  unfamiliar partners.
+
+engineering_object:
+  Independent Multi-Agent Coordination
+
+engineering_problem: |
+  Agents trained through independent self-play may develop
+  incompatible interaction conventions that prevent effective
+  coordination with unfamiliar partners.
+
+engineering_context:
+  - Cooperative AI
+  - Multi-agent systems
+  - Ad-hoc teamwork
+  - Partner substitution
+  - Independent optimization
+
+engineering_specification:
+  Independent Agents
+          │
+          ▼
+  Observable Signals
+          │
+          ▼
+  Shared Interaction Conventions
+          │
+          ▼
+  Partner Generalization
+          │
+          ▼
+  Measured Coordination
+          │
+          ▼
+  Robust Deployment
+
+measured_states:
+  - Self-play coordination
+  - Ad-hoc coordination
+  - Partner generalization
+  - Coordination performance
+  - Convention compatibility
+
+measured_observations:
+  - High self-play performance does not guarantee coordination with independently trained partners.
+  - Independently trained agents may assign different meanings to the same observable signals.
+  - Partner substitution reveals incompatible interaction conventions.
+  - Robust deployment requires coordination beyond familiar training partners.
+
+engineering_constraints:
+  - Independent training
+  - Observable communication
+  - Shared interpretation
+  - Convention compatibility
+  - Unfamiliar partners
+
+engineering_refinements:
+  - Interaction conventions
+  - Partner generalization
+  - Ad-hoc coordination
+  - Robust deployment
+  - Multi-agent interoperability
+
+leading_specifications:
+  - Shared interaction conventions
+  - Generalization across independently trained partners
+  - Robust coordination
+  - Deployment reliability
+
+applications:
+  - AI assistants
+  - Scientific agents
+  - Software agents
+  - Robotics
+  - Autonomous systems
+
+reference:
+  title: The Hanabi Challenge
+  authors:
+    - Nolan Bard
+    - Jakob N. Foerster
+    - et al.
+  arxiv: "1902.00506"
+
+keywords:
+  - cooperative ai
+  - multi-agent systems
+  - hanabi
+  - ad-hoc teamwork
+  - partner substitution
+  - interaction conventions
+  - coordination
+  - interoperability
+  - independent training
+  - partner generalization
+  - robust deployment
+
+summary: |
+  Independent optimization can produce highly effective
+  self-play strategies while simultaneously developing
+  incompatible interaction conventions. Robust coordination
+  therefore depends on conventions that generalize across
+  independently trained partners rather than only within
+  familiar training environments.
+
+footer: |
+  Robust coordination specifies interaction conventions
+  that generalize across independently trained partners.
