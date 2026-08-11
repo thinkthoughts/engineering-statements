@@ -1,0 +1,136 @@
+title: "Persistent LLM Attractors Specify Experimental Requirements"
+slug: "sophontic"
+source:
+type: "website"
+organization: "Sophontic"
+url: "https://sophontic.ai/"
+status: "candidate"
+
+engineering_object:
+domain: "large-language-models"
+object: "persistent-llm-attractors"
+
+leading_statement: >
+Persistent LLM attractor claims require specified sister sessions,
+variable contrasts, measured relations, geometric correspondence,
+temporal persistence, and experimental constraints.
+
+measured_states:
+
+* semantic_proximity
+* trajectory_similarity
+* session_agreement
+* context_persistence
+* state_correspondence
+
+experimental_variables:
+
+* context_variation
+* training_regime_comparison
+* architecture_contrast
+* sampling_conditions
+* state_isolation_conditions
+
+internal_geometry:
+relations:
+- angles
+- distances
+- paths
+- neighborhoods
+- regions
+measurements:
+semantic_proximity: "cosine similarity"
+trajectory_similarity: "path correspondence"
+session_agreement: "cross-session alignment"
+context_persistence: "stability under variation"
+state_correspondence: "state-to-state alignment"
+
+experimental_requirements:
+
+* session_separation
+* specified_variables
+* geometric_measurement
+* correspondence
+* temporal_measurement
+* constraints
+
+figures:
+A:
+title: "Output Trajectories Specify the Experimental Object"
+statement: >
+Output trajectories specify a candidate attractor; persistence
+and mechanism remain approachable.
+B:
+title: "Candidate Sources Specify Experimental Controls"
+statement: >
+Candidate sources specify controls; measured differences constrain
+admissible explanations.
+C:
+title: "Variable Contrasts Specify Measured Differences"
+statement: >
+Variable contrasts specify measured differences; measured differences
+constrain admissible attractor claims.
+D:
+title: "Measured Relations Specify Internal Geometry"
+statement: >
+Measured relations specify internal geometry; variable perturbations
+specify geometric response.
+E:
+title: "Geometric Persistence Specifies Attractor Evidence"
+statement: >
+Geometric correspondence across sister sessions specifies persistence;
+persistence under variable perturbations strengthens attractor evidence.
+F:
+title: "Attractor Evidence Specifies Experimental Requirements"
+statement: >
+Persistent attractor claims require specified sessions, variables,
+measurements, correspondence, and constraints.
+
+candidate_sources:
+
+* prompt_context_structure
+* shared_training_conditions
+* model_architecture
+* sampling_evaluation_effects
+* persistent_state_effects
+
+geometric_response:
+
+* geometry_preserved
+* geometry_shifted
+* region_transition
+
+attractor_evidence:
+sequence:
+- output_similarity
+- geometric_correspondence
+- geometric_persistence
+- attractor_evidence
+constraint: >
+Attractor evidence is constrained by the measured conditions.
+
+specification_grammar:
+
+* "Sister sessions specify output trajectories."
+* "Candidate sources specify experimental controls."
+* "Variable contrasts specify measured differences."
+* "Measured relations specify internal geometry."
+* "Geometric correspondence specifies persistence."
+* "Persistent correspondence strengthens attractor evidence."
+* "Attractor evidence specifies experimental requirements."
+* "Admissible generalizations trail leading specifications."
+
+tags:
+
+* llm
+* attractors
+* persistent-attractors
+* internal-geometry
+* sister-sessions
+* variable-contrasts
+* cosine-similarity
+* geometric-correspondence
+* state-correspondence
+* temporal-persistence
+* experimental-requirements
+* specification-grammar
