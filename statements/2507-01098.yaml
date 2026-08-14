@@ -1,0 +1,31 @@
+date: "2026-08-13"
+source: "arXiv"
+identifier: "2507.01098"
+title: "SGD Dynamics Specify Representation Alignment"
+category: "machine-learning"
+tags:
+  - machine learning
+  - representation learning
+  - Platonic Representation Hypothesis
+  - PRH
+  - embedded deep linear networks
+  - EDLN
+  - stochastic gradient descent
+  - SGD
+  - implicit regularization
+  - entropic regularization
+  - representation alignment
+  - representation geometry
+  - rotation
+  - scaling
+  - global minima
+  - gradient noise
+  - finite learning rate
+  - discretization
+  - numerical backward error
+  - microscopic irreversibility
+  - learning dynamics
+status: "published"
+report: "https://labreports.app/2507-01098/"
+statement: "https://github.com/thinkthoughts/leading-specification/blob/main/statements/2507-01098.yaml"
+image: "https://labreports.app/2507-01098/2507-01098.png"
