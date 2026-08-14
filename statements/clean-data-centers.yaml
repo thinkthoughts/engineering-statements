@@ -1,0 +1,100 @@
+id: clean-data-centers
+title: Clean Data Centers
+
+statement: >
+  Clean data centers develop through increasing specification of
+  electricity demand, load flexibility, power-system conditions,
+  clean-energy correspondence, and physical deliverability at
+  additional reading points.
+
+engineering_object:
+  name: Data Center
+
+engineering_system:
+  components:
+    - power system
+    - electricity supply
+    - data-center load
+    - AI workloads
+    - cooling
+    - heat transfer
+
+engineering_variables:
+  - electricity demand
+  - load flexibility
+  - marginal carbon intensity
+  - clean-energy supply
+  - power-system conditions
+  - grid reference
+  - matching interval
+
+measured_states:
+  - carbon intensity
+  - renewable utilization
+  - grid flexibility
+  - reliability
+  - associated operational emissions
+  - clean-energy matching cost
+
+engineering_refinements:
+  - temporal shifting
+  - demand adjustment
+  - renewable-supply alignment
+  - demand response
+  - ancillary services
+  - specified matching
+
+reading_point:
+  specifies:
+    - time reference
+    - grid reference
+    - matching interval
+
+leading_specifications:
+  - time correspondence
+  - grid correspondence
+  - physical deliverability
+  - carbon-free-energy correspondence
+
+constraints:
+  - Electricity demand alone does not specify associated operational emissions.
+  - Associated operational emissions depend on power-system conditions.
+  - Clean-energy matching requires specified reading points.
+  - Matching remains constrained by physical deliverability.
+  - Location-specific claims require location-specific measurements.
+
+evidence:
+  - source: arXiv
+    identifier: "2606.21064"
+    role: initiating source
+
+figures:
+  - figure: A
+    specification: AI data centers as power-system loads
+
+  - figure: B
+    specification: load flexibility and power-system variables
+
+  - figure: C
+    specification: operational refinements
+
+  - figure: D
+    specification: marginal carbon intensity and associated operational emissions
+
+  - figure: E
+    specification: load flexibility and clean-energy matching cost
+
+  - figure: F
+    specification: clean-energy matching at additional reading points
+
+next_specifications:
+  - data-center locations
+  - power-system connections
+  - electricity sources
+  - cooling systems
+  - water demand
+  - heat transfer
+  - local grid conditions
+  - additional reading points
+
+footer: Admissible generalizations trail leading specifications.
