@@ -1,0 +1,56 @@
+engineering-statement:
+  identifier: "2512-24880"
+  source: "arXiv"
+  title: "mHC: Manifold-Constrained Hyper-Connections"
+
+  leading-constraints:
+    - "Expanded residual streams increase topological complexity and residual-stream capacity."
+    - "Unconstrained residual mappings compose across depth and can amplify or attenuate signals."
+    - "Widened residual streams increase memory-access, GPU-memory, and pipeline-communication costs."
+
+  engineering-objects:
+    - "standard residual connection"
+    - "Hyper-Connections (HC)"
+    - "expanded residual stream"
+    - "pre mapping"
+    - "post mapping"
+    - "residual mapping"
+    - "Manifold-Constrained Hyper-Connections (mHC)"
+    - "doubly stochastic manifold"
+    - "Birkhoff polytope"
+    - "Sinkhorn-Knopp projection"
+    - "infrastructure optimizations"
+
+  measurable-states:
+    - "training loss"
+    - "gradient norm"
+    - "Amax Gain Magnitude"
+    - "forward signal amplification"
+    - "backward gradient amplification"
+    - "compute scaling"
+    - "token scaling"
+    - "downstream benchmark performance"
+    - "memory access"
+    - "GPU memory"
+    - "pipeline communication"
+    - "training-time overhead"
+
+  specification:
+    residual-connection: "Carries shallower-layer signals directly to deeper layers through an identity mapping."
+    hyper-connections: "Expand residual-stream width and connectivity using learnable pre, post, and residual mappings."
+    manifold-constrained-hyper-connections: "Project residual mappings onto the doubly stochastic manifold so residual propagation forms convex combinations, conserves feature mean, controls signal amplification, and remains closed under composition."
+
+  engineering-sequence:
+    - "expand residual stream"
+    - "constrain residual mapping"
+    - "stabilize composition"
+
+  measured-evidence:
+    - "Unconstrained HC composite Amax Gain Magnitude reaches peaks near 3000 in the reported 27B stability analysis."
+    - "mHC outperforms the 27B baseline across all eight reported downstream benchmarks and exceeds HC on seven of eight."
+    - "Compute-scaling experiments span 3B, 9B, and 27B models."
+    - "Infrastructure optimization addresses memory-access, activation-memory, and pipeline-communication overhead."
+
+  statement: "Manifold constraints on expanded residual mappings specify stable composition across depth while infrastructure optimizations address the systems costs of widened residual streams."
+
+  footer: "Admissible generalizations trail leading specifications."
