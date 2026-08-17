@@ -1,0 +1,71 @@
+id: bifurcative
+title: Bifurcative Self-Interaction Specifies a Hydrogen Mass-Ratio Construction
+
+source:
+  type: paper
+  identifier: microvit-ra-20080202
+  paper: The Hydrogen Atom as an Integrative Eigenstate of the Bifurcating Quantum Field
+  author: Frank van den Bovenkamp
+  year: 2020
+
+objective: >
+  Separate the paper's proposed bifurcative hydrogen model from its
+  mathematical mass-ratio construction and the measured quantities
+  used as input and comparison.
+
+contexts:
+  - hydrogen eigenstates
+  - quantum-field self-interaction
+  - bifurcative wave function
+  - Golden-Ratio synchronization
+  - spin-orbital coupling
+  - proton-to-electron mass ratio
+
+constraints:
+  - treat bifurcative self-interaction as a proposed model
+  - preserve the paper's terminology for bifurcation and synchronization
+  - distinguish proposed physical interpretation from mathematical construction
+  - distinguish calculated quantities from measured quantities
+  - identify measured inputs entering the construction
+  - evaluate numerical agreement separately from support for the proposed model
+
+evidence:
+  - >
+    The paper defines a discrete self-interacting phase-wave packet
+    consisting of D waves and describes it as a bifurcative wave function.
+  - >
+    Synchronization is specified using the Golden-Ratio base phi.
+  - >
+    The proposed hydrogen model associates bifurcative self-interaction,
+    synchronization, spin-orbital coupling, and an integrative resonance.
+  - >
+    The paper factorizes its proposed mass as
+    M = phi^3 * 2^3 * 3(3 + 3 + 3).
+  - >
+    Using the base-2 volumetric factor, the construction gives a
+    proton-to-electron mass ratio of approximately 1829.98.
+  - >
+    The paper then substitutes the measured electron spin g-factor
+    for the base-2 volumetric bifurcation.
+  - >
+    With that measured input, the construction gives 1836.35434.
+  - >
+    The measured proton-to-electron mass ratio reported in the paper
+    is 1836.15267, corresponding to a relative difference of about 0.011%.
+
+outputs:
+  - proposed model: bifurcative self-interaction
+  - proposed synchronization: phi
+  - mathematical construction: mass factorization
+  - base-construction mass ratio: 1829.98
+  - measured input: electron spin g-factor
+  - g-factor construction mass ratio: 1836.35434
+  - measured comparison: 1836.15267
+  - relative difference: approximately 0.011%
+
+next_steps:
+  - identify which factors follow mathematically from the bifurcative definition
+  - identify which factors require proposed physical correspondences
+  - trace every measured quantity entering the mass-ratio calculation
+  - test whether the construction produces additional measurable quantities
+  - distinguish numerical agreement from empirical validation of the proposed geometry
