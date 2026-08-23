@@ -1,0 +1,127 @@
+id: "2108-07896"
+
+title: "Liquid-Crystal Topology and a Measured Quotient Correspondence"
+
+source:
+  type: "arXiv"
+  identifier: "2108.07896"
+  title: "Framework for liquid crystal based particle models"
+  author:
+    - "Jarek Duda"
+  url: "https://arxiv.org/abs/2108.07896"
+
+engineering_statement: >
+  Independently specified ReadingPoint arithmetic and executable M5
+  liquid-crystal topology admit compatible V4 quotient structure.
+  Native observables further produce compatible singleton-plus-pair
+  partitions, reducing six abstract quotient isomorphisms to two.
+  Existing M5/N4 orientation audits do not independently select between
+  the two remaining mappings.
+
+relation: >
+  (Z/30Z)^*/{1,19} ≅ C2^3/<Ty> ≅ V4,
+  with 6 -> 2 supported and 2 -> 1 not licensed.
+
+source_context:
+  framework: "LdGS"
+  description: >
+    The source develops a liquid-crystal particle-model framework combining
+    Landau-de Gennes field structure with a Skyrme kinetic term and explores
+    quantized topological charge and particle-like field configurations.
+
+specified_structures:
+  readingpoint:
+    units_mod_30:
+      - 1
+      - 7
+      - 11
+      - 13
+      - 17
+      - 19
+      - 23
+      - 29
+    quotient_kernel:
+      - 1
+      - 19
+    quotient: "V4"
+    first_label: "chi5 / mod-5 quadratic character"
+    second_label: "chi3 / nontrivial mod-3 character"
+
+  m5:
+    transformation_structure: "C2^3"
+    quotient_kernel: "<Ty>"
+    quotient: "V4"
+    first_label: "full-frame G/R norm partition"
+    second_label: "N4 C-sign"
+
+observable_evidence:
+  common_v4_quotient: "SUPPORTED"
+  repository_native_m5_quotient: "SUPPORTED"
+  readingpoint_native_partition: "SUPPORTED"
+  m5_native_partition: "SUPPORTED"
+  partition_level_correspondence: "SUPPORTED"
+  abstract_isomorphisms: 6
+  partition_preserving_isomorphisms: 2
+
+remaining_mappings:
+  aligned:
+    Ibar: "{1,19}"
+    Txbar: "{11,29}"
+    Tzbar: "{7,13}"
+    TxTzbar: "{17,23}"
+    relation: "C-sign = chi3"
+
+  reversed:
+    Ibar: "{1,19}"
+    Txbar: "{11,29}"
+    Tzbar: "{17,23}"
+    TxTzbar: "{7,13}"
+    relation: "C-sign = -chi3"
+
+orientation_anchor_audits:
+  result_035:
+    candidate: "right-handed full-frame convention"
+    result: "NO C-sign anchor"
+
+  result_036:
+    candidate: "self-linking N -> -N"
+    result: "NO CLEAN C-sign anchor"
+
+  result_037:
+    candidate: "g_chiral / chi signs"
+    result: "WEIGHTED-TERM SIGN ONLY"
+
+  result_038:
+    candidate: "Mermin-Ho / topological-flux sign"
+    result: "SAME RESIDUAL-PAIR SIGN"
+
+correspondence_boundary:
+  six_to_two: "SUPPORTED"
+  two_to_one: "NOT LICENSED"
+  independent_orientation_alignment_rule: "NOT FOUND"
+  unique_structural_correspondence: "NOT ESTABLISHED"
+  readingpoint_to_m5_physical_mapping: "NOT ESTABLISHED"
+  current_implementation_stopping_boundary: "SUPPORTED"
+
+next_engineering_step: >
+  Introduce a next correspondence test only where an independently motivated
+  observable or derivation fixes the relative orientation of M5 C-sign and
+  ReadingPoint chi3. Such evidence may select the aligned mapping, select the
+  reversed mapping, or preserve both mappings as admissible.
+
+repository:
+  name: "openwave-readingpoint"
+  url: "https://github.com/thinkthoughts/openwave-readingpoint"
+
+lab_report:
+  path: "app/2108-07896"
+  figures:
+    - "Explorer_A.png"
+    - "Explorer_B.png"
+    - "Explorer_C.png"
+    - "Explorer_D.png"
+    - "Explorer_E.png"
+    - "Explorer_F.png"
+    - "Explorer_G.png"
+
+principle: "Specify -> compute -> measure -> compare -> refine or reject."
