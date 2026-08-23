@@ -1,0 +1,246 @@
+id: "2608-16578"
+source:
+  type: "arXiv"
+  identifier: "2608.16578"
+  version: "v1"
+  date: "2026-08-17"
+  title: "Physics of Agents: Statistical Mechanics Predicts Collective Behavior of AI Agents"
+  url: "https://arxiv.org/abs/2608.16578"
+
+status: "complete"
+
+reading_point:
+  statement: >
+    Local interaction rules specify probabilistic transitions between agent
+    states; repeated transitions produce measurable collective regimes, while
+    objective-task accuracy introduces an observed asymmetry in social influence.
+  connection: >
+    Initial agent states and signed communication structure define a reading
+    point from which fitted local transition rules predict subsequent states and
+    collective trajectories.
+
+system:
+  agents:
+    default_count: 32
+    state:
+      discrete: "s_i(t) ∈ {-1,+1}"
+      observed_opinion: "ō_i(t) ∈ [-1,+1]"
+    persona_role:
+      objective: "domain expertise"
+      subjective: "profile-conditioned preference"
+
+  interaction:
+    network: "J ∈ {-1,0,+1}^{N×N}"
+    meanings:
+      "-1": "discordant / unfriendly connection"
+      "0": "no communication edge"
+      "+1": "concordant / friendly connection"
+    symmetry: "J is symmetric with zero diagonal in the reported experiments"
+
+  timing:
+    updates: "synchronous by default"
+    initial_reading_point: "t = 0"
+    final_reading_point: "t = 8"
+    default_rounds: 8
+    asynchronous_extension: true
+
+experiments:
+  community_count:
+    characterization: 9600
+    full_dataset: "over 10,000"
+  task_types:
+    objective:
+      source: "MATH competition mathematics problems"
+      format: "binary multiple choice"
+      ground_truth: true
+    subjective:
+      source: "political statements"
+      ground_truth: false
+  procedure:
+    - "Each agent begins from its persona and the shared question."
+    - "Agents exchange natural-language messages along signed communication edges."
+    - "Agents revise their binary state after receiving current-round messages."
+    - "Influence propagates through repeated local updates across the graph."
+
+observed_dynamics:
+  collective_regimes:
+    indifference:
+      description: "agents hold weak opinions"
+    polarization:
+      description: "strongly committed agents divide into opposing camps"
+    consensus:
+      description: "agents move toward the same position"
+
+  individual_archetypes:
+    - "frozen"
+    - "single switch"
+    - "switch and return"
+    - "oscillatory"
+
+  collective_effects:
+    conviction:
+      observation: >
+        Interaction generally increases conviction and moves communities toward
+        more ordered states.
+    objective_accuracy:
+      observation: >
+        Communication improves collective accuracy on average; initially
+        incorrect majorities switch to the correct answer more often than
+        initially correct majorities become incorrect.
+    subjective_drift:
+      observation: >
+        Subjective political interactions can exhibit directional ideological
+        drift inherited from the underlying models.
+
+model:
+  family: "extended Ising / statistical-mechanics model"
+  purpose:
+    - "predict one-step opinion transitions"
+    - "roll out collective trajectories"
+    - "relate collective regimes to interpretable interaction parameters"
+
+  intrinsic_field:
+    symbol: "g_i"
+    role: "agent-specific predisposition toward the question"
+
+  fitted_interaction_parameters:
+    beta_plus:
+      symbol: "β⁺"
+      role: "concordant interaction effect"
+    beta_minus:
+      symbol: "β⁻"
+      role: "discordant interaction effect"
+    beta_zero:
+      symbol: "β⁰"
+      role: "connection / exposure interaction effect"
+
+  fitting:
+    data: "observed one-step opinion transitions"
+    output:
+      - "intrinsic fields"
+      - "interaction parameters"
+
+  temperature:
+    role: "analysis parameter controlling stochastic response"
+    fitted_operating_point: "T = 1"
+    interpretation: >
+      The fitted communities operate below the inferred critical social
+      temperature, consistent with observed conviction buildup.
+
+results:
+  prediction:
+    - "predicts held-out individual one-step transitions"
+    - "outperforms standard baselines"
+    - "generalizes to unseen communication-graph families"
+    - "approximately reproduces population-level collective-outcome distributions"
+
+  consensus:
+    fitted_result: >
+      Concordant interactions are stronger than discordant interactions,
+      favoring consensus over persistent polarization.
+
+  accuracy_influence:
+    scope: "objective questions"
+    empirical_result: >
+      Agents holding the correct answer exert greater fitted influence than
+      agents holding an incorrect answer.
+    collective_interpretation: >
+      Greater accurate-agent influence supports the observed improvement in
+      collective accuracy and a truth-seeking tendency.
+
+figures:
+  A:
+    title: "Physics of Agents"
+    focus: "collective regimes"
+    sequence:
+      - "initial ±1 agent states"
+      - "signed interaction network"
+      - "repeated updates"
+      - "indifference / polarization / consensus"
+    footer: "LOCAL INTERACTIONS → COLLECTIVE READING POINTS"
+
+  B:
+    title: "Statistical Mechanics of Agent Updates"
+    focus: "fitted local dynamics"
+    objects:
+      - "g_i"
+      - "β⁺"
+      - "β⁻"
+      - "β⁰"
+      - "T"
+    sequence:
+      - "local state"
+      - "effective social field"
+      - "probabilistic next-state update"
+      - "t = 0 through t = 8 collective trajectory"
+    footer: "FITTED MODEL PREDICTS HELD-OUT ONE-STEP TRANSITIONS"
+
+  C:
+    title: "Accuracy Shapes Social Influence"
+    focus: "objective-task influence asymmetry"
+    sequence:
+      - "compare transitions by source accuracy"
+      - "accurate sources exert greater influence"
+      - "fitted model captures the asymmetry"
+      - "collective trajectories become biased toward the correct answer"
+    footer: "ACCURACY → INFLUENCE ASYMMETRY → COLLECTIVE TRUTH-SEEKING"
+
+boundary:
+  - >
+    Language-model agents are modeled using Ising-style statistical mechanics;
+    the agents are not literal magnetic spins.
+  - >
+    Indifference, polarization, and consensus are collective regimes; 0 is not
+    an additional individual opinion state in the binary model.
+  - >
+    Truth is not assumed to be an energy minimum. The truth-seeking result comes
+    from observed and fitted accuracy-dependent influence on objective tasks.
+  - >
+    Consensus alone does not specify correctness; inaccurate consensus remains
+    an admissible collective outcome.
+  - >
+    "Reading point" and "collective reading points" are interpretive language
+    used by this report rather than terminology introduced by the paper.
+
+engineering_statement:
+  leading_constraints:
+    - "binary agent states"
+    - "fixed personas"
+    - "signed communication graph"
+    - "local message exchange"
+    - "repeated update rounds"
+
+  engineering_objects:
+    - "agent state s_i(t)"
+    - "continuous sampled opinion ō_i(t)"
+    - "signed adjacency J_ij"
+    - "intrinsic field g_i"
+    - "interaction parameters β⁺, β⁻, β⁰"
+    - "social temperature T"
+
+  measurable_states:
+    - "one-step opinion transitions"
+    - "individual trajectory archetypes"
+    - "collective regimes"
+    - "collective accuracy"
+    - "conviction buildup"
+    - "consensus and polarization frequencies"
+    - "accuracy-dependent influence"
+
+  specification: >
+    Given initial agent states, personas, a signed communication graph, and
+    fitted local transition parameters, the model specifies probabilistic
+    subsequent states and collective trajectories.
+
+  interpretation: >
+    Compact fitted local dynamics can recover structured collective behavior
+    across large populations of interacting language-model agents.
+
+  footer: "Admissible generalizations trail leading specifications"
+
+links:
+  report: "/2608-16578/"
+  arxiv: "https://arxiv.org/abs/2608.16578"
+  html: "https://arxiv.org/html/2608.16578v1"
+  code: "https://github.com/batu-el/physics-of-agents"
+  reading_point: "https://readingpoint.app"
