@@ -1,0 +1,141 @@
+id: "2501-18272"
+
+source:
+  type: "arXiv"
+  identifier: "2501.18272"
+  version: "v1"
+  title: "The Periodic Table and the Group SO(4,4)"
+  url: "https://arxiv.org/abs/2501.18272"
+
+report:
+  title: "The Periodic Table as an SO(4,4) Weight-Space Construction"
+  status: "complete"
+
+engineering_statement:
+  leading_specification: >
+    The paper extends a rank-3 weight-space description to the rank-4
+    Lie algebra so(4,4), providing four weight coordinates. It relates
+    this four-coordinate structure to the quantum numbers (n,l,m,s),
+    with s = ±1/2 indexing two three-dimensional (n,l,m) views.
+
+  construction:
+    - >
+      so(4,4) has rank 4, so a Cartan subalgebra has dimension 4 and
+      admits four commuting Cartan generators.
+    - >
+      A weight is labeled by four simultaneous eigenvalues
+      (lambda_1, lambda_2, lambda_3, lambda_4).
+    - >
+      Fixing one weight coordinate lambda_4 = c selects a
+      three-dimensional slice parameterized by the remaining three
+      coordinates.
+    - >
+      The paper relates the four-coordinate weight labeling to
+      the atomic quantum numbers (n,l,m,s).
+    - >
+      The paper restricts spin to s = -1/2 or s = +1/2, producing
+      two spin-indexed three-dimensional views organized by (n,l,m).
+
+  reported_correspondence:
+    negative_spin:
+      spin: "-1/2"
+      range:
+        start: "Hydrogen (H)"
+        end: "Moscovium (Mc)"
+        atomic_numbers: "1-115"
+      explicit_start_state: "|1,0,0,-1/2>"
+      hypothetical_extension:
+        element: "Uue"
+        atomic_number: 119
+        state: "|8,0,0,-1/2>"
+
+    positive_spin:
+      spin: "+1/2"
+      range:
+        start: "Helium (He)"
+        end: "Oganesson (Og)"
+        atomic_numbers: "2-118"
+      explicit_start_state: "|1,0,0,+1/2>"
+      explicit_end_state: "|7,1,1,+1/2>"
+      hypothetical_extension:
+        element: "Ubn"
+        atomic_number: 120
+        state: "|8,0,0,+1/2>"
+
+  boundary:
+    established_mathematics:
+      - "rank so(4,4) = 4"
+      - "dimensionality of the Cartan subalgebra = 4"
+      - "weights admit four Cartan-coordinate eigenvalues"
+      - "fixing one coordinate defines a three-dimensional slice"
+
+    paper_modeling_choices:
+      - "relating the four-coordinate weight structure to (n,l,m,s)"
+      - "using s = ±1/2 to index two three-dimensional views"
+      - "organizing states within each view by n, l, and m"
+
+    not_established_by_construction_alone:
+      - >
+        That SO(4,4) is an experimentally measured physical symmetry
+        underlying chemical elements.
+      - >
+        That the proposed organization follows uniquely or necessarily
+        from the fundamental dynamics of atoms or nuclei.
+      - >
+        That the construction supersedes or replaces the standard
+        quantum-mechanical description of atomic structure and periodicity.
+      - >
+        That predictions for hypothetical elements or deviations beyond
+        the known periodic system have been experimentally confirmed.
+
+  conclusion: >
+    Mathematical consistency of the SO(4,4) construction and the proposed
+    physical correspondence are distinct claims. The construction provides
+    a four-coordinate weight-space framework; the identification of its
+    spin-indexed three-dimensional views with periodic-system states is the
+    paper's physical interpretation.
+
+figures:
+  - id: "A"
+    title: "From (n,l,m) to (n,l,m,s): Why Rank 4?"
+    role: >
+      Introduces the extension from three quantum-number coordinates to
+      four by adding spin.
+
+  - id: "B"
+    title: "What Rank 4 Means: Four Commuting Cartan Generators"
+    role: >
+      Separates the abstract Cartan generators and weight eigenvalues from
+      the paper's correspondence with (n,l,m,s).
+
+  - id: "C"
+    title: "From 4D Weight Space to Two 3D Views"
+    role: >
+      Shows that fixing one abstract weight coordinate selects a 3D slice,
+      then separately presents the paper's spin-indexed interpretation.
+
+  - id: "D"
+    title: "Chemical Elements in the Two 3D Views"
+    role: >
+      Shows the periodic-system ranges assigned by the paper to the
+      s = -1/2 and s = +1/2 views, including proposed extensions.
+
+  - id: "E"
+    title: "From Mathematics to Interpretation: The Paper's Boundary"
+    role: >
+      Distinguishes mathematical facts, the paper's modeling construction,
+      its physical interpretation, and claims not established by the
+      construction alone.
+
+tags:
+  - "Lie algebra"
+  - "SO(4,4)"
+  - "Cartan subalgebra"
+  - "rank"
+  - "weight space"
+  - "periodic table"
+  - "atomic quantum numbers"
+  - "spin"
+  - "mathematical physics"
+  - "representation"
+  - "model boundary"
