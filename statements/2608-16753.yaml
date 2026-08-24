@@ -1,0 +1,98 @@
+paper:
+  title: "Mathematics in the Age of AI"
+  author: "Terence Tao"
+  source: "arXiv"
+  identifier: "2608.16753"
+  date: "2026-08-17"
+  context: "ICM 2026 public lecture"
+
+engineering_statement:
+  title: "Proof Abundance Makes Mathematical Values Explicit"
+
+  premise:
+    - "Research-level mathematical proof generation may become substantially more abundant through AI systems."
+    - "The paper conditions on increasingly capable AI rather than requiring a prediction of exactly where or how quickly those capabilities arrive."
+    - "Proof abundance changes which constraints become central to mathematical practice."
+
+  reading_point:
+    from: "Can this be proved?"
+    toward:
+      - "What counts as a contribution?"
+      - "What counts as understanding?"
+      - "What should be rewarded?"
+      - "Who or what should be regarded as having done the work?"
+
+  leading_constraints:
+    - "Mathematical truth remains constrained by rigorous foundations and valid reasoning."
+    - "Proof generation and mathematical value are distinct quantities."
+    - "Greater proof supply does not by itself specify contribution, understanding, reward, or attribution."
+    - "Values and practices that operated implicitly under proof scarcity require more explicit specification under potential abundance."
+
+  engineering_objects:
+    - name: "proof"
+      role: "A mathematical artifact whose validity can be checked against formal or accepted mathematical reasoning."
+
+    - name: "contribution"
+      role: "A specification of which mathematical outputs or actions merit recognition as advances."
+
+    - name: "understanding"
+      role: "A specification of what it means for mathematical content to be interpreted, organized, explained, or made usable."
+
+    - name: "reward"
+      role: "A specification of which mathematical activities and outcomes receive attention, prestige, resources, or other recognition."
+
+    - name: "attribution"
+      role: "A specification of who or what is credited with producing mathematical work."
+
+    - name: "AI mathematical system"
+      role: "A system capable of contributing to research-level mathematical tasks, including potentially producing proofs."
+
+  measurable_states:
+    - "volume of generated candidate proofs"
+    - "verification status of proofs"
+    - "human time required for checking and interpretation"
+    - "novelty or usefulness of mathematical contributions"
+    - "explanatory or organizational value"
+    - "credit and attribution assigned to human and AI participants"
+    - "reward structures used by journals, institutions, funders, and mathematical communities"
+
+  transition:
+    scarce_state:
+      label: "proof scarcity"
+      description: "Human mathematical time constrains the supply of research-level proofs."
+
+    potential_state:
+      label: "proof abundance"
+      description: "AI systems may increase the supply of research-level proofs sufficiently that proof production is no longer the dominant scarcity."
+
+    consequence:
+      label: "the reading point moves"
+      description: "Attention shifts from proof production alone toward explicit specifications of mathematical value and practice."
+
+  specification:
+    - "Separate proof validity from the value assigned to a proof."
+    - "Specify what constitutes mathematical understanding."
+    - "Specify which contributions merit reward."
+    - "Specify attribution where mathematical work is distributed across humans and AI systems."
+    - "Make previously unwritten mathematical goals and practices inspectable and discussable."
+
+  admissible_generalizations:
+    - "AI-generated proofs may increase proof supply."
+    - "Increasing proof supply can raise the importance of selection, interpretation, evaluation, and attribution."
+    - "Mathematical communities may need more explicit criteria for evaluating work where production becomes abundant."
+
+  excluded_generalizations:
+    - "Proof abundance means mathematical truth becomes arbitrary."
+    - "AI-generated proof automatically constitutes mathematical understanding."
+    - "A valid proof automatically specifies its importance."
+    - "The paper establishes that research-level proof generation is already abundant."
+    - "The paper specifies a single universal reward or attribution system."
+
+  concise_statement: >
+    Where AI increases the supply of research-level proofs, mathematical
+    validity remains a foundational constraint while contribution,
+    understanding, reward, and attribution become increasingly explicit
+    engineering specifications for mathematical practice.
+
+footer:
+  principle: "Admissible generalizations trail leading specifications."
