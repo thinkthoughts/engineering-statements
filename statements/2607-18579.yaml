@@ -1,0 +1,112 @@
+id: "2607-18579"
+source:
+  type: "arXiv"
+  identifier: "2607.18579"
+  version: "v1"
+  title: "Motional Kerr-Cat States of an Atom in an Optical Tweezer"
+
+engineering_statement:
+  title: "Motional Kerr-Cat States Specify Single-Atom Bosonic Control"
+
+  leading_constraints:
+    - "A single 87Rb atom is confined in an optical tweezer."
+    - "Quantized motion evolves in the tweezer's anharmonic optical potential."
+    - "The intrinsic anharmonicity supplies a motional Kerr nonlinearity."
+    - "Quadratic trap-depth modulation near 2ω preserves motional parity and produces the phase-space bifurcation used to prepare Kerr-cat states."
+    - "Linear trap-position modulation near ω couples opposite-parity motional states."
+    - "The control framework uses the trapping light without requiring an internal spin degree of freedom."
+
+  engineering_objects:
+    - "single neutral atom"
+    - "optical tweezer"
+    - "quantized motional mode"
+    - "anharmonic oscillator"
+    - "Kerr nonlinearity"
+    - "quadratic drive"
+    - "linear drive"
+    - "phase-space bifurcation"
+    - "even and odd Kerr-cat states"
+    - "Fock states"
+    - "parity rotations"
+    - "bosonic-state control"
+
+  measurable_states:
+    cat_size:
+      parameter: "|α|"
+      demonstrated_values:
+        - 0.9
+        - 1.3
+        - 1.8
+        - 2.1
+        - 2.7
+
+    even_cat_fidelity_percent:
+      "|α|=0.9": 95.4
+      "|α|=1.3": 80.5
+      "|α|=1.8": 94.4
+      "|α|=2.1": 70.8
+      "|α|=2.7": 57.3
+
+    parity_control:
+      cat_size: 1.8
+      odd_cat_fidelity_percent: 74.8
+      parity_inversion_fidelity_percent: 79.2
+
+    robustness:
+      estimated_fractional_trap_frequency_noise: "≈ 0.35%"
+      direct_excited_fock_state_fidelity: "≈ 75%"
+      modeled_relative_sensitivity: "cat encoding ≈ 40× less sensitive for the reported parameters"
+
+  specification:
+    statement: >-
+      The intrinsic Kerr nonlinearity of an optical tweezer, combined with
+      quadratic and linear modulation of the trapping light, specifies
+      controllable non-Gaussian motional states of a single neutral atom,
+      including Kerr-cat states, Fock states, superpositions, and
+      parity rotations.
+
+    generalization: >-
+      Spin-independent control of the tweezer potential provides a framework
+      for arbitrary bosonic-state engineering in the atom's motional degree
+      of freedom.
+
+  reading_point:
+    relation: >-
+      The experimental result retains its physical constraints while a
+      reading point provides a location in a separately specified reading
+      space.
+
+    mod30:
+      construction: "(1+1) × 3 × 5 = 30"
+      units:
+        - 1
+        - 7
+        - 11
+        - 13
+        - 17
+        - 19
+        - 23
+        - 29
+      constraint_5: >-
+        5 is one factor in the construction of 30. Divisibility by 5
+        contributes an arithmetic constraint helping specify the eight
+        admissible unit residue classes modulo 30.
+      independence: >-
+        The mod-30 constraints belong to the reading space and are not
+        physical constraints or results of the atom-tweezer experiment.
+
+figures:
+  A:
+    title: "Motional Kerr-Cat State of a Single Atom"
+    focus: "state preparation, phase-space bifurcation, and parity control"
+
+  B:
+    title: "What the Experiment Controls and Achieves"
+    focus: "cat size, fidelity, parity control, and robustness"
+
+  C:
+    title: "How We Read This Result: Physical → Reading Point → Mod-30 Reading Space"
+    focus: "connection between independently constrained specification spaces"
+
+footer:
+  principle: "Admissible generalizations trail leading specifications."
