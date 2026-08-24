@@ -1,0 +1,147 @@
+id: "1612-07189"
+
+title: "5-Connectivity Specifies a K5 Subdivision"
+
+source:
+  type: "arXiv"
+  identifier: "1612.07189"
+  title: "The Kelmans-Seymour conjecture IV: a proof"
+  authors:
+    - "Dawei He"
+    - "Yan Wang"
+    - "Xingxing Yu"
+
+category: "graph-theory"
+
+tags:
+  - "Kelmans-Seymour conjecture"
+  - "5-connectivity"
+  - "nonplanar graphs"
+  - "K5 subdivision"
+  - "topological minor"
+  - "vertex connectivity"
+  - "graph structure"
+  - "mod 30"
+  - "SO(10)"
+  - "reading points"
+
+status: "complete"
+
+leading_constraints:
+  - "G is 5-connected."
+  - "G is nonplanar."
+  - "5-connectivity means that removing any set of fewer than 5 vertices leaves G connected."
+  - "Equivalently, κ(G) ≥ 5."
+
+engineering_objects:
+  - "graph G"
+  - "vertex cut S"
+  - "vertex-connectivity κ(G)"
+  - "subdivision TK5 of K5"
+  - "five branch vertices"
+  - "ten pairwise internally vertex-disjoint paths"
+  - "unit classes modulo 30"
+
+measurable_states:
+  - "|S| < 5"
+  - "G - S remains connected"
+  - "κ(G) ≥ 5"
+  - "five branch vertices in TK5"
+  - "C(5,2) = 10 branch-vertex pairs"
+  - "30 = 2 × 3 × 5"
+  - "φ(30) = 8"
+  - "(Z/30Z)^× = {1, 7, 11, 13, 17, 19, 23, 29}"
+
+statement:
+  theorem: >
+    If G is 5-connected and nonplanar, then G contains a subdivision
+    of K5.
+
+  connectivity: >
+    The numeral 5 first specifies a vertex-connectivity threshold:
+    every set S with |S| ≤ 4 leaves G - S connected.
+
+  conclusion: >
+    The guaranteed K5 subdivision contains five branch vertices,
+    with one internally vertex-disjoint path for each of the
+    C(5,2) = 10 branch-vertex pairs.
+
+  distinction: >
+    The connectivity threshold 5 and the five branch vertices have
+    distinct structural roles. The theorem relates these structures
+    without identifying the two uses of 5.
+
+  cross_domain: >
+    The numeral 5 also occurs in independently specified structures:
+    a physical hand has five digit positions, so(10) has rank 5,
+    and 5 is one prime factor of the modulus 30. Numerical equality
+    does not by itself establish structural correspondence.
+
+  mod30: >
+    For 30 = 2 × 3 × 5, exactly eight residue classes are coprime to 30:
+    {1, 7, 11, 13, 17, 19, 23, 29}. These form the multiplicative
+    group of units modulo 30.
+
+engineering_statement: >
+  Reading points preserve the constraints that specify them.
+  In the Kelmans-Seymour theorem, 5 specifies a lower bound on
+  vertex connectivity; in the guaranteed K5 subdivision, five
+  specifies the number of branch vertices. A hand, rank-5 so(10),
+  and the factor 5 in 30 provide separately defined occurrences
+  of the same numeral. Each occurrence retains its own object,
+  definition, and constraint.
+
+figures:
+  - id: "A"
+    title: "5-Connectivity Specifies a K5 Subdivision"
+    role: "theorem"
+
+  - id: "B"
+    title: "Operational Meaning of 5-Connectivity"
+    role: "connectivity threshold"
+
+  - id: "C"
+    title: "From 5-Connectivity to Five Branch Vertices"
+    role: "distinct roles for 5 within the theorem"
+
+  - id: "D"
+    title: "One Numeral, Separately Specified Structures"
+    role: "cross-domain comparison"
+
+  - id: "E"
+    title: "Expanding the mod 30 Column: The Eight Unit Classes"
+    role: "number-theory derivation"
+
+reading_point:
+  principle: >
+    A repeated numeral establishes numerical equality, not structural
+    correspondence. Each reading point retains the definition and
+    constraint supplied by its domain.
+
+  examples:
+    kelmans_seymour:
+      value: 5
+      specification: "κ(G) ≥ 5"
+
+    K5_subdivision:
+      value: 5
+      specification: "five branch vertices"
+
+    physical_hand:
+      value: 5
+      specification: "five digit positions"
+
+    so10:
+      value: 5
+      specification: "rank(so(10)) = 5"
+
+    mod30:
+      value: 5
+      specification: "one prime factor in 30 = 2 × 3 × 5"
+
+leading_specification: >
+  Five-connectivity together with nonplanarity constrains G strongly
+  enough to guarantee a K5 subdivision, while each occurrence of the
+  numeral 5 remains attached to its independently specified structure.
+
+footer: "Admissible generalizations trail leading specifications."
