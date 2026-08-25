@@ -1,0 +1,103 @@
+engineering-statement:
+  identifier: "2502-08640"
+  source: "arXiv"
+  title: "Utility Engineering: Analyzing and Controlling Emergent Value Systems in AIs"
+
+  leading-constraints:
+    - "Preferences over outcomes acquire utility structure where they satisfy completeness and transitivity."
+    - "Pairwise LLM choices can vary across repeated samples, option orderings, and prompt framings."
+    - "A utility representation is supported where a fitted utility model explains the observed preference relations."
+    - "Utility analysis requires separating the structure of preferences from the particular values assigned to outcomes."
+    - "Utility control requires a specified target preference distribution against which model utilities can be rewritten."
+
+  engineering-objects:
+    - "textual outcomes"
+    - "forced-choice preference queries"
+    - "pairwise preference graph"
+    - "probabilistic preferences"
+    - "coherent preference relation"
+    - "utility function"
+    - "Thurstonian random utility model"
+    - "utility mean"
+    - "utility variance"
+    - "preference cycles"
+    - "linear utility probes"
+    - "expected utility"
+    - "utility maximization"
+    - "utility analysis"
+    - "utility control"
+    - "target preference distribution"
+    - "simulated citizen assembly"
+    - "supervised fine-tuning utility rewriting"
+
+  measurable-states:
+    - "pairwise preference probability P(x ≻ y)"
+    - "preference confidence across repeated and reframed queries"
+    - "completeness of elicited preference relations"
+    - "probability of cyclic preference triads"
+    - "Thurstonian utility-model test accuracy"
+    - "utility parameters μ(o) and σ²(o)"
+    - "linear-probe accuracy for internal utility representations"
+    - "error between U(L) and E[U(o)] for lotteries"
+    - "utility-maximization score in open-ended decisions"
+    - "agreement between model preferences and a target preference distribution"
+    - "test accuracy on simulated citizen-assembly preferences"
+    - "political-bias measurements before and after utility rewriting"
+
+  specification:
+    coherent-preferences:
+      - "Completeness specifies a preference relation over compared outcomes."
+      - "Transitivity specifies x ≻ z where x ≻ y and y ≻ z."
+      - "For coherent preferences, a utility representation satisfies U(x) > U(y) iff x ≻ y."
+
+    preference-elicitation:
+      - "Forced-choice prompts compare pairs of textual outcomes."
+      - "Repeated queries and swapped option orderings supply probabilistic preference estimates."
+      - "Pairwise estimates populate a preference graph over the outcome set."
+
+    utility-model:
+      - "Each outcome o is assigned a stochastic utility U(o) ~ N(μ(o), σ²(o))."
+      - "Pairwise preference probability is modeled from the difference between the corresponding utility distributions."
+      - "Goodness of fit measures how well a global utility structure represents the observed pairwise preferences."
+
+    structural-analysis:
+      - "Preference-cycle frequency measures transitivity violations."
+      - "Expected-utility tests compare U(L) with E[o~L][U(o)] for explicit and implicit lotteries."
+      - "Utility-maximization tests compare selected outcomes with the highest-utility outcomes available to the model."
+
+    utility-control:
+      - "A target entity supplies a preference distribution over paired outcomes."
+      - "The paper constructs one target from a simulated citizen assembly."
+      - "Supervised fine-tuning trains model choice probabilities toward the target preference distribution while an auxiliary language-model preservation loss constrains representation drift."
+
+  engineering-sequence:
+    - "Define a set of textual outcomes."
+    - "Sample informative outcome pairs."
+    - "Elicit repeated forced-choice preferences under multiple framings."
+    - "Aggregate responses into probabilistic pairwise preferences."
+    - "Fit a Thurstonian utility model to the preference graph."
+    - "Measure completeness, transitivity, and utility-model fit."
+    - "Probe model activations for internal utility representations."
+    - "Test expected-utility structure and utility-guided choice."
+    - "Analyze the particular utilities assigned to salient outcomes."
+    - "Specify a target preference distribution for utility control."
+    - "Fine-tune model preferences toward the target distribution."
+    - "Re-measure preference agreement, utility use, and downstream bias."
+
+  measured-evidence:
+    - "The study evaluates pairwise preferences over 500 textual outcomes across 18 open-source and 5 proprietary LLMs."
+    - "Preference-cycle probability decreases sharply with model scale and falls below 1% for the largest evaluated LLMs."
+    - "Thurstonian utility-model accuracy increases with model scale, indicating that a global utility representation increasingly explains pairwise preferences."
+    - "Linear probes predict fitted Thurstonian utilities from model representations with accuracy that improves with scale."
+    - "Mean absolute error between lottery utility U(L) and expected utility E[U(o)] decreases with scale for both explicit and implicit lotteries."
+    - "Utility-maximization scores increase with scale and exceed 60% for the largest evaluated LLMs."
+    - "For Llama-3.1-8B-Instruct, utility rewriting toward a simulated citizen assembly increases test accuracy on assembly preferences from 73.2% to 90.6%."
+    - "After utility rewriting, the reported utility-maximization score is 30.0%, compared with 36.6% before rewriting, while political bias is reduced in the paper's evaluation."
+
+  statement:
+    - "Pairwise preference readings can be tested for whether they admit a coherent utility representation."
+    - "Completeness, transitivity, utility-model fit, expected utility, and utility-guided choice specify measurable structure beyond isolated preference responses."
+    - "Utility Engineering separates analysis of an emergent preference structure from control against a separately specified target preference distribution."
+
+  footer:
+    - "Admissible generalizations trail leading specifications."
