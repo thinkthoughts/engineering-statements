@@ -1,0 +1,91 @@
+paper:
+  title: "Large Deviations for the Bose-Einstein Condensate of the Ideal Gas in the Canonical Ensemble"
+  author: "Andreas Deuchert, Xuanyu Li"
+  source: "arXiv"
+  identifier: "2608.26378"
+  date: "2026-08-26"
+  context: "Version 1 preprint, math-ph"
+
+engineering_statement:
+  title: "Canonical Fixed-N Specifies Two Large-Deviation Rates"
+
+  premise:
+    - "The ideal (non-interacting) Bose gas exhibits Bose-Einstein condensation below a critical temperature."
+    - "Grand canonical calculations are exactly solvable but are known to over-state condensate-number fluctuations relative to fixed particle number."
+    - "The 2026 preprint reports large-deviation estimates for the condensate number in the canonical ensemble, for a general one-particle Hamiltonian, finding the left- and right-tail probabilities decay at different exponential rates."
+
+  reading_point:
+    from: "Does the condensate fraction fluctuate symmetrically around its typical value?"
+    toward:
+      - "Do the low-side and high-side tail probabilities decay at the same exponential rate?"
+      - "Which pair produces the reading of two: the tail rates, or the ensembles being compared?"
+      - "What machinery is required to compute fluctuations with particle number held fixed?"
+
+  leading_constraints:
+    - "The large-deviation estimates are constrained by the fixed-N canonical structure, not the analytically convenient grand canonical shortcut."
+    - "The pair of tail rates (I-, I+) is produced by the large-deviation analysis; the pair of ensembles (canonical, grand canonical) is a modeling choice specified before that analysis begins."
+    - "A specified object produces a numerical reading; the numeral does not, on its own, specify the object."
+    - "A preprint's reported estimate and an independently verified result are different states requiring separate specification."
+
+  engineering_objects:
+    - name: "canonical ensemble"
+      role: "Statistical ensemble with total particle number N held fixed; the setting in which this paper's estimates are derived."
+
+    - name: "grand canonical ensemble"
+      role: "Statistical ensemble with chemical potential fixed and N fluctuating; the analytically convenient but fluctuation-overstating alternative."
+
+    - name: "condensate occupation N0"
+      role: "The number of particles occupying the single-particle ground state; the fluctuating quantity the large-deviation estimates describe."
+
+    - name: "left-tail rate I-"
+      role: "Exponential decay rate for the probability of unusually few condensed particles."
+
+    - name: "right-tail rate I+"
+      role: "Exponential decay rate for the probability of unusually many condensed particles; reported to differ from I-."
+
+  measurable_states:
+    - "condensate fraction relative to total particle number N"
+    - "left-tail probability decay rate I-"
+    - "right-tail probability decay rate I+"
+    - "generality of the one-particle Hamiltonian assumed"
+    - "version number and posting date of the preprint"
+
+  transition:
+    scarce_state:
+      label: "grand canonical shortcut"
+      description: "Exact, analytically convenient computation of condensate statistics, at the cost of overstated fluctuation size."
+
+    potential_state:
+      label: "canonical large-deviation estimate"
+      description: "The 2026 preprint reports large-deviation estimates with particle number held fixed, for a general one-particle Hamiltonian."
+
+    consequence:
+      label: "the reading point moves"
+      description: "Attention shifts from a single symmetric fluctuation estimate toward two distinct tail rates, each requiring its own specification."
+
+  specification:
+    - "Separate the paper's reported estimate from its verification status, per the same posting-date convention used for arXiv:2608.27242."
+    - "Attach the reading of two tail rates to the large-deviation analysis, and the reading of two ensembles to the prior modeling choice, per Figure D of the report."
+    - "Track whether later versions of the preprint narrow or generalize the one-particle Hamiltonian assumption."
+    - "State that a specified object produces a numerical reading, not that the numeral specifies the object."
+
+  admissible_generalizations:
+    - "An asymmetric large-deviation rate is a stronger, more detailed statement than a single symmetric fluctuation estimate."
+    - "The canonical ensemble's fixed-N constraint is the physically relevant setting for condensate fluctuation statistics."
+    - "Multiple independent pairs can each produce a reading of two without being the same structural object."
+
+  excluded_generalizations:
+    - "The preprint's posting establishes the estimate as an independently verified result."
+    - "The pair of tail rates and the pair of ensembles are the same specification because both produce a reading of two."
+    - "The general one-particle Hamiltonian result implies every trap or lattice geometry has been separately checked."
+    - "The report asserts an opinion on whether the paper's argument is correct."
+
+  concise_statement: >
+    Where a 2026 preprint reports asymmetric large-deviation rates for the
+    canonical-ensemble Bose-Einstein condensate, the pair of tail rates
+    produced by that analysis and the pair of ensembles that framed the
+    question beforehand each produce their own reading of two, and remain
+    separate, explicit specifications rather than one shared numeral.
+
+footer:
+  principle: "Admissible generalizations trail leading specifications."
