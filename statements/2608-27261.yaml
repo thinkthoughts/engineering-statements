@@ -1,0 +1,92 @@
+paper:
+  title: "Strategy-Proof and Minimally Wasteful Random Assignment"
+  author: "Christian Basteck, Lars Ehlers"
+  source: "arXiv"
+  identifier: "2608.27261"
+  date: "2026-08-27"
+  context: "Version 1 preprint, econ.TH"
+
+engineering_statement:
+  title: "Temporal Frame Specifies Two Readings of Wastefulness"
+
+  premise:
+    - "Random assignment mechanisms allocate indivisible objects to agents with strict preferences and outside options, using a lottery over deterministic assignments."
+    - "The paper studies two temporal frames for the word 'wasteful': an ex-post axiom on a single realized assignment, and an ex-ante measure computed across the mechanism's whole lottery."
+    - "The 2026 preprint reports a tight bound of 1/6 on the ex-ante measure for mechanisms satisfying equal treatment of almost equals, strategy-proofness, and the ex-post axiom, and reports that random serial dictatorship (RSD) attains it."
+
+  reading_point:
+    from: "Is a strategy-proof, equal-treatment mechanism wasteful?"
+    toward:
+      - "Which reading of 'wasteful' is being asked about: a condition on one realized outcome, or a probability across the whole lottery?"
+      - "How much ex-ante waste does the ex-post axiom still leave unavoidable, in the worst case?"
+      - "Does RSD's known ordinal inefficiency correspond to a specific, tight numeric bound?"
+
+  leading_constraints:
+    - "Ex-post weak non-wastefulness is an axiom assumed of the mechanism, defined on a single realized assignment in its support; it is not itself the quantity the paper bounds."
+    - "Ex-ante q-agent-object-waste is a probability computed across the mechanism's entire lottery; this is the quantity proved to satisfy q >= 1/6 in the worst case."
+    - "A specified object produces a numerical or semantic reading; the reading does not, on its own, specify the object."
+    - "A preprint's reported bound and an independently verified result are different states requiring separate specification."
+
+  engineering_objects:
+    - name: "ex-post weak non-wastefulness"
+      role: "Assumed axiom: no assignment in the mechanism's support leaves both an agent and one of that agent's acceptable objects unassigned."
+
+    - name: "ex-ante q-agent-object-waste"
+      role: "Bounded quantity: the probability, across the whole lottery, that some agent and one of their acceptable objects are jointly unassigned."
+
+    - name: "equal treatment of almost equals"
+      role: "Assumed axiom: agents with identical rankings over mutually acceptable objects receive the same probability shares for those objects."
+
+    - name: "random serial dictatorship (RSD)"
+      role: "Mechanism reported to attain the minimal ex-ante waste bound of 1/6 within the paper's specified axiom class, once there are at least four agents or three objects."
+
+    - name: "random deferred acceptance (RDA)"
+      role: "Mechanism the paper reports can be strictly less object-wasteful than RSD, at the cost of violating equal treatment of almost equals."
+
+  measurable_states:
+    - "ex-ante probability q that some agent-object pair is jointly unassigned"
+    - "ex-post condition satisfied or violated by a given realized assignment"
+    - "worst-case bound on q across preference profiles"
+    - "number of agents or objects required for the bound to apply (at least four agents or three objects)"
+    - "version number and posting date of the preprint"
+
+  transition:
+    scarce_state:
+      label: "qualitative inefficiency complaint"
+      description: "RSD has long been known to be ordinally inefficient, without a tight quantitative figure attached to that complaint."
+
+    potential_state:
+      label: "tight quantitative bound"
+      description: "The 2026 preprint reports that any mechanism satisfying the paper's three axioms must have ex-ante waste of at least 1/6, and that RSD attains exactly that bound."
+
+    consequence:
+      label: "the reading point moves"
+      description: "Attention shifts from a single word, 'wasteful,' toward two separately specified readings: an axiom the mechanism must satisfy, and a probability the theorem measures and bounds."
+
+  specification:
+    - "Separate the ex-post axiom (assumed of the mechanism) from the ex-ante quantity (bounded by the theorem), per Figure D of the report."
+    - "Attach the proved 1/6 bound specifically to the ex-ante reading, not the ex-post reading."
+    - "Scope RSD's optimality to the paper's specified class of equal-treatment, strategy-proof, ex-post non-wasteful mechanisms, not beyond it."
+    - "Track later versions of the preprint for any change to the four-agents-or-three-objects condition, or to the related 1/4 object-wastefulness bound."
+
+  admissible_generalizations:
+    - "A tight numeric bound is a stronger statement than a qualitative inefficiency complaint about the same mechanism."
+    - "The same word can specify an axiom in one part of an argument and a bounded quantity in another part, without those being the same specification."
+    - "Giving up one axiom (equal treatment of almost equals) can allow a different mechanism (RDA) to do better on a related waste measure."
+
+  excluded_generalizations:
+    - "The ex-post axiom and the ex-ante q-agent-object-waste measure are the same specification because both are called 'wasteful.'"
+    - "RSD's attainment of the 1/6 bound holds outside the paper's specified axiom class or agent/object thresholds."
+    - "The preprint's posting establishes the bound as an independently verified result."
+    - "The report asserts an opinion on whether the paper's argument is correct."
+
+  concise_statement: >
+    Where a 2026 preprint reports that strategy-proof, equal-treatment random
+    assignment mechanisms satisfying an ex-post non-wastefulness axiom must
+    still have ex-ante agent-object waste of at least 1/6, with random serial
+    dictatorship attaining that bound, the axiom and the bounded quantity
+    remain separate, explicit specifications of "wasteful" rather than one
+    shared reading.
+
+footer:
+  principle: "Admissible generalizations trail leading specifications."
