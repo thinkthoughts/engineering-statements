@@ -1,0 +1,88 @@
+paper:
+  title: "Accelerating Scientific Research with Gemini in the Real-World"
+  author: "Samuel Schmidgall, Xiaokai Zhu, Marian Shaw, Lin Yang, Valentin Lievin, Jingyun Yang, Yuchen Zhuang, Tim Strother, Alex Bijamov, Min Woo Sun, Anil Palepu, Justin Chen, David Steiner, Jacqueline Shreibati, Wei-Hung Weng, Yilin Zhao, Xingjian Hu, Nicholas Zahn, Sadhya Garg, Julia Kirby, Yuxiang Gan, Jiaoli Li, Divy Thakkar, Shekoofeh Azizi, David Racz, Juraj Gottweis, Vivek Natarajan, Chenglin Wu, Tal Danino, Keran Rong, Haozhe Wang, Benoit Schillings, Yong Cheng, Quoc V. Le, Tao Tu"
+  source: "arXiv"
+  identifier: "2608.26701"
+  date: "2026-08-27"
+  context: "Version 1 preprint, cs.AI, Google DeepMind"
+
+engineering_statement:
+  title: "Domain Specifies Three Readings of Evidence"
+
+  premise:
+    - "Co-Scientist is a Gemini-based multi-agent system originally aimed at generating scientific hypotheses in silico."
+    - "The 2026 preprint reports extending Co-Scientist into an execution-grounded configuration that interfaces with laboratory hardware and computational workflows across materials science, biology, and computer science."
+    - "The paper's abstract describes this overall exercise as a 'real-world validation,' but each domain result is checked against a differently specified kind of evidence."
+
+  reading_point:
+    from: "Was Co-Scientist's output validated?"
+    toward:
+      - "What object was tested, by what procedure, producing what evidence, in each domain?"
+      - "Does the paper itself call each domain result 'validated,' or only the overall exercise?"
+      - "Are the three domain results ranked against one another, or only differently specified?"
+
+  leading_constraints:
+    - "The word 'validation' appears in the paper's abstract describing the overall exercise, not as a per-domain label applied individually to each result."
+    - "Each domain runs its own object through its own test to its own evidence: a structural comparison in materials science, a wet-lab match in biology, a benchmark-plus-safety evaluation in computer science."
+    - "E(material), E(phenotype), and E(architecture) are distinct in specification; the report does not rank them on a shared strength scale the paper itself doesn't establish."
+    - "A preprint from a system's own developers and an independently replicated result are different states requiring separate specification."
+
+  engineering_objects:
+    - name: "materials-science structural test"
+      role: "Comparison of a CVD-grown 2D material against the Ti3C2Tx MXene lattice; authors state atomic structure is not yet confirmed."
+
+    - name: "biology wet-lab comparison"
+      role: "Comparison of predicted E. coli swarming phenotypes against unpublished wet-lab morphological measurements."
+
+    - name: "computer-science benchmark and blinded evaluation"
+      role: "Comparison of an autonomously discovered inference-time scaling architecture against six frontier models on HealthBench, plus a blinded physician safety evaluation."
+
+    - name: "double-blind reliability study"
+      role: "A separate measurement track: 30 domain experts, 450 reviews, assessing hallucination, plagiarism, and research-safety in Co-Scientist's own manuscript generation, not a scientific hypothesis."
+
+  measurable_states:
+    - "structural similarity and atomic-confirmation status of the materials-science result"
+    - "quantitative match between predicted and measured biology phenotypes"
+    - "benchmark rank and blinded safety score of the computer-science architecture"
+    - "hallucination rate, plagiarism rate, and safety score from the reliability study"
+    - "version number and posting date of the preprint"
+
+  transition:
+    scarce_state:
+      label: "in silico hypothesis generation"
+      description: "Prior Co-Scientist configuration generated candidate hypotheses without a physical execution loop."
+
+    potential_state:
+      label: "execution-grounded validation exercise"
+      description: "The 2026 preprint reports Co-Scientist interfacing with real laboratory and computational workflows across three domains, each producing its own kind of evidence."
+
+    consequence:
+      label: "the reading point moves"
+      description: "Attention shifts from one shared word, 'validation,' toward three separately specified evidentiary paths that the word gathers without erasing."
+
+  specification:
+    - "Attach each domain's evidence to its own object and test, per Figure D of the report (object to test to evidence to shared reading)."
+    - "State plainly that only the paper's title-level word is shared across domains, not a uniform per-domain claim of 'validated.'"
+    - "Avoid ranking E(material), E(phenotype), and E(architecture) against one another; note differences in specification rather than strength."
+    - "Treat this as a preprint from the system's own developers, pending independent replication."
+
+  admissible_generalizations:
+    - "A shared reading, such as 'evidence' or 'validation,' can be produced by objects, tests, and measurement procedures that remain fully distinct from one another."
+    - "Separating what a paper's abstract claims in aggregate from what it establishes per sub-claim is a useful check before citing any individual result."
+    - "The Reading Point framework applies to shared readings that are not numerals: words, evidentiary categories, and classifications can all play this role."
+
+  excluded_generalizations:
+    - "The source paper individually labels each of the three domain results 'validated.'"
+    - "The materials-science, biology, and computer-science results are ranked from weakest to strongest evidence."
+    - "The preprint's posting establishes independent replication of any of the three domain results."
+    - "The report asserts an opinion on whether the paper's claims are correct."
+
+  concise_statement: >
+    Where a 2026 preprint reports real-world results from Co-Scientist across
+    materials science, biology, and computer science, the paper's own word
+    "validation" names the exercise as a whole, while each domain's evidence
+    is produced by its own object, test, and measurement procedure, remaining
+    a separate, explicit specification rather than one shared, ranked claim.
+
+footer:
+  principle: "Admissible generalizations trail leading specifications."
