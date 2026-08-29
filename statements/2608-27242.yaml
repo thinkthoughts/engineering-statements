@@ -1,0 +1,92 @@
+paper:
+  title: "A proof of the Arnold-Givental conjecture"
+  author: "Shaoyun Bai, Egor Shelukhin, Yi Wang, Guangbo Xu"
+  source: "arXiv"
+  identifier: "2608.27242"
+  date: "2026-08-24"
+  context: "Version 1 preprint, math.SG"
+
+engineering_statement:
+  title: "Antisymplectic Involution Specifies a Mod-2 Intersection Bound"
+
+  premise:
+    - "The Arnold-Givental conjecture bounds Lagrangian intersection numbers by mod-2 Betti numbers, for Lagrangians fixed by an antisymplectic involution."
+    - "Prior proofs established the bound only under added hypotheses: monotonicity, semipositivity, or specific homogeneous spaces."
+    - "The 2026 preprint reports removing those hypotheses to establish the bound in general."
+
+  reading_point:
+    from: "Does an intersection bound hold under this specific hypothesis?"
+    toward:
+      - "Does the bound hold for a general closed symplectic manifold?"
+      - "Which structural role does each use of 2 in the argument specify?"
+      - "What transversality and compactness machinery is required to remove the hypothesis?"
+
+  leading_constraints:
+    - "The Arnold-Givental bound is constrained by rigorous Floer-theoretic and Kuranishi-chart construction."
+    - "The order of the involution, the coefficient field, and the pair of intersected Lagrangians are distinct specifications that each happen to involve 2."
+    - "Verification status and mathematical validity are distinct quantities."
+    - "A preprint's claimed proof and an established, reviewed theorem are different states requiring separate specification."
+
+  engineering_objects:
+    - name: "antisymplectic involution Φ"
+      role: "An order-2 diffeomorphism of the symplectic manifold that reverses the sign of the symplectic form; its fixed-point set specifies the Lagrangian W."
+
+    - name: "Lagrangian W"
+      role: "A submanifold fixed by Φ, whose mod-2 Betti numbers specify the lower bound on intersection points."
+
+    - name: "Hamiltonian isotopy φ¹"
+      role: "A map producing the second Lagrangian φ¹(W), whose intersection with W is counted."
+
+    - name: "ℤ/2 coefficient field"
+      role: "The field used to compute Betti numbers dim Hᵢ(W; ℤ/2) entering the bound."
+
+    - name: "moduli-space regularization machinery"
+      role: "Kuranishi charts and related tools used to establish transversality and compactness for general (non-monotone, non-semipositive) V and W."
+
+  measurable_states:
+    - "number of intersection points #(W ∩ φ¹(W))"
+    - "sum of mod-2 Betti numbers of W"
+    - "hypotheses required on V and W (monotone, semipositive, symmetric space, general)"
+    - "peer-review / verification status of the argument"
+    - "version number and posting date of the preprint"
+
+  transition:
+    scarce_state:
+      label: "hypothesis-restricted proof"
+      description: "Each earlier result established the bound only under one added structural hypothesis on V or W."
+
+    potential_state:
+      label: "general proof"
+      description: "The 2026 preprint reports establishing the bound for a general closed symplectic manifold and Lagrangian, without those added hypotheses."
+
+    consequence:
+      label: "the reading point moves"
+      description: "Attention shifts from closing individual restricted cases toward verifying a single general argument and specifying its review status."
+
+  specification:
+    - "Separate the paper's claimed proof from its verification status."
+    - "Attach each occurrence of 2 in the argument (involution order, coefficient field, pair of Lagrangians) to its own specification, per Figure D of the report."
+    - "Track whether later versions of the preprint narrow or qualify the hypotheses on V and W."
+    - "Record the posting date and version number as the explicit marker of review status, rather than asserting or denying peer review in prose."
+
+  admissible_generalizations:
+    - "A general proof, if verified, extends the mod-2 Betti-number bound beyond the monotone and semipositive cases."
+    - "The techniques used to remove hypotheses here parallel those used in the integral Arnold conjecture program."
+    - "Multiple independent uses of the numeral 2 can appear in one result without being the same structural object."
+
+  excluded_generalizations:
+    - "The preprint's posting establishes the conjecture as a reviewed theorem."
+    - "The order-2 involution, the ℤ/2 coefficients, and the pair of Lagrangians are the same mathematical object because they share the numeral 2."
+    - "Removing one set of hypotheses implies the argument generalizes to every symplectic setting without further conditions."
+    - "The report asserts an opinion on whether the argument is correct."
+
+  concise_statement: >
+    Where a 2026 preprint reports removing the monotonicity and semipositivity
+    hypotheses from the Arnold-Givental bound, the mod-2 Betti-number
+    inequality remains constrained by rigorous Floer-theoretic construction,
+    while the four independent uses of 2 inside the argument, and the
+    argument's own verification status, remain separate, explicit
+    specifications.
+
+footer:
+  principle: "Admissible generalizations trail leading specifications."
