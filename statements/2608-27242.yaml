@@ -23,7 +23,7 @@ engineering_statement:
 
   leading_constraints:
     - "The Arnold-Givental bound is constrained by rigorous Floer-theoretic and Kuranishi-chart construction."
-    - "The order of the involution, the coefficient field, and the pair of intersected Lagrangians are distinct specifications that each happen to involve 2."
+    - "The order of the involution and the coefficient field are explicit uses of 2 written into the theorem's own notation; the pairing of the two intersected Lagrangians is a count of objects, not a numeral inside the mathematics, and is kept as a separate specification."
     - "Verification status and mathematical validity are distinct quantities."
     - "A preprint's claimed proof and an established, reviewed theorem are different states requiring separate specification."
 
@@ -76,7 +76,7 @@ engineering_statement:
 
   excluded_generalizations:
     - "The preprint's posting establishes the conjecture as a reviewed theorem."
-    - "The order-2 involution, the ℤ/2 coefficients, and the pair of Lagrangians are the same mathematical object because they share the numeral 2."
+    - "The order-2 involution, the ℤ/2 coefficients, and the pair of Lagrangians (W, φ¹(W)) are the same kind of specification because they can each be read as 'two.'"
     - "Removing one set of hypotheses implies the argument generalizes to every symplectic setting without further conditions."
     - "The report asserts an opinion on whether the argument is correct."
 
