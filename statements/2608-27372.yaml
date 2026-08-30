@@ -1,0 +1,66 @@
+id: 2608-27372
+title: Universality and Sharp Thresholds for Ellipsoid Fitting
+
+source:
+  paper: https://arxiv.org/abs/2608.27372
+  lab_report: https://labreports.app/2608-27372/
+  repo: https://github.com/thinkthoughts/engineering-statements
+
+objective: >
+  Specify the ellipsoid-fitting problem from its random-vector input
+  through its constraint-density scaling, sharp SAT-UNSAT phase boundary,
+  distribution-dependent threshold, and computational readings.
+
+contexts:
+  - ellipsoid fitting
+  - high-dimensional probability
+  - random constraint-satisfaction problems
+  - convex geometry
+  - semidefinite programming
+  - asymptotic phase transitions
+  - computational readings
+
+constraints:
+  - Random vectors x_1,...,x_n lie in R^d.
+  - Seek a positive-semidefinite matrix R such that x_i^T R x_i = 1 for every i.
+  - Constraint density is specified by alpha = n / d^2.
+  - The asymptotic regime has n,d increasing with n / d^2 approaching alpha.
+  - A sharp SAT-UNSAT phase boundary occurs at alpha_star(kappa).
+  - Below alpha_star(kappa), ellipsoid fitting is feasible with high probability.
+  - Above alpha_star(kappa), ellipsoid fitting is infeasible with high probability.
+  - The coordinate distribution enters the phase boundary through kappa = E[x_ij^4].
+  - alpha_star(kappa) is nonincreasing in kappa.
+  - For Gaussian coordinates, kappa = 3 and alpha_star(3) = 1/4.
+  - The Gaussian phase boundary therefore occurs asymptotically near n = d^2 / 4.
+  - Computational readings at a chosen dimension are distinguished from the asymptotic specification.
+
+evidence:
+  - arXiv:2608.27372
+  - sharp SAT-UNSAT threshold theorem
+  - distributional universality through kappa = E[x_ij^4]
+  - Gaussian threshold alpha_star(3) = 1/4
+  - numerical ellipsoid-fitting experiments at d = 40
+  - Figure A: ellipsoid-fitting object and shared quadratic specification
+  - Figure B: constraint density alpha = n / d^2
+  - Figure C: sharp SAT-UNSAT phase boundary
+  - Figure D: coordinate distribution specifies the ellipsoid-fitting phase boundary
+  - Figure E: computational readings track the phase boundary
+
+outputs:
+  - engineering statement YAML
+  - labreports.app report
+  - Figure A — Ellipsoid Fitting
+  - Figure B — Constraint Density Scales as n/d^2
+  - Figure C — A Sharp Boundary Separates Ellipsoid Fitting
+  - Figure D — Coordinate Distribution Specifies the Ellipsoid-Fitting Phase Boundary
+  - Figure E — Computational Readings Track the Phase Boundary
+  - reproducible SDP experiment
+
+next_steps:
+  - reproduce the ellipsoid-fitting SDP at d = 40
+  - vary n to generate computational SAT-UNSAT readings
+  - compare the observed transition with alpha_star(kappa)
+  - reproduce the Gaussian reading kappa = 3 and alpha_star(3) = 1/4
+  - test coordinate distributions with different values of kappa
+  - distinguish theoretical specification from computational reading in generated artifacts
+  - preserve the paper's assumptions when extending the experiment
