@@ -1,0 +1,75 @@
+id: 2606-17393
+title: Orthogonality Specifies 2025 E8 Bases
+
+source:
+  paper: https://arxiv.org/abs/2606.17393
+  lab_report: https://labreports.app/2606-17393/
+  repo: https://github.com/thinkthoughts/engineering-statements
+
+objective: >
+  Specify how orthogonality in the E8 positive root system selects 2025
+  admissible bases, how quasiparabolic order and class sums organize those
+  bases, and how perfect matchings and labelled Fano planes provide concrete
+  combinatorial constructions and level readings.
+
+contexts:
+  - algebraic Lie theory
+  - E8 root system
+  - orthogonal roots
+  - Weyl groups
+  - quasiparabolic sets
+  - Bruhat-like partial orders
+  - generalized Rothe diagrams
+  - perfect matchings
+  - labelled Fano planes
+  - distributive lattices
+  - combinatorial statistics
+  - rank generating functions
+  - mathematical reading spaces
+
+constraints:
+  - The E8 root system Phi has 240 roots, partitioned into 120 positive and 120 negative roots.
+  - Omega consists of 8-element subsets of positive roots whose elements are pairwise orthogonal.
+  - The elements of Omega are orthogonal bases of the ambient 8-dimensional space.
+  - Omega contains exactly 2025 orthogonal bases.
+  - Omega carries a graded Bruhat-like quasiparabolic partial order <=_Q.
+  - Each basis R has a generalized Rothe diagram D(R).
+  - The basis level is rho(R) = |D(R)|.
+  - The level generating function is P_Omega(q) = [3]_q [5]_q [9]_q [15]_q.
+  - The class-sum map is sigma(R) = sum_{alpha in R} alpha.
+  - Equal class sums define exactly 50 sigma-classes.
+  - Each sigma-class is an interval in the quasiparabolic order.
+  - The 50 class sums form a distributive lattice Sigma.
+  - The matching model Omega_M contains 945 bases constructed bijectively from perfect matchings of {0,1,...,9}.
+  - The Fano model Omega_F contains 1080 bases constructed bijectively from labelled Fano planes.
+  - Omega is the disjoint union Omega_M union Omega_F, with 945 + 1080 = 2025.
+  - Omega_M is the union of 42 sigma-classes and Omega_F is the union of 8 sigma-classes.
+  - For a perfect matching M, rho(R(M)) = h(M) = c(M) + 2 n(M).
+  - The matching height also equals the matching weight and the cardinality of the associated involution Rothe diagram.
+  - For a labelled Fano plane F, h(F) = |D(F)| counts Fano inversions.
+  - For the Fano model, rho(R(F)) = h(F) + 24 - sum_{z in L^c(F)} z.
+  - Each sigma-class is indexed by a constrained 4-tuple d = (d1,d2,d3,d4).
+  - For gamma = Psi(d), the class level generating function is q^|d| product_{i=1}^4 [d_i + 1]_q.
+  - Different combinatorial constructions can specify elements of the same admissible mathematical space while using different formulas to compute the same type of basis-level reading.
+  - Equal cardinality alone does not establish equivalent mathematical structure; a structure-preserving map must establish a structural connection.
+
+outputs:
+  - engineering statement YAML
+  - companion notebook
+  - reproducible combinatorial readings
+  - matching-model level calculations
+  - Fano-model level calculations
+  - class-sum and sigma-class readings
+  - mathematical-basis specification checks
+
+next_steps:
+  - encode the 2025-basis specification and verify 945 + 1080 = 2025
+  - implement perfect matchings of the 10-set and reproduce the matching-model count
+  - compute crossing and nesting statistics and verify rho(R(M)) = c(M) + 2 n(M)
+  - encode labelled Fano planes and reproduce the 1080-element Fano model
+  - compute Fano inversion counts and the omitted-label correction
+  - reproduce selected basis levels from both combinatorial models
+  - implement the class-sum map sigma and recover the 50 sigma-classes
+  - verify the 42 matching-class and 8 Fano-class partition
+  - evaluate the class generating function from constrained 4-tuples d
+  - distinguish cardinality matches from established structure-preserving correspondences
