@@ -1,0 +1,84 @@
+id: "1902-05494"
+
+source:
+  type: "arxiv"
+  identifier: "1902.05494"
+  title: "Rogue Waves as Self-Similar Solutions on a Background: A Direct Calculation"
+  authors:
+    - "C. B. Ward"
+    - "P. G. Kevrekidis"
+
+engineering_statement:
+  object: "Peregrine rogue-wave solution"
+
+  statement: >
+    Self-similar specification provides a stationary representation
+    of the evolving Peregrine waveform for mathematical analysis.
+
+  leading_constraints:
+    - "focusing nonlinear Schrödinger dynamics"
+    - "nonzero background"
+    - "localized extreme waveform"
+    - "self-similar coordinate and field transformation"
+
+  measurable_states:
+    - "wave amplitude"
+    - "space-time localization"
+    - "stationary profile in the self-similar frame"
+
+  specification:
+    input:
+      - "evolving waveform u(x,t)"
+      - "physical coordinates (x,t)"
+
+    operation:
+      - "specify self-similar coordinates"
+      - "rescale the waveform"
+
+    output:
+      - "stationary representation in the self-similar frame"
+      - "profile available for further analysis"
+
+mathematical_basis:
+  object: "waveform"
+
+  constraints:
+    - "coordinate specification"
+    - "scaling specification"
+
+  representation:
+    physical: "u(x,t)"
+    specified: "U(xi)"
+
+  reading_point: "stationary self-similar representation"
+
+  statement: >
+    Mathematical specification determines the representation used
+    to analyze the object.
+
+figures:
+  A:
+    title: "Self-Similar Coordinates Specify the Peregrine Waveform"
+    role: "self-similar representation"
+
+  B:
+    title: "Periodic States Specify the Peregrine Stability Limit"
+    role: "periodic-family limit and stability information"
+
+  C:
+    title: "Peregrine Structure Extends from 1+1 to 2+1 Dimensions"
+    role: "dimensional specification"
+
+  D:
+    title: "Peregrine Patterns Appear Across Distinct Physical Systems"
+    role: "continuum and discrete physical realizations"
+
+  E:
+    title: "A Co-Exploding Frame Specifies a Stationary Collapse Profile"
+    role: "collapse and scale specification"
+
+  F:
+    title: "Mathematical Specification Determines the Representation"
+    role: "mathematical-basis synthesis"
+
+status: "reading-point specified"
