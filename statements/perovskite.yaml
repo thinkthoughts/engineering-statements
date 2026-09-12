@@ -1,0 +1,166 @@
+id: "lean-perovskite"
+
+title: "Coherence and Relaxation Specify Photon Indistinguishability"
+
+source:
+  type: "seminar + supporting literature"
+  identifier: "CU-2026-09-11"
+  title: "Interface-regulated Perovskite Nanocrystals for Quantum Light Emissions"
+  authors:
+    - "Yitong Dong"
+
+category: "quantum-optics"
+
+tags:
+  - "perovskite nanocrystals"
+  - "quantum light emission"
+  - "photon indistinguishability"
+  - "exciton coherence"
+  - "radiative lifetime"
+  - "stochastic relaxation"
+  - "timing jitter"
+  - "Hong-Ou-Mandel visibility"
+  - "interface regulation"
+  - "Lean"
+  - "formalization"
+  - "reading points"
+
+status: "complete"
+
+leading_constraints:
+  - "T1 > 0 is the radiative recombination time."
+  - "T2 > 0 is the coherence/dephasing time."
+  - "The coherence specification constrains T2 ≤ 2 T1."
+  - "The transform limit is specified by T2 = 2 T1."
+  - "Γ_relaxation > 0 and Γ_X > 0 specify positive relaxation rates."
+  - "Stochastic-relaxation timing jitter limits Hong-Ou-Mandel visibility."
+  - "The combined indistinguishability model is treated as a stated physical model rather than as a consequence derived from the perovskite measurements."
+
+engineering_objects:
+  - "perovskite nanocrystal emitter"
+  - "nanocrystal/environment interface"
+  - "radiative recombination time T1"
+  - "coherence/dephasing time T2"
+  - "coherence ratio C"
+  - "relaxation rate Γ_relaxation"
+  - "exciton rate Γ_X"
+  - "relaxation limit L"
+  - "Hong-Ou-Mandel visibility"
+  - "combined indistinguishability I"
+  - "Lean specification"
+
+measurable_states:
+  - "T1 > 0"
+  - "T2 > 0"
+  - "T2 ≤ 2 T1"
+  - "C = T2 / (2 T1)"
+  - "0 < C ≤ 1"
+  - "L = Γ_relaxation / (Γ_relaxation + Γ_X)"
+  - "0 < L < 1"
+  - "0 ≤ V_HOM ≤ L"
+  - "I = C L"
+  - "0 < I < 1"
+  - "I < C"
+  - "I ≤ L"
+
+statement:
+  coherence: >
+    For positive radiative recombination time T1 and coherence/dephasing
+    time T2 satisfying T2 ≤ 2 T1, the normalized coherence quantity
+    C = T2 / (2 T1) satisfies 0 < C ≤ 1. The transform limit
+    T2 = 2 T1 is equivalent to C = 1.
+
+  relaxation: >
+    For positive Γ_relaxation and Γ_X, the stochastic-relaxation
+    quantity L = Γ_relaxation / (Γ_relaxation + Γ_X) satisfies
+    0 < L < 1. Increasing Γ_relaxation with Γ_X fixed cannot decrease L,
+    while increasing Γ_X with Γ_relaxation fixed cannot increase L.
+
+  combined: >
+    A source-supported quantum-dot model combines coherence/dephasing
+    and stochastic-relaxation timing-jitter effects multiplicatively:
+    I = C L. Under the stated positivity and coherence constraints,
+    Lean verifies 0 < I < 1, I < C, and I ≤ L.
+
+  engineering_consequence: >
+    Within the stated combined model, improving coherence alone leaves
+    photon indistinguishability constrained by stochastic-relaxation
+    timing jitter, while improving the relaxation factor alone leaves
+    photon indistinguishability constrained by coherence.
+
+  distinction: >
+    The coherence specification C, the stochastic-relaxation
+    specification L, measured HOM visibility, and the combined model I
+    remain separately specified objects. The combined model is not
+    presented as a relation derived from Dong's perovskite measurements.
+
+  formalization: >
+    The lean-perovskite repository encodes these specifications in Lean
+    and verifies their mathematical consequences with a successful
+    lake build under the pinned Lean and mathlib versions.
+
+engineering_statement: >
+  Photon indistinguishability is jointly constrained by coherence and
+  stochastic-relaxation timing jitter. The coherence quantity
+  C = T2 / (2 T1) and relaxation quantity
+  L = Γ_relaxation / (Γ_relaxation + Γ_X) retain distinct measurable
+  specifications; under the stated multiplicative model I = C L,
+  Lean verifies that the combined indistinguishability remains bounded
+  by both component constraints.
+
+figures:
+  - id: "A"
+    title: "Interface-Regulated Perovskite Quantum Light Emission"
+    role: "seminar context"
+
+  - id: "B"
+    title: "Coherence Constraint"
+    role: "T1, T2, and transform limit"
+
+  - id: "C"
+    title: "Stochastic-Relaxation Constraint"
+    role: "timing-jitter limit on HOM visibility"
+
+  - id: "D"
+    title: "Combined Indistinguishability Model"
+    role: "C × L specification"
+
+  - id: "E"
+    title: "Lean-Verified Component Bounds"
+    role: "formal verification"
+
+reading_point:
+  principle: >
+    Measured quantities, stated physical models, and Lean-verified
+    consequences remain distinct reading points. Combining specifications
+    requires an explicit model; numerical or conceptual proximity alone
+    does not identify them.
+
+  examples:
+    coherence:
+      value: "C"
+      specification: "C = T2 / (2 T1), with 0 < C ≤ 1"
+
+    transform_limit:
+      value: "C = 1"
+      specification: "T2 = 2 T1"
+
+    relaxation:
+      value: "L"
+      specification: "L = Γ_relaxation / (Γ_relaxation + Γ_X), with 0 < L < 1"
+
+    hom_visibility:
+      value: "V_HOM"
+      specification: "0 ≤ V_HOM ≤ L under the stated relaxation specification"
+
+    combined:
+      value: "I"
+      specification: "I = C L under the stated combined model"
+
+leading_specification: >
+  Exciton coherence and stochastic-relaxation timing jitter specify
+  distinct constraints on photon indistinguishability. Under the
+  source-supported multiplicative model, their combined effect is
+  I = C L, and Lean verifies the resulting component bounds.
+
+footer: "Admissible generalizations trail leading specifications."
