@@ -1,0 +1,100 @@
+id: gioia
+title: A Formalization of the W-State Locality Obstruction
+
+source:
+  authors:
+    - Lei Gioia
+    - Sanjay Moudgalya
+    - Olexei I. Motrunich
+  title: "Distinct Types of Parent Hamiltonians for Quantum States: Insights from the W State as a Quantum Many-Body Scar"
+  arxiv: "2510.24713v3"
+  reading_points:
+    - "Section III.B"
+    - "Definition 1"
+    - "Equations (16)-(17)"
+    - "Table I"
+    - "Section III.C, Corollary 1"
+    - "Appendix C"
+
+reading_point:
+  statement: >
+    If the W state is an eigenstate of an extensive-local operator,
+    then the vacuum state is also an eigenstate.
+
+leading_specifications:
+  - finite one-dimensional periodic qubit chain
+  - finite interaction range R
+  - W-state eigenstate relation
+  - normal-ordered hard-core-boson operator representation
+  - "N > 3R for the Appendix C witness geometry"
+  - finite creator support
+  - duplicate-free creator lists
+  - mixed-support coverage
+  - aggregate representation matching
+
+excluded_assumptions:
+  - Hermiticity
+
+formal_derivation:
+  single_creation:
+    sector: "n = 1, m = 0"
+    result: "single-creation coefficient = 0"
+
+  higher_creation:
+    sector: "n >= 2, m = 0"
+    objects:
+      - cyclic finite-range geometry
+      - HigherCreationWitnessData
+      - support-fiber aggregate coefficient
+    result: "aggregate coefficient = 0 for each represented creator support"
+
+  representation_bridge:
+    objects:
+      - HigherCreationMixedSupportCovered
+      - PureCreationAggregateRepresentationMatches
+    result: MixedRowOneCondition
+
+checked_conclusion:
+  statement: >
+    The vacuum is an eigenstate of the represented mixed
+    normal-ordered operator.
+  lean:
+    theorem: corollary_one_from_periodic_overlap_aggregate_closed
+    module: LeanGioia.PeriodicOverlapAggregateClosed
+    checkpoint: 52
+
+representation_refinement:
+  statement: >
+    Equal duplicate-free creator supports specify the same
+    creation-string operator. The operator-visible coefficient
+    is therefore the sum over the corresponding support fiber.
+  consequence: >
+    The end-to-end route uses support coverage plus support-fiber
+    aggregate coefficients rather than injective indexing of
+    higher-creation supports.
+
+verification:
+  build: "lake build"
+  placeholders: "no sorry or admit"
+  axioms:
+    - propext
+    - Classical.choice
+    - Quot.sound
+
+artifacts:
+  repository: "https://github.com/thinkthoughts/lean-gioia"
+  report: "https://github.com/thinkthoughts/lean-gioia/blob/main/REPORT/REPORT.md"
+  specification: "https://github.com/thinkthoughts/lean-gioia/blob/main/SPECIFICATION.md"
+  source_to_lean: "https://github.com/thinkthoughts/lean-gioia/blob/main/docs/SOURCE_TO_LEAN.md"
+  lab_report: "https://labreports.app/gioia"
+
+reading_point_grammar:
+  supplied:
+    - source evidence
+    - leading specifications
+  derived:
+    - coefficient equalities
+    - MixedRowOneCondition
+    - vacuum eigenstate conclusion
+  next: >
+    Admissible generalizations follow leading specifications.
