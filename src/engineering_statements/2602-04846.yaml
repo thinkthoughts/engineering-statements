@@ -1,0 +1,80 @@
+id: 2602-04846
+title: "CSLib: The Lean Computer Science Library"
+
+source:
+  authors:
+    - Clark Barrett
+    - Swarat Chaudhuri
+    - Fabrizio Montesi
+    - Jim Grundy
+    - Pushmeet Kohli
+    - Leonardo de Moura
+    - Alexandre Rademaker
+    - Sorrachai Yingchareonthawornchai
+  title: "CSLib: The Lean Computer Science Library"
+  arxiv: "2602.04846"
+  type: "research paper"
+
+reading_point:
+  statement: >
+    A shared Lean library for computer science can provide reusable
+    formal infrastructure for research, education, and the engineering
+    of formally verified systems.
+
+leading_specifications:
+  - computer science knowledge represented in Lean
+  - reusable definitions and theories
+  - formally verified code
+  - shared tools and infrastructure
+  - community documentation
+  - support for manual and AI-aided development
+
+supplied_infrastructure:
+  library: CSLib
+  prover: Lean
+  objects:
+    - definitions and theories
+    - verified code
+    - tools and infrastructure
+    - community and documentation
+  role: >
+    Supply a shared, extensible formal foundation that subsequent
+    computer science specifications and verification projects can
+    reuse and extend.
+
+research_workflow:
+  input: "research reading point"
+  specification: "leading specifications"
+  infrastructure: "CSLib + Lean"
+  result: "checked result"
+  continuation: "next reading point"
+
+evidence_boundary:
+  source_supplies:
+    - CSLib design and implementation
+    - stated goals for computer science research and education
+    - reusable formal library infrastructure
+    - support for manual and AI-aided formal development
+  lab_report_supplies:
+    - reading-point interpretation
+    - specification-oriented workflow
+    - Figure A
+  verification_status: >
+    This engineering statement reports and organizes the paper's
+    infrastructure contribution. It does not claim an independent
+    formal verification of CSLib or of systems developed with CSLib.
+
+artifacts:
+  figure_a: "2602-04846_A.png"
+  arxiv: "https://arxiv.org/abs/2602.04846"
+
+reading_point_grammar:
+  supplied:
+    - source evidence
+    - shared formal infrastructure
+    - leading specifications
+  checked:
+    - results formalized and proved within Lean
+  next: >
+    Checked results can supply subsequent reading points, while
+    reusable formal infrastructure can inform new specifications.
