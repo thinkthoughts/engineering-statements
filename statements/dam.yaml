@@ -1,0 +1,56 @@
+id: "dam"
+
+title: "Dense Associative Memory Specifies an Exact One-Flip Stability Interface"
+
+source:
+  paper: "https://arxiv.org/abs/1606.01164"
+  lab_report: "https://labreports.app/dam"
+  repo: "https://github.com/thinkthoughts/lean-dense-associative-memory"
+
+objective: >
+  Specify the exact finite layer of Dense Associative Memory (DAM)
+  needed before asymptotic capacity analysis: the one-flip energy gap,
+  the selected-memory signal term, the deterministic signal/noise
+  decomposition, and an explicit uniform binary pattern ensemble with
+  equiprobable +1 and -1 stored coordinates.
+
+contexts:
+  - "Dense Associative Memory with polynomial separation F(x) = x^n."
+  - "Binary stored patterns with coordinates in {-1, +1}."
+  - "One-neuron flip stability evaluated at an exactly stored memory."
+  - "Finite uniform Boolean sample space mapped deterministically to spin-valued patterns."
+
+constraints:
+  - "The selected stored memory has self-overlap N."
+  - "Flipping one stored coordinate changes the selected-memory overlap from N to N - 2."
+  - "For F(x) = x^n, the exact selected-memory signal term is N^n - (N - 2)^n."
+  - "The one-flip energy gap decomposes exactly into the selected-memory signal term plus the contribution from all other stored memories."
+  - "The random-pattern layer is specified by a uniform PMF on Omega = Memory -> Neuron -> Bool."
+  - "The Boolean sample map produces only {-1, +1} pattern coordinates."
+  - "Each stored spin coordinate is equiprobable: P[xi_i^mu = +1] = P[xi_i^mu = -1] = 1/2."
+  - "Distinct-coordinate independence is not yet part of the kernel-checked boundary."
+  - "Noise variance, Gaussian approximation, and asymptotic capacity scaling remain subsequent checkpoints."
+
+evidence:
+  - "Lean theorem: overlap_self_of_binary."
+  - "Lean theorem: overlap_self_flip_of_binary."
+  - "Lean theorem: self_signal_term."
+  - "Lean theorem: flipEnergyGap_signal_noise_decomposition."
+  - "Lean theorem: areBinaryPatterns_patternsOf."
+  - "Lean theorem: coordinate_true_fiber_card."
+  - "Lean theorems: coordinatePMF_true and coordinatePMF_false."
+  - "Lean theorem: patternCoordinate_pm_half."
+  - "Project build: 8940 jobs completed successfully."
+
+outputs:
+  - "Kernel-checked exact one-flip DAM identities."
+  - "Kernel-checked deterministic signal/noise decomposition."
+  - "Kernel-checked finite uniform binary ensemble."
+  - "Kernel-checked equiprobable +1/-1 stored pattern coordinates."
+  - "A report boundary that separates exact finite statements from later probabilistic and asymptotic claims."
+
+next_steps:
+  - "Specify distinct-coordinate independence for the uniform finite pattern ensemble."
+  - "Derive the noise variance under the explicit random-pattern assumptions."
+  - "Separate exact variance statements from the paper's Gaussian approximation."
+  - "Formalize the threshold-dependent asymptotic capacity scaling only after the preceding assumptions are explicit."
