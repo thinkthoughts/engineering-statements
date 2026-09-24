@@ -1,0 +1,63 @@
+id: confinement
+title: Symmetry Specifications Constrain Mass-Generation Claims
+
+source:
+  paper:
+    - "arXiv:2409.02062 — Symmetric Mass Generation with four SU(2) doublet fermions"
+    - "arXiv:2604.02424 — A Guide to Symmetric Mass Generation in Lattice-QCD"
+  lab_report: "https://labreports.app/confinement"
+  repo: "https://github.com/thinkthoughts/lean-confinement"
+
+objective: >
+  Specify mathematical implications connecting symmetry transformations,
+  partner correlators, extracted masses, staggered-fermion structure,
+  anomaly conditions, and merged-fixed-point models while keeping numerical
+  evidence, physical assumptions, kernel-checked consequences, and physical
+  interpretation distinct.
+
+contexts:
+  - "Anna Hasenfratz, CTQM seminar: Confinement and mass generation without Goldstone Bosons: a new paradigm"
+  - "Four-dimensional strongly coupled gauge-fermion systems"
+  - "SU(2) gauge theory with Nf = 4"
+  - "SU(3) gauge theory with Nf = 8"
+  - "Staggered fermions and taste-breaking interactions"
+  - "Parity-partner correlators and mass extraction"
+  - "Spin-Z4 anomaly constraints"
+  - "Merged infrared-ultraviolet fixed-point models"
+
+constraints:
+  - "Numerical evidence is not identified with a mathematical theorem."
+  - "Specified symmetry assumptions precede correlator-equality conclusions."
+  - "Equal correlators imply equal extracted masses only under an explicit shared mass extractor."
+  - "The four-fermion specification abstracts the source-backed structure S^2 - P^2 without identifying differing overall coupling conventions."
+  - "Absence of a bilinear condensate alone does not specify gaplessness."
+  - "Anomaly cancellation is treated as a necessary condition, not a sufficient dynamical mechanism."
+  - "The arithmetic anomaly condition is 8 | Nf * Nc."
+  - "A merged fixed point is specified algebraically by a beta-function zero of multiplicity at least two."
+  - "The merged-fixed-point specification does not assert that a measured gauge theory realizes that RG model."
+  - "The 2024 paper's SMG terminology is distinguished from the updated seminar classification in which the observed strong-coupling phase breaks Gamma_4 and is described as dSMG."
+
+evidence:
+  - "The lattice study reports configuration-by-configuration degeneracy of pseudoscalar/scalar parity-partner correlators and analogous vector/axial degeneracy."
+  - "The seminar presents a gapped strong-coupling phase with exact U(1)_epsilon preserved and Gamma_4 taste symmetry broken."
+  - "The seminar finite-size-scaling comparison states that both second-order and merged-fixed-point fits show good curve collapse and that the displayed FSS does not yet distinguish them."
+  - "Hasenfratz and Xu identify Nf = 4 SU(2) and Nf = 8 SU(3) as satisfying the Spin-Z4 self-anomaly arithmetic condition."
+  - "Hasenfratz and Xu distinguish anomaly cancellation as necessary from dynamical realization of a phase."
+
+outputs:
+  - "Lean theorem: specified symmetry assumptions imply equality of partner correlators."
+  - "Lean theorem: equal correlators under a shared mass extractor imply equal extracted masses."
+  - "Lean specification: Q(S,P) = S^2 - P^2 for the taste-breaking four-fermion structure."
+  - "Lean predicates for mass gap, bilinear condensate, symmetry preservation, and Goldstone modes."
+  - "Lean staggered-lattice parity sign, U(1)_epsilon phase, field transformation, and round-trip identity."
+  - "Lean theorem separating validity on a specified sample from universal validity."
+  - "Lean verification of 8 | Nf * Nc for the specified SU(2) and SU(3) examples."
+  - "Lean necessary-condition form of the anomaly obstruction."
+  - "Lean merged-fixed-point specification (g - g*)^2 | beta(g)."
+  - "Kernel-checked CP1-CP12 formalization with no sorry or admit."
+
+next_steps:
+  - "Specify a concrete source-backed lattice operator transformation."
+  - "Connect that transformation to the abstract partner-correlator theorem without identifying numerical evidence with the theorem assumptions."
+  - "Extend the RG layer only where additional source equations provide explicit specifications."
+  - "Keep admissible generalizations trailing leading specifications."
