@@ -6,6 +6,14 @@ source:
   lab_report: https://readingpoint.app/galerkin/
   repo: https://github.com/wwang-math/FluidGalerkinLean
 
+grokbait:
+  url: https://x.com/dan_hawkley/status/2105201766623301827
+  role: comparative reading point
+  comparison:
+    - arXiv:2609.33033
+    - arXiv:2609.33103
+    - arXiv:2609.33241
+
 objective: >
   Track the specification structure exposed by Wang's Lean formalization
   of the Galerkin construction for two-dimensional Navier–Stokes equations.
