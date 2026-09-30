@@ -1,0 +1,38 @@
+id: 2609-33033
+title: Reading Points and Galerkin Limits
+
+source:
+  paper: https://arxiv.org/abs/2609.33033
+  lab_report: https://readingpoint.app/galerkin/
+  repo: https://github.com/wwang-math/FluidGalerkinLean
+
+objective: >
+  Track the specification structure exposed by Wang's Lean formalization
+  of the Galerkin construction for two-dimensional Navier–Stokes equations.
+
+contexts:
+  - Galerkin construction
+  - Leray–Hopf weak solutions
+  - Lean 4 formalization
+  - reading points
+  - specification grammar
+
+constraints:
+  - Exact Galerkin identities establish uniform energy control.
+  - Strong velocity convergence and weak energy-space convergence constrain the limiting construction.
+  - Weak lower semicontinuity yields the inherited every-time energy inequality.
+  - The established weakly continuous representative supplies the specified reading point.
+
+evidence:
+  - Galerkin construction → established representative → reading point.
+  - Exact Galerkin identity → inherited limiting inequality.
+  - Integer-horizon representatives agree pointwise on overlaps.
+  - A common refined subsequence supports the nonlinear limit, weakly continuous representative, and energy argument.
+
+outputs:
+  - https://readingpoint.app/galerkin/
+  - https://github.com/wwang-math/FluidGalerkinLean
+
+next_steps:
+  - Treat the report as frozen unless a mathematical correction is required.
+  - Use the engineering statement to track the reading-point interpretation without creating a separate Lean repository.
